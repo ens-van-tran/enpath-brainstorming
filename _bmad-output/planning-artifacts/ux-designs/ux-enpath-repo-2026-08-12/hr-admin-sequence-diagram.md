@@ -20,14 +20,17 @@ sequenceDiagram
     actor HR as HR Admin
     actor Manager as Manager
     participant EnPath as En-Path
+    participant HRData as Employee Import
     participant Results as Assessment Results
 
     rect rgb(236, 242, 246)
         HR->>EnPath: Open Competencies / Pool
         HR->>EnPath: Open New competency drawer
-        HR->>EnPath: Enter name, behavior, and advice for each shared level
-        EnPath->>EnPath: Validate required level content
-        alt Required behavior or advice is missing
+        HR->>EnPath: Enter name, description, score anchors, and advice
+        HR->>EnPath: Define role + level + criterion rubric
+        HR->>EnPath: Define Below / Meet / Above behavior
+        EnPath->>EnPath: Validate score content and role-level rubric
+        alt Required score, advice, or rubric is missing
             EnPath-->>HR: Keep drawer open and show validation
         else Competency is complete
             HR->>EnPath: Create competency
@@ -36,6 +39,9 @@ sequenceDiagram
     end
 
     rect rgb(233, 240, 238)
+        HR->>HRData: Import Employee, team, role, and level
+        HRData->>EnPath: Provide validated Employee records
+        EnPath-->>HR: Show Employee Import register
         HR->>EnPath: Assign an Employee as Role Manager for team + role
         EnPath->>EnPath: Validate active Employee and exact duplicate
         alt Assignment is invalid
@@ -55,6 +61,8 @@ sequenceDiagram
         EnPath-->>Manager: Update expected-profile radar and numeric values
         Manager->>EnPath: Save template as Draft
         HR->>EnPath: Open the Draft template
+        EnPath->>EnPath: Match imported Employees by role and team
+        EnPath-->>HR: Preview affected Employees and role levels
         HR->>EnPath: Confirm Public
         EnPath->>EnPath: Set template status to Public
         EnPath->>EnPath: Record Public action in Audit Log
@@ -73,6 +81,8 @@ sequenceDiagram
         end
         HR->>EnPath: Open Assessment Reports
         EnPath-->>HR: Show report completion and template context
+        HR->>EnPath: Open evidence
+        EnPath-->>HR: Show Employee reference, Manager context, and rationale (view only)
         HR->>EnPath: Open Company Gaps and select a team
         EnPath-->>HR: Show team ranking, strengths, weaknesses, and coverage
         HR->>EnPath: Open Team Gaps
@@ -92,13 +102,18 @@ sequenceDiagram
 ## Invariants
 
 - Competencies live in one flat Pool; Categories organize Pool selections inside Framework Templates.
-- Every competency stores behavior and improvement advice for each active shared level.
+- Every competency stores a description, score anchor, and improvement advice for each active shared score.
+- Role-level rubrics bind role, role level, evaluation criterion, and Below / Meet / Above Expectation behavior.
+- Shared score anchors and role-level rubrics remain separate concepts.
 - Template Categories are collapsible presentation sections; collapse state does not change composition.
 - A Category may be assigned to multiple active Role Manager scopes.
 - HR and appropriately scoped Managers may compose Framework Templates.
+- HR imports Employee team, role, and level data before role assignment and impact preview.
 - Templates move directly between Draft and Public in this prototype; there is no Framework Review route.
+- Public confirmation includes affected imported Employees and role levels.
 - Making a template Public is not tied to a performance-review period.
 - Assessment Reports consume existing assessment results; HR does not generate assessments in this prototype.
+- Evidence Review is view-only for HR Admin.
 - Manager Score is recorded. Employee Score is reference-only.
 - `Gap = Expected Score - Manager Score`; missing Manager Score produces `Unknown`.
 - Prototype fixtures use anonymous labels and never reuse persona or interview identities.

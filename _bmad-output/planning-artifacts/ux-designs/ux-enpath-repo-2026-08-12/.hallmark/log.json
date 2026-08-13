@@ -1,0 +1,23 @@
+{
+  "skill": "hallmark",
+  "action": "redesign",
+  "theme": "calm slate operations workbench",
+  "palette_anchor": "muted teal",
+  "structural_fingerprint": "persistent slate rail with compact task canvas",
+  "preserved_routes": 9,
+  "source_inputs": [
+    "existing BMAD DESIGN.md and EXPERIENCE.md",
+    "user scope decisions dated 2026-08-13",
+    "Competency Matrix - Draft - Rubric Config PDF"
+  ],
+  "validation": {
+    "contrast": "pass",
+    "token_discipline": "pass",
+    "responsive_widths": [320, 375, 414, 768, 1280],
+    "horizontal_overflow": false,
+    "browser_errors": 0,
+    "reduced_motion": true,
+    "persona_fixture_check": "pass"
+  },
+  "status": "complete"
+}

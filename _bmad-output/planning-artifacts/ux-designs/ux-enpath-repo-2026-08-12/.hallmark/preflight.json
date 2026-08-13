@@ -1,0 +1,11 @@
+{
+  "intent": "redesign",
+  "artifact": "interactive HR Admin operations console",
+  "preserve": ["nine routes", "information architecture", "business rules", "working interactions", "anonymous fixture identities"],
+  "visual_direction": "calm slate operations workbench",
+  "density": "compact",
+  "primary_surface": "desktop web",
+  "modified": [".working/key-hr-admin-prototype.html", "mockups/hr-admin-prototype.html", "DESIGN.md", "EXPERIENCE.md", "hr-admin-sequence-diagram.md"],
+  "created": [".working/tokens.css", "mockups/tokens.css", ".hallmark/preflight.json", ".hallmark/log.json"],
+  "deleted": []
+}

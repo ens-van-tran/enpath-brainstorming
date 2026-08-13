@@ -12,48 +12,49 @@ sources:
   - Projects/En-Path/docs/Product Canvas.md
   - Projects/En-Path/docs/PVB.md
   - Projects/En-Path/Catchup business meeting note.md
+  - /Users/vawn/Downloads/Bản sao của To share] Competency Matrix - Draft - Rubric Config (chuột bạch BA).pdf
 colors:
-  background: '#F4F7F9'
-  surface: '#FFFFFF'
-  surface-subtle: '#E9F0F4'
-  foreground: '#172A39'
-  foreground-muted: '#607585'
-  border: '#D8E2E8'
-  border-strong: '#91A9B8'
-  sidebar: '#123B5D'
-  sidebar-active: '#245371'
-  sidebar-foreground: '#D5E3EC'
-  primary: '#176A78'
-  primary-hover: '#105966'
-  on-primary: '#FFFFFF'
-  primary-container: '#D9ECED'
-  info: '#23526F'
-  info-container: '#E0EDF5'
-  warning: '#986000'
-  warning-container: '#FFF0CF'
-  danger: '#B34438'
-  danger-container: '#FCE4E0'
-  success: '#24756F'
-  success-container: '#DCEEEA'
-  focus-ring: '#2D8791'
-  chart-recorded: '#176A78'
-  chart-employee-reference: '#C77A35'
-  chart-expected: '#123B5D'
-  chart-unknown: '#C8D4DB'
+  background: 'oklch(97.1% 0.007 210)'
+  surface: 'oklch(98.7% 0.006 210)'
+  surface-subtle: 'oklch(94.8% 0.012 210)'
+  foreground: 'oklch(25% 0.028 225)'
+  foreground-muted: 'oklch(48% 0.024 220)'
+  border: 'oklch(87% 0.017 210)'
+  border-strong: 'oklch(68% 0.028 215)'
+  sidebar: 'oklch(31% 0.038 220)'
+  sidebar-active: 'oklch(48% 0.09 185)'
+  sidebar-foreground: 'oklch(94% 0.009 210)'
+  primary: 'oklch(48% 0.09 185)'
+  primary-hover: 'oklch(42% 0.09 185)'
+  on-primary: 'oklch(98.5% 0.005 190)'
+  primary-container: 'oklch(92.8% 0.032 185)'
+  info: 'oklch(45% 0.075 235)'
+  info-container: 'oklch(94% 0.022 225)'
+  warning: 'oklch(49% 0.105 76)'
+  warning-container: 'oklch(95% 0.05 86)'
+  danger: 'oklch(48% 0.15 28)'
+  danger-container: 'oklch(94% 0.04 28)'
+  success: 'oklch(48% 0.09 160)'
+  success-container: 'oklch(94% 0.035 155)'
+  focus-ring: 'oklch(58% 0.12 185)'
+  chart-recorded: 'oklch(48% 0.09 185)'
+  chart-employee-reference: 'oklch(55% 0.09 255)'
+  chart-expected: 'oklch(31% 0.038 220)'
+  chart-unknown: 'oklch(68% 0.028 215)'
 typography:
   display:
-    fontFamily: 'Segoe UI, Helvetica Neue, Arial, sans-serif'
-    fontSize: 26px
-    fontWeight: '700'
-    lineHeight: '1.15'
-    letterSpacing: -0.02em
+    fontFamily: 'Aptos Display, Avenir Next, sans-serif'
+    fontSize: 31px
+    fontWeight: '800'
+    lineHeight: '1.05'
+    letterSpacing: -0.045em
   heading:
-    fontFamily: 'Segoe UI, Helvetica Neue, Arial, sans-serif'
-    fontSize: 17px
-    fontWeight: '700'
+    fontFamily: 'Aptos Display, Avenir Next, sans-serif'
+    fontSize: 18px
+    fontWeight: '750'
     lineHeight: '1.25'
   body:
-    fontFamily: 'Segoe UI, Helvetica Neue, Arial, sans-serif'
+    fontFamily: 'IBM Plex Sans, Aptos, sans-serif'
     fontSize: 13px
     fontWeight: '400'
     lineHeight: '1.45'
@@ -63,14 +64,14 @@ typography:
     fontWeight: '700'
     lineHeight: '1.3'
   data:
-    fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace'
+    fontFamily: 'IBM Plex Mono, SFMono-Regular, monospace'
     fontSize: 12px
     fontWeight: '550'
     lineHeight: '1.4'
 rounded:
   sm: 4px
-  md: 5px
-  lg: 7px
+  md: 7px
+  lg: 11px
 spacing:
   '1': 4px
   '2': 8px
@@ -78,7 +79,7 @@ spacing:
   '4': 16px
   '5': 20px
   '6': 24px
-  sidebar: 220px
+  sidebar: 232px
   content-max: 1480px
 components:
   app-shell:
@@ -125,7 +126,7 @@ components:
 
 ## Brand & Style
 
-En-Path is an internal HR and L&D work surface. The Operations Console direction is compact, precise, and easy to scan: a navy sidebar, blue-gray canvas, white panels, teal actions, readable sans-serif typography, and minimal decoration.
+En-Path is an internal HR competency-governance work surface. The Hallmark-refined Operations Console is a calm workbench: a softened slate navigation rail, lightly cool neutral canvas, low-chroma panels, muted-teal task actions, a distinct display/body font pairing, and minimal decoration. The palette is intentionally comfortable for long desktop sessions rather than dramatic or brand-heavy.
 
 The prototype intentionally carries less explanatory copy. A page header contains its title and at most one primary action; the interaction itself communicates the task. Governance remains visible through ownership, status, scoped Manager assignments, Public template state, and the Audit Log.
 
@@ -143,11 +144,11 @@ The final interactive visual reference is [HR Admin prototype](mockups/hr-admin-
 
 ## Typography
 
-Use the local Segoe UI-led stack so the standalone HTML remains readable without network dependencies. Sentence case is standard. Compact table headers may use uppercase and letter spacing. Numeric values use tabular alignment where available.
+Use local-first Aptos Display/Avenir Next for headings, IBM Plex Sans/Aptos for body content, and IBM Plex Mono/SFMono for data labels. Sentence case is standard. Compact table headers may use uppercase and letter spacing. Numeric values use tabular alignment where available.
 
 ## Layout & Spacing
 
-Desktop web is the primary form factor. A persistent 220px sidebar groups Overview, Framework, Reports, Analytics, and Governance. Content uses compact panels and 12px gaps.
+Desktop web is the primary form factor. A persistent 232px sidebar groups Overview, Framework, Reports, Analytics, and Governance. Content uses compact panels and 12px gaps.
 
 The Competencies surface uses tabs to keep Pool and Categories on one route. Creating a competency opens a right-side drawer so the Pool remains visible behind the task. Framework Templates use a narrow selection column and a wider composition/radar work area; Categories are collapsible to reduce vertical density.
 
@@ -164,15 +165,17 @@ Use 4-7px corners for controls and panels. Status badges may be compact rounded 
 - **App shell:** Persistent sidebar and content area. Framework Templates belongs under Governance.
 - **Page header:** Page title plus at most one primary action group. No eyebrow, breadcrumb repetition, or descriptive paragraph.
 - **Tabs:** Pool and Categories share the Competencies route. The selected tab remains visually and programmatically explicit.
-- **Competency Pool table:** Shows competency name, each shared level as an explicit badge, and status. Do not show competency description or a summarized `Level coverage` field.
-- **Competency drawer:** Creates a competency with a name, behavior, and improvement advice for each active shared level. Validation keeps incomplete content in the drawer.
-- **Competency editor:** Shows behavior and advice as two editable rows across the shared levels.
-- **Competency editor:** Selecting a Pool row opens its behavior-by-level grid on the same surface.
+- **Competency Pool table:** Shows competency name, role-level rubric count, and status. Do not show repeated descriptions or a summarized `Level coverage` field.
+- **Competency drawer:** Creates a competency description, score anchors, improvement advice per score, and the first role-level rubric.
+- **Competency editor:** Shows the shared score anchors as readable rows rather than narrow columns.
+- **Role-level rubric editor:** Separates role, role level, evaluation criterion, and Below / Meet / Above Expectation behavior.
 - **Category register:** Shows a Category and every assigned Role Manager scope. Category assignment supports multiple active Managers.
 - **Framework Template composer:** Lets HR or an assigned Manager pick Pool competencies inside collapsible Categories. A template is saved as Draft or made Public directly.
 - **Template radar:** Shows the expected competency profile and an adjacent numeric equivalent.
-- **Role Manager register:** Shows Employee identity, team/role scope, effective date, status, and revoke action.
-- **Assessment Reports table:** Reports on existing assessment activity; it does not launch or generate an assessment.
+- **People & Managers:** Uses tabs for Role Managers and Employee Import; imported records expose team, role, and level.
+- **Role Manager register:** Shows Employee identity, level, team/role scope, effective date, status, and revoke action.
+- **Assessment Reports table:** Reports on existing assessment activity and opens evidence in a view-only dialog.
+- **Public impact preview:** Shows matched imported Employees and role levels before a Framework Template becomes Public.
 - **Team member list:** The full row is the inspection trigger. Do not add a separate Inspect button.
 - **Company insight lists:** Show up to five strongest and five weakest known competencies for the selected team.
 - **Gap charts:** Team and member radars show Expected, recorded Manager, and Employee-reference series with numeric tables. Team trend adds a dashed six-month-prior Manager series.
@@ -185,7 +188,7 @@ Use 4-7px corners for controls and panels. Status badges may be compact rounded 
 |---|---|
 | Keep pages focused on title, primary action, and task content | Add descriptions that repeat the page title |
 | Show Pool and Categories as tabs on one surface | Split them into separate navigation routes |
-| Show every competency level explicitly | Show a vague `Level coverage` summary |
+| Separate shared score anchors from role-level rubrics | Treat a score label as the complete evaluation rubric |
 | Create competency in a right drawer | Replace the Pool with a separate creation page |
 | Support multiple Manager assignments per Category | Treat Category assignment as single-select |
 | Make a valid template Public directly | Add a separate Framework Review queue |
