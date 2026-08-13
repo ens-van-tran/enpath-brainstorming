@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "title": "En-Path Discovery - Native FigJam Content",
+    "source_root": "Projects/En-Path/docs-enlish",
+    "source_files": [
+      "PVB.md",
+      "Product Canvas.md",
+      "Persona.md",
+      "Customer Journey Maps.md",
+      "User Story Map.md",
+      "CJM Cross-Role Swimlane.md"
+    ],
+    "language": "English",
+    "purpose": "Compact source-of-truth dataset for rebuilding all six sections as editable FigJam objects.",
+    "content_rules": [
+      "Use one editable sticky or text card per card object.",
+      "Use editable connectors for every relationship object.",
+      "HR Admin content remains a role-based draft because no validated HR Admin persona exists.",
+      "Do not imply reminders, deadlines, notification channels, an SLA, or a scoring formula."
+    ]
+  },
+  "sections": [
+    {
+      "id": "pvb",
+      "title": "PVB",
+      "subtitle": "Product Vision Board",
+      "layout": "Five horizontal groups: Vision, Target Groups, Business Goals, Needs, Product Principles.",
+      "node_count": 13,
+      "groups": [
+        {
+          "id": "pvb-vision-group",
+          "title": "Vision",
+          "color": "blue",
+          "cards": [
+            {
+              "id": "pvb-vision",
+              "title": "En-Path Vision",
+              "body": "For enterprise HR leadership managing competencies, assessments, and career paths across disconnected spreadsheets. En-Path turns evaluation into explainable employee profiles, development priorities, and role-qualification decisions."
+            },
+            {
+              "id": "pvb-differentiator",
+              "title": "Single Auditable Standard",
+              "body": "Unlike fragmented tools and opaque assessments, En-Path centralizes skills, evaluations, role requirements, career gaps, and decision history in one transparent source of truth."
+            }
+          ]
+        },
+        {
+          "id": "pvb-target-group",
+          "title": "Target Groups",
+          "color": "yellow",
+          "cards": [
+            {
+              "id": "pvb-target-employee",
+              "title": "Employee",
+              "body": "Early-career, mid-career, and experienced employees, both tech-savvy and non-tech-savvy, who want to own their career growth and professional development."
+            },
+            {
+              "id": "pvb-target-hr",
+              "title": "HR / L&D",
+              "body": "Junior through senior HR and L&D professionals who design, manage, and optimize talent-development programs and organizational capability."
+            },
+            {
+              "id": "pvb-target-manager",
+              "title": "Manager / Leader",
+              "body": "New team leads through senior department leaders who manage workforce capability, team performance, and strategic talent decisions."
+            }
+          ]
+        },
+        {
+          "id": "pvb-goals-group",
+          "title": "Business Goals",
+          "color": "green",
+          "cards": [
+            {
+              "id": "pvb-goal-employee",
+              "title": "Employee Goal",
+              "body": "Understand current capabilities, identify competency gaps, and take ownership of growth toward a desired role."
+            },
+            {
+              "id": "pvb-goal-hr",
+              "title": "HR / L&D Goal",
+              "body": "Build consistent competency metrics, define transparent career paths, and govern evidence-based evaluation and development."
+            },
+            {
+              "id": "pvb-goal-manager",
+              "title": "Manager Goal",
+              "body": "Evaluate workforce capability transparently, make accountable role-readiness decisions, and close gaps through targeted development."
+            }
+          ]
+        },
+        {
+          "id": "pvb-needs-group",
+          "title": "Needs",
+          "color": "orange",
+          "cards": [
+            {
+              "id": "pvb-need-employee",
+              "title": "Employee Need",
+              "body": "Clear current level and progression, target-role requirements, personalized next actions, and one place for competencies, certifications, courses, and achievements."
+            },
+            {
+              "id": "pvb-need-leader",
+              "title": "Team Leader Need",
+              "body": "A fast, reliable view of team competencies, gaps, evidence, and development plans for coaching and objective review conversations."
+            },
+            {
+              "id": "pvb-need-manager",
+              "title": "Strategic Manager Need",
+              "body": "Organization-wide capability insight for workforce planning, succession, promotions, future skill demand, and organizational gap analysis."
+            }
+          ]
+        },
+        {
+          "id": "pvb-principles-group",
+          "title": "Product Principles",
+          "color": "pink",
+          "cards": [
+            {
+              "id": "pvb-product-promise",
+              "title": "Product Promise",
+              "body": "Every competency score and career decision should be transparent, explainable, and reusable throughout the employee lifecycle."
+            },
+            {
+              "id": "pvb-trust",
+              "title": "Trust Foundation",
+              "body": "Use shared competency standards, evidence and rationale, authorized verification, auditable history, and appropriate access controls."
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        { "from": "pvb-vision", "to": "pvb-differentiator", "label": "delivered through" },
+        { "from": "pvb-target-employee", "to": "pvb-goal-employee", "label": "pursues" },
+        { "from": "pvb-goal-employee", "to": "pvb-need-employee", "label": "requires" },
+        { "from": "pvb-target-hr", "to": "pvb-goal-hr", "label": "pursues" },
+        { "from": "pvb-goal-hr", "to": "pvb-need-manager", "label": "requires visibility" },
+        { "from": "pvb-target-manager", "to": "pvb-goal-manager", "label": "pursues" },
+        { "from": "pvb-goal-manager", "to": "pvb-need-leader", "label": "requires team insight" },
+        { "from": "pvb-need-employee", "to": "pvb-product-promise", "label": "addressed by" },
+        { "from": "pvb-need-leader", "to": "pvb-product-promise", "label": "addressed by" },
+        { "from": "pvb-need-manager", "to": "pvb-product-promise", "label": "addressed by" },
+        { "from": "pvb-product-promise", "to": "pvb-trust", "label": "protected by" }
+      ]
+    },
+    {
+      "id": "product-canvas",
+      "title": "Product Canvas",
+      "subtitle": "MVP scope, value loop, personas, measures, and guardrails",
+      "layout": "Canvas grid with Product Goal at top, Personas at left, MVP Capabilities in the center, Measures and Guardrails at right.",
+      "node_count": 16,
+      "groups": [
+        {
+          "id": "pc-goal-group",
+          "title": "Product Goal",
+          "color": "blue",
+          "cards": [
+            {
+              "id": "pc-problem",
+              "title": "Problem",
+              "body": "Competencies, reviews, experience, and career paths are fragmented. Employees cannot see their current state, important gaps, or next actions, and agreed actions are often forgotten between reviews."
+            },
+            {
+              "id": "pc-mvp-outcome",
+              "title": "MVP Outcome",
+              "body": "Target -> gap -> roadmap and next actions -> follow-up -> evidence and review -> verified competency -> updated roadmap. Used throughout the employee's tenure."
+            },
+            {
+              "id": "pc-review-role",
+              "title": "Role in Performance Reviews",
+              "body": "En-Path does not replace performance or promotion decisions. It replaces manual data collection and turns reviews into evidence-based calibration checkpoints."
+            }
+          ]
+        },
+        {
+          "id": "pc-personas-group",
+          "title": "Primary Users",
+          "color": "yellow",
+          "cards": [
+            {
+              "id": "pc-persona-employee",
+              "title": "Employee",
+              "body": "Understand the current level, select a target, demonstrate competency, request reviews, execute a development plan, revisit agreed actions, and reuse a visual career profile."
+            },
+            {
+              "id": "pc-persona-manager",
+              "title": "Manager",
+              "body": "Understand each employee's capability, clarify promotion direction, agree and follow up actions, verify evidence, update plans, and make staffing decisions."
+            },
+            {
+              "id": "pc-persona-hr",
+              "title": "HR Admin",
+              "body": "Set up roles, levels, competency matrices, and career paths; publish shared competency metrics; monitor gaps and progress by role and level."
+            }
+          ]
+        },
+        {
+          "id": "pc-mvp-group",
+          "title": "MVP Capabilities",
+          "color": "green",
+          "cards": [
+            {
+              "id": "pc-capability-standard",
+              "title": "Competency Standard",
+              "body": "Maintain competency metrics and career paths by role and level as the comparison standard."
+            },
+            {
+              "id": "pc-capability-profile-gap",
+              "title": "Profile, Target, and Gap",
+              "body": "Provide a career profile, target role or level, gap analysis, prioritized development needs, and a publishable or exportable profile."
+            },
+            {
+              "id": "pc-capability-roadmap",
+              "title": "Roadmap and Retained Actions",
+              "body": "Store the development roadmap, agreed next actions, follow-up status, and jointly confirmed action history so commitments are not lost."
+            },
+            {
+              "id": "pc-capability-review",
+              "title": "Continuous Evidence Review",
+              "body": "Capture evidence and rationale, support event-based review requests, authorize verification, and retain immutable competency history."
+            },
+            {
+              "id": "pc-capability-views",
+              "title": "Updated Views and Reuse",
+              "body": "Update competency, gaps, readiness, roadmap, and Manager team view; let Employees export or publish the verified career profile."
+            }
+          ]
+        },
+        {
+          "id": "pc-metrics-group",
+          "title": "Success Measures",
+          "color": "orange",
+          "cards": [
+            {
+              "id": "pc-metric-clarity",
+              "title": "Clarity and Trust",
+              "body": "Employees understand gaps against company direction and can identify the next action. Managers can interpret evaluation results and outcomes through a shared view."
+            },
+            {
+              "id": "pc-metric-activation",
+              "title": "Employee Activation",
+              "body": "An Employee has a target role or level, has an available gap analysis, and reaches a first roadmap quickly."
+            }
+          ]
+        },
+        {
+          "id": "pc-guardrails-group",
+          "title": "Guardrails and Horizon",
+          "color": "pink",
+          "cards": [
+            {
+              "id": "pc-rules",
+              "title": "Business Rules and Manual MVP Work",
+              "body": "Verified skills require an authorized reviewer plus evidence or rationale. Least-privilege access and immutable history apply. HR and Managers manually map gaps to assignments, mentors, materials, or courses."
+            },
+            {
+              "id": "pc-assumptions",
+              "title": "Assumptions and Constraints",
+              "body": "Pilot one career family with a complete owned matrix. Managers will run short event-based reviews. Rule-based recommendations are sufficient. Competency-metric quality and Manager workload determine reliability."
+            },
+            {
+              "id": "pc-later",
+              "title": "Later Phases",
+              "body": "Peer workflows, advanced organizational analytics, HRIS or LMS integration, multiple targets, competency-metric versioning, and AI recommendations."
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        { "from": "pc-problem", "to": "pc-mvp-outcome", "label": "resolved by" },
+        { "from": "pc-capability-standard", "to": "pc-capability-profile-gap", "label": "comparison standard" },
+        { "from": "pc-capability-profile-gap", "to": "pc-capability-roadmap", "label": "prioritizes action" },
+        { "from": "pc-capability-roadmap", "to": "pc-capability-review", "label": "creates evidence" },
+        { "from": "pc-capability-review", "to": "pc-capability-views", "label": "updates state" },
+        { "from": "pc-capability-views", "to": "pc-capability-profile-gap", "label": "next cycle", "style": "dashed" },
+        { "from": "pc-persona-hr", "to": "pc-capability-standard", "label": "publishes" },
+        { "from": "pc-persona-employee", "to": "pc-capability-profile-gap", "label": "uses" },
+        { "from": "pc-persona-manager", "to": "pc-capability-roadmap", "label": "co-owns" },
+        { "from": "pc-capability-views", "to": "pc-metric-clarity", "label": "measured by" },
+        { "from": "pc-capability-profile-gap", "to": "pc-metric-activation", "label": "measured by" }
+      ]
+    },
+    {
+      "id": "personas",
+      "title": "Personas",
+      "subtitle": "Validated Employee and Engineering Manager personas",
+      "layout": "Two side-by-side persona columns, each with Profile, Goals, Needs, and Pain Points.",
+      "node_count": 8,
+      "groups": [
+        {
+          "id": "persona-dinh-group",
+          "title": "Mr. Dinh Van Nhan - Employee",
+          "color": "blue",
+          "cards": [
+            {
+              "id": "persona-dinh-profile",
+              "title": "Profile",
+              "body": "Age 20-25; Backend Engineer; male. Early-career, technically focused, proactive about learning, and seeking clear progression plus recognition from real project work."
+            },
+            {
+              "id": "persona-dinh-goals",
+              "title": "Goals",
+              "body": "Understand current skills and experience; identify target-role gaps; assess promotion or internal-mobility readiness; track growth; build a practical personalized career path."
+            },
+            {
+              "id": "persona-dinh-needs",
+              "title": "Needs and Expectations",
+              "body": "Continuous skill updates from project contributions, Manager validation, transparent gap analysis, practical learning recommendations, and visible next-role requirements."
+            },
+            {
+              "id": "persona-dinh-pains",
+              "title": "Pain Points",
+              "body": "Updates wait for periodic reviews; current levels and priorities are unclear; promotion readiness is hard to judge; project contributions may be missed; next-level requirements lack visibility."
+            }
+          ]
+        },
+        {
+          "id": "persona-long-group",
+          "title": "Mr. Long Nguyen - Manager",
+          "color": "green",
+          "cards": [
+            {
+              "id": "persona-long-profile",
+              "title": "Profile",
+              "body": "Age 25-35; Engineering Manager; male. Coaches through projects and 1:1s, values evidence-based development, understands technical role expectations, and balances people growth with delivery."
+            },
+            {
+              "id": "persona-long-goals",
+              "title": "Goals",
+              "body": "Track team skill growth; support career plans and mobility; capture continuous feedback; prepare better reviews; identify shared gaps; build team capability."
+            },
+            {
+              "id": "persona-long-needs",
+              "title": "Needs and Expectations",
+              "body": "Centralized skill records and evidence, employee-initiated review requests, Manager validation, historical review context, tracked development plans, gap analysis, and practical growth actions."
+            },
+            {
+              "id": "persona-long-pains",
+              "title": "Pain Points",
+              "body": "No dedicated competency tool; evidence gathering is manual; records and history are scattered; mobility planning is unclear; assessments are infrequent; 1:1 actions are lost; Employees cannot request structured reviews."
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        { "from": "persona-dinh-profile", "to": "persona-dinh-goals", "label": "drives" },
+        { "from": "persona-dinh-goals", "to": "persona-dinh-needs", "label": "requires" },
+        { "from": "persona-dinh-pains", "to": "persona-dinh-needs", "label": "must resolve" },
+        { "from": "persona-long-profile", "to": "persona-long-goals", "label": "drives" },
+        { "from": "persona-long-goals", "to": "persona-long-needs", "label": "requires" },
+        { "from": "persona-long-pains", "to": "persona-long-needs", "label": "must resolve" },
+        { "from": "persona-dinh-needs", "to": "persona-long-needs", "label": "shared employee-manager workflow", "style": "dashed" }
+      ]
+    },
+    {
+      "id": "customer-journeys",
+      "title": "Customer Journey Maps",
+      "subtitle": "Employee, Manager, and HR Admin role journeys",
+      "layout": "Three horizontal lanes. Place stages left-to-right inside each lane and use cross-lane handoffs where specified.",
+      "node_count": 16,
+      "groups": [
+        {
+          "id": "cjm-employee-lane",
+          "title": "Employee",
+          "color": "blue",
+          "cards": [
+            {
+              "id": "cjm-e1",
+              "title": "1. Understand Current Profile",
+              "body": "Review skills, experience, strengths, and development areas. Outcome: a clear current competency state instead of fragmented history."
+            },
+            {
+              "id": "cjm-e2",
+              "title": "2. Select Target and See Gaps",
+              "body": "Choose a target role or level, compare against company metrics, and identify priority gaps. Outcome: clear direction and requirements."
+            },
+            {
+              "id": "cjm-e3",
+              "title": "3. Agree on Roadmap",
+              "body": "Discuss target, gaps, and next actions in a 1:1 with the Manager. Store a shared roadmap that both parties can revisit."
+            },
+            {
+              "id": "cjm-e4",
+              "title": "4. Execute and Follow Up",
+              "body": "Act through projects and daily work, record progress and evidence, then revisit and jointly confirm previous action statuses instead of losing them until the next review."
+            },
+            {
+              "id": "cjm-e5",
+              "title": "5. Request Evidence Review",
+              "body": "After a project or development event, submit evidence and rationale for authorized competency review. Outcome: recognition can occur continuously and transparently."
+            },
+            {
+              "id": "cjm-e6",
+              "title": "6. Receive Updated State",
+              "body": "View verified competencies, changed gaps, readiness, roadmap, and next actions. Outcome: the profile reflects real progress and guides the next cycle."
+            },
+            {
+              "id": "cjm-e7",
+              "title": "7. Export or Publish Profile",
+              "body": "Reuse a consistent profile containing personal information, work history, and experience for interviews or client pitches."
+            }
+          ]
+        },
+        {
+          "id": "cjm-manager-lane",
+          "title": "Manager",
+          "color": "green",
+          "cards": [
+            {
+              "id": "cjm-m1",
+              "title": "1. Understand Team Capability",
+              "body": "Review the Employee List, current skills, gaps, evidence, and development history under one shared standard instead of consolidating multiple sources."
+            },
+            {
+              "id": "cjm-m2",
+              "title": "2. Clarify Direction",
+              "body": "Use the Employee profile, target requirements, and gap analysis to clarify readiness and priority development needs."
+            },
+            {
+              "id": "cjm-m3",
+              "title": "3. Roadmap and Follow-Up",
+              "body": "Agree on actions, coach progress, then compare evidence with previous commitments, jointly confirm statuses, and agree what comes next."
+            },
+            {
+              "id": "cjm-m4",
+              "title": "4. Receive and Verify Review",
+              "body": "Receive an event-based request and, when authorized, assess the evidence and rationale. Outcome: an auditable competency decision."
+            },
+            {
+              "id": "cjm-m5",
+              "title": "5. Adjust Roadmap",
+              "body": "Use updated competencies and gaps to continue coaching and update development actions to match the new state."
+            },
+            {
+              "id": "cjm-m6",
+              "title": "6. Plan and Select Staff",
+              "body": "Use the Employee List, current skills, and gap analysis to consider suitable people for a project or client pitch."
+            }
+          ]
+        },
+        {
+          "id": "cjm-hr-lane",
+          "title": "HR Admin (Draft)",
+          "color": "yellow",
+          "cards": [
+            {
+              "id": "cjm-h1",
+              "title": "1. Establish Metrics",
+              "body": "Define roles, levels, competency matrices, and career paths as a sufficiently complete shared standard."
+            },
+            {
+              "id": "cjm-h2",
+              "title": "2. Publish Metrics",
+              "body": "Finalize and publish the standard used by profiles, targets, Manager views, and gap analyses."
+            },
+            {
+              "id": "cjm-h3",
+              "title": "3. Monitor Gaps and Progress",
+              "body": "Track competency gaps and progress by role and level against the published standard. Persona motivations remain unvalidated."
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        { "from": "cjm-e1", "to": "cjm-e2" },
+        { "from": "cjm-e2", "to": "cjm-e3" },
+        { "from": "cjm-e3", "to": "cjm-e4" },
+        { "from": "cjm-e4", "to": "cjm-e5", "label": "after an event" },
+        { "from": "cjm-e5", "to": "cjm-e6" },
+        { "from": "cjm-e6", "to": "cjm-e7" },
+        { "from": "cjm-m1", "to": "cjm-m2" },
+        { "from": "cjm-m2", "to": "cjm-m3" },
+        { "from": "cjm-m3", "to": "cjm-m4" },
+        { "from": "cjm-m4", "to": "cjm-m5" },
+        { "from": "cjm-m5", "to": "cjm-m6", "label": "reuse updated data" },
+        { "from": "cjm-h1", "to": "cjm-h2" },
+        { "from": "cjm-h2", "to": "cjm-h3" },
+        { "from": "cjm-h2", "to": "cjm-e2", "label": "comparison standard" },
+        { "from": "cjm-h2", "to": "cjm-m1", "label": "shared standard" },
+        { "from": "cjm-e3", "to": "cjm-m3", "label": "agree together" },
+        { "from": "cjm-e4", "to": "cjm-m3", "label": "follow up together" },
+        { "from": "cjm-e5", "to": "cjm-m4", "label": "request + evidence" },
+        { "from": "cjm-m4", "to": "cjm-e6", "label": "verified outcome" },
+        { "from": "cjm-m4", "to": "cjm-h3", "label": "updated competency data" },
+        { "from": "cjm-m5", "to": "cjm-e3", "label": "next development cycle", "style": "dashed" }
+      ]
+    },
+    {
+      "id": "user-story-map",
+      "title": "User Story Map",
+      "subtitle": "Discovery backbone and MVP value slices",
+      "layout": "Eight backbone columns from left to right, with four release-slice cards below and two boundary cards at the side.",
+      "node_count": 14,
+      "groups": [
+        {
+          "id": "usm-backbone-group",
+          "title": "Backbone",
+          "color": "blue",
+          "cards": [
+            {
+              "id": "usm-b1",
+              "title": "1. Establish Competency Metrics",
+              "body": "HR Admin sets up roles, levels, matrices, and career paths, then publishes competency metrics. The system stores them as the shared standard."
+            },
+            {
+              "id": "usm-b2",
+              "title": "2. Understand Profiles and Team",
+              "body": "Employee views profile, work history, strengths, and development areas. Manager views Employee List, skills, gaps, evidence, and history. HR tracks gaps by role and level."
+            },
+            {
+              "id": "usm-b3",
+              "title": "3. Select Target and Understand Gaps",
+              "body": "Employee selects a target role or level. The system compares the current profile with target metrics and identifies priority gaps; Manager clarifies direction."
+            },
+            {
+              "id": "usm-b4",
+              "title": "4. Roadmap, Actions, and Follow-Up",
+              "body": "Employee and Manager agree actions, execute them, revisit previous statuses, jointly confirm progress, and agree next actions. The system retains the full shared history."
+            },
+            {
+              "id": "usm-b5",
+              "title": "5. Evidence and Review Request",
+              "body": "Employee records project evidence and rationale, then submits an event-based review request. Manager receives evidence in roadmap context; the system centralizes it."
+            },
+            {
+              "id": "usm-b6",
+              "title": "6. Verify and Update Competencies",
+              "body": "An authorized reviewer assesses evidence. The system stores immutable results with least-privilege access and updates competencies, gaps, readiness, and roadmap."
+            },
+            {
+              "id": "usm-b7",
+              "title": "7. Reuse Profile and Data",
+              "body": "Employee exports or shares a profile for interviews or pitches. Manager uses current skills and gaps for project staffing or client pitching."
+            },
+            {
+              "id": "usm-b8",
+              "title": "8. Track Gaps and Progress",
+              "body": "HR tracks progress by role and level; Manager maintains team capability context; Employee continues the target-to-review development cycle."
+            }
+          ]
+        },
+        {
+          "id": "usm-slices-group",
+          "title": "Release Slices",
+          "color": "green",
+          "cards": [
+            {
+              "id": "usm-s0",
+              "title": "Slice 0 - Foundation / Pilot",
+              "body": "One career family has an owned, sufficiently complete matrix and published metrics. Store the standard and enforce least-privilege access. Open: initial profile source and HR persona."
+            },
+            {
+              "id": "usm-s1",
+              "title": "Slice 1 - Career Clarity",
+              "body": "Employee gets a profile, target, priority gaps, first roadmap, and retained next actions. Manager gets basic team visibility; learning mapping remains manual."
+            },
+            {
+              "id": "usm-s2",
+              "title": "Slice 2 - Closed Review Loop",
+              "body": "Employee and Manager revisit and confirm actions; evidence triggers review; an authorized reviewer verifies competency; the system updates the profile and roadmap."
+            },
+            {
+              "id": "usm-s3",
+              "title": "Slice 3 - Profile and Staffing Reuse",
+              "body": "Employee exports or publishes the updated profile. Manager reuses Employee List, skills, and gaps for project or pitch consideration."
+            }
+          ]
+        },
+        {
+          "id": "usm-boundaries-group",
+          "title": "Boundaries and Open Decisions",
+          "color": "pink",
+          "cards": [
+            {
+              "id": "usm-outside",
+              "title": "Outside Current MVP",
+              "body": "Peer workflow, advanced organization analytics, HRIS or LMS integrations, multiple career targets, competency-metric versioning, and AI-generated recommendations."
+            },
+            {
+              "id": "usm-open",
+              "title": "Open Before Epics and Stories",
+              "body": "Initial profile source; scoring and readiness; reviewer assignment; rejected evidence and disputes; project-fit rules; public-profile privacy; next-action statuses; SLA and notifications; HR Admin persona. PRD, architecture, and UX are still prerequisites."
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        { "from": "usm-b1", "to": "usm-b2" },
+        { "from": "usm-b2", "to": "usm-b3" },
+        { "from": "usm-b3", "to": "usm-b4" },
+        { "from": "usm-b4", "to": "usm-b5" },
+        { "from": "usm-b5", "to": "usm-b6" },
+        { "from": "usm-b6", "to": "usm-b7" },
+        { "from": "usm-b7", "to": "usm-b8" },
+        { "from": "usm-b8", "to": "usm-b3", "label": "next cycle", "style": "dashed" },
+        { "from": "usm-s0", "to": "usm-b1", "label": "enables" },
+        { "from": "usm-s1", "to": "usm-b2", "label": "covers" },
+        { "from": "usm-s1", "to": "usm-b4", "label": "covers" },
+        { "from": "usm-s2", "to": "usm-b5", "label": "covers" },
+        { "from": "usm-s2", "to": "usm-b6", "label": "covers" },
+        { "from": "usm-s3", "to": "usm-b7", "label": "covers" },
+        { "from": "usm-open", "to": "usm-s0", "label": "limits commitment", "style": "dashed" }
+      ]
+    },
+    {
+      "id": "cross-role-swimlane",
+      "title": "Cross-Role Swimlane",
+      "subtitle": "Handoffs among HR Admin, Employee, Manager, and En-Path",
+      "layout": "Four horizontal lanes with aligned left-to-right stages. Use solid arrows for flow and dashed arrows for reuse or iteration.",
+      "node_count": 18,
+      "groups": [
+        {
+          "id": "swimlane-hr",
+          "title": "HR Admin (Draft)",
+          "color": "yellow",
+          "cards": [
+            {
+              "id": "sw-h1",
+              "title": "Establish Standard",
+              "body": "Set up roles, levels, competency matrices, and career paths."
+            },
+            {
+              "id": "sw-h2",
+              "title": "Publish Metrics",
+              "body": "Publish competency metrics as the shared organizational standard."
+            },
+            {
+              "id": "sw-h3",
+              "title": "Monitor Adoption",
+              "body": "Track gaps and progress by role and level. HR persona remains undefined."
+            }
+          ]
+        },
+        {
+          "id": "swimlane-employee",
+          "title": "Employee",
+          "color": "blue",
+          "cards": [
+            {
+              "id": "sw-e1",
+              "title": "View Profile and Select Target",
+              "body": "Understand current competencies and choose a target role or level."
+            },
+            {
+              "id": "sw-e2",
+              "title": "Understand Priority Gaps",
+              "body": "Review the comparison between current profile and target requirements."
+            },
+            {
+              "id": "sw-e3",
+              "title": "Agree on Roadmap",
+              "body": "Agree next actions with the Manager after a 1:1."
+            },
+            {
+              "id": "sw-e4",
+              "title": "Execute and Follow Up",
+              "body": "Act, create evidence, revisit previous actions, jointly confirm statuses, and agree what comes next."
+            },
+            {
+              "id": "sw-e5",
+              "title": "Request Competency Review",
+              "body": "Submit evidence and rationale after a project or development event."
+            },
+            {
+              "id": "sw-e6",
+              "title": "Use Updated Profile",
+              "body": "View verified competency, readiness, and roadmap; export or publish the profile for interviews or pitches."
+            }
+          ]
+        },
+        {
+          "id": "swimlane-manager",
+          "title": "Manager",
+          "color": "green",
+          "cards": [
+            {
+              "id": "sw-m1",
+              "title": "View Team and Clarify Direction",
+              "body": "Use the Employee List, skills, gaps, and history to clarify target and development priorities."
+            },
+            {
+              "id": "sw-m2",
+              "title": "Co-Own Roadmap and Follow-Up",
+              "body": "Agree actions, coach progress, review evidence, and jointly confirm previous statuses with the Employee."
+            },
+            {
+              "id": "sw-m3",
+              "title": "Verify Competency",
+              "body": "When authorized, assess evidence and rationale and make an auditable verification decision."
+            },
+            {
+              "id": "sw-m4",
+              "title": "Coach and Reuse Data",
+              "body": "Adjust the roadmap, start the next development cycle, and use skills and gaps for staffing or client pitching."
+            }
+          ]
+        },
+        {
+          "id": "swimlane-system",
+          "title": "En-Path System",
+          "color": "pink",
+          "cards": [
+            {
+              "id": "sw-s1",
+              "title": "Store Published Metrics",
+              "body": "Keep the shared standard for profiles, targets, team views, and gap analysis."
+            },
+            {
+              "id": "sw-s2",
+              "title": "Compare and Generate Gaps",
+              "body": "Compare current profile with target metrics and identify priority gaps."
+            },
+            {
+              "id": "sw-s3",
+              "title": "Persist Roadmap and Status History",
+              "body": "Retain roadmap, next actions, progress, jointly confirmed statuses, and subsequent actions."
+            },
+            {
+              "id": "sw-s4",
+              "title": "Store Evidence and Request",
+              "body": "Centralize evidence, rationale, and the event-based review request."
+            },
+            {
+              "id": "sw-s5",
+              "title": "Store Verification and Update State",
+              "body": "Keep immutable decision history with least-privilege access; update profile, gaps, readiness, and roadmap."
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        { "from": "sw-h1", "to": "sw-h2" },
+        { "from": "sw-h2", "to": "sw-s1", "label": "publish metrics" },
+        { "from": "sw-s1", "to": "sw-e1", "label": "shared standard" },
+        { "from": "sw-s1", "to": "sw-m1", "label": "shared standard" },
+        { "from": "sw-e1", "to": "sw-s2", "label": "profile + target" },
+        { "from": "sw-s1", "to": "sw-s2", "label": "comparison standard" },
+        { "from": "sw-s2", "to": "sw-e2", "label": "priority gaps" },
+        { "from": "sw-s2", "to": "sw-m1", "label": "gap context" },
+        { "from": "sw-e2", "to": "sw-e3" },
+        { "from": "sw-m1", "to": "sw-e3", "label": "clarify together" },
+        { "from": "sw-e3", "to": "sw-m2", "label": "agree together" },
+        { "from": "sw-m2", "to": "sw-s3", "label": "store roadmap and statuses" },
+        { "from": "sw-s3", "to": "sw-e4", "label": "retained context" },
+        { "from": "sw-s3", "to": "sw-m2", "label": "follow-up context" },
+        { "from": "sw-e4", "to": "sw-m2", "label": "review and confirm together" },
+        { "from": "sw-m2", "to": "sw-s3", "label": "confirmed statuses + next actions" },
+        { "from": "sw-e4", "to": "sw-e5", "label": "after an event" },
+        { "from": "sw-e5", "to": "sw-s4", "label": "request + evidence" },
+        { "from": "sw-s4", "to": "sw-m3", "label": "review package" },
+        { "from": "sw-m3", "to": "sw-s5", "label": "verification decision" },
+        { "from": "sw-s5", "to": "sw-e6", "label": "updated profile" },
+        { "from": "sw-s5", "to": "sw-m4", "label": "updated competency data" },
+        { "from": "sw-s5", "to": "sw-h3", "label": "gap and progress data" },
+        { "from": "sw-m4", "to": "sw-e3", "label": "next development cycle", "style": "dashed" },
+        { "from": "sw-m4", "to": "sw-m1", "label": "reuse for staffing", "style": "dashed" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6560" height="6600" viewBox="6560 0 6560 6600">
+  <rect x="0" y="0" width="13120" height="6600" fill="#F9F9F9"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="120" y="80" width="12880" height="390" rx="36" fill="#17324D"/>
+    <text x="220" y="190" fill="#FFFFFF" font-size="68" font-weight="700">CROSS-ROLE CUSTOMER JOURNEY - EN-PATH</text>
+    <text x="220" y="260" fill="#D9EAF7" font-size="29">Draft - Updated 2026-08-08 - Handoffs, evidence loop and retained next actions</text>
+    <text x="220" y="330" fill="#FFDCA8" font-size="28" font-weight="700">HR ADMIN LANE IS DRAFT: Persona, motivations and pain points are not yet defined.</text>
+    <text x="220" y="382" fill="#FFFFFF" font-size="25">Profile export is the Employee main flow; staffing and client pitching are Manager data-reuse branches.</text>
+
+    <g font-size="23" font-weight="700" fill="#17324D">
+      <circle cx="250" cy="565" r="18" fill="#F5B84B"/><text x="282" y="573">HR Admin - Draft</text>
+      <circle cx="660" cy="565" r="18" fill="#FFD86A"/><text x="692" y="573">Employee</text>
+      <circle cx="945" cy="565" r="18" fill="#7AC7A5"/><text x="977" y="573">Manager / Reviewer</text>
+      <circle cx="1385" cy="565" r="18" fill="#71B7E6"/><text x="1417" y="573">En-Path System</text>
+      <line x1="1760" y1="565" x2="1860" y2="565" stroke="#355D7A" stroke-width="7"/><path d="M1860 565 L1835 548 L1835 582 Z" fill="#355D7A"/><text x="1885" y="573">handoff / data transfer</text>
+      <line x1="2290" y1="565" x2="2390" y2="565" stroke="#EE8374" stroke-width="7" stroke-dasharray="16 10"/><path d="M2390 565 L2365 548 L2365 582 Z" fill="#EE8374"/><text x="2415" y="573">feedback / reuse loop</text>
+    </g>
+
+    <g stroke="#D0D7DE" stroke-width="3">
+      <rect x="120" y="650" width="12880" height="900" rx="26" fill="#FFF7E7"/>
+      <rect x="120" y="1580" width="12880" height="1080" rx="26" fill="#FFFDF0"/>
+      <rect x="120" y="2690" width="12880" height="1080" rx="26" fill="#F2FAF6"/>
+      <rect x="120" y="3800" width="12880" height="1080" rx="26" fill="#EFF7FC"/>
+    </g>
+    <g fill="#17324D" font-size="31" font-weight="700">
+      <text x="185" y="740"><tspan x="185">HR ADMIN</tspan><tspan x="185" dy="42">DRAFT</tspan><tspan x="185" dy="38" font-size="20" font-weight="500">Persona not defined</tspan></text>
+      <text x="185" y="1690">EMPLOYEE</text>
+      <text x="185" y="2800"><tspan x="185">MANAGER /</tspan><tspan x="185" dy="42">AUTHORIZED</tspan><tspan x="185" dy="42">REVIEWER</tspan></text>
+      <text x="185" y="3910"><tspan x="185">EN-PATH</tspan><tspan x="185" dy="42">SYSTEM</tspan></text>
+    </g>
+    <line x1="1120" y1="650" x2="1120" y2="4880" stroke="#B7C0C8" stroke-width="4"/>
+
+    <g fill="none" stroke="#355D7A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2130 1100 L2470 1100"/><path d="M2470 1100 L2438 1078 L2438 1122 Z" fill="#355D7A"/>
+      <path d="M2130 2075 L2470 2075"/><path d="M2470 2075 L2438 2053 L2438 2097 Z" fill="#355D7A"/>
+      <path d="M3280 2075 L3620 2075"/><path d="M3620 2075 L3588 2053 L3588 2097 Z" fill="#355D7A"/>
+      <path d="M4430 2075 L4770 2075"/><path d="M4770 2075 L4738 2053 L4738 2097 Z" fill="#355D7A"/>
+      <path d="M5580 2075 L5920 2075"/><path d="M5920 2075 L5888 2053 L5888 2097 Z" fill="#355D7A"/>
+      <path d="M6730 2075 L7070 2075"/><path d="M7070 2075 L7038 2053 L7038 2097 Z" fill="#355D7A"/>
+      <path d="M7880 2075 L8220 2075"/><path d="M8220 2075 L8188 2053 L8188 2097 Z" fill="#355D7A"/>
+      <path d="M9030 2075 L9370 2075"/><path d="M9370 2075 L9338 2053 L9338 2097 Z" fill="#355D7A"/>
+      <path d="M10180 2075 L10520 2075"/><path d="M10520 2075 L10488 2053 L10488 2097 Z" fill="#355D7A"/>
+      <path d="M11330 2075 L11670 2075"/><path d="M11670 2075 L11638 2053 L11638 2097 Z" fill="#355D7A"/>
+      <path d="M2130 3215 L3620 3215"/><path d="M3620 3215 L3588 3193 L3588 3237 Z" fill="#355D7A"/>
+      <path d="M4430 3215 L4770 3215"/><path d="M4770 3215 L4738 3193 L4738 3237 Z" fill="#355D7A"/>
+      <path d="M5580 3215 L5920 3215"/><path d="M5920 3215 L5888 3193 L5888 3237 Z" fill="#355D7A"/>
+      <path d="M6730 3215 L7070 3215"/><path d="M7070 3215 L7038 3193 L7038 3237 Z" fill="#355D7A"/>
+      <path d="M7880 3215 L8220 3215"/><path d="M8220 3215 L8188 3193 L8188 3237 Z" fill="#355D7A"/>
+      <path d="M9030 3215 L9180 3215"/><path d="M9180 3215 L9148 3193 L9148 3237 Z" fill="#355D7A"/>
+      <path d="M9900 3215 L10050 3215"/><path d="M10050 3215 L10018 3193 L10018 3237 Z" fill="#355D7A"/>
+      <path d="M10950 3215 L11100 3215"/><path d="M11100 3215 L11068 3193 L11068 3237 Z" fill="#355D7A"/>
+      <path d="M11900 3215 L12050 3215"/><path d="M12050 3215 L12018 3193 L12018 3237 Z" fill="#355D7A"/>
+      <path d="M3280 4325 L3470 4325"/><path d="M3470 4325 L3438 4303 L3438 4347 Z" fill="#355D7A"/>
+      <path d="M4370 4325 L4560 4325"/><path d="M4560 4325 L4528 4303 L4528 4347 Z" fill="#355D7A"/>
+      <path d="M5460 4325 L5920 4325"/><path d="M5920 4325 L5888 4303 L5888 4347 Z" fill="#355D7A"/>
+      <path d="M6730 4325 L9370 4325"/><path d="M9370 4325 L9338 4303 L9338 4347 Z" fill="#355D7A"/>
+      <path d="M10220 4325 L10370 4325"/><path d="M10370 4325 L10338 4303 L10338 4347 Z" fill="#355D7A"/>
+      <path d="M11220 4325 L11370 4325"/><path d="M11370 4325 L11338 4303 L11338 4347 Z" fill="#355D7A"/>
+    </g>
+
+    <g fill="none" stroke="#2D7DA8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3280 1100 L3280 3975 L2830 3975"/><path d="M2830 3975 L2862 3953 L2862 3997 Z" fill="#2D7DA8"/>
+      <path d="M2830 4175 L2830 2325 L1730 2325"/><path d="M1730 2325 L1762 2303 L1762 2347 Z" fill="#2D7DA8"/>
+      <path d="M2830 4175 L2830 3470 L1730 3470"/><path d="M1730 3470 L1762 3448 L1762 3492 Z" fill="#2D7DA8"/>
+      <path d="M2880 4325 L3470 4325"/><path d="M3470 4325 L3438 4303 L3438 4347 Z" fill="#2D7DA8"/>
+      <path d="M3920 4175 L3920 2325"/><path d="M3920 2325 L3898 2357 L3942 2357 Z" fill="#2D7DA8"/>
+      <path d="M3920 4175 L3920 3470"/><path d="M3920 3470 L3898 3502 L3942 3502 Z" fill="#2D7DA8"/>
+      <path d="M5175 3470 L5175 4175"/><path d="M5175 4175 L5153 4143 L5197 4143 Z" fill="#2D7DA8"/>
+      <path d="M6375 4175 L6375 2325"/><path d="M6375 2325 L6353 2357 L6397 2357 Z" fill="#2D7DA8"/>
+      <path d="M6375 4175 L6375 3470"/><path d="M6375 3470 L6353 3502 L6397 3502 Z" fill="#2D7DA8"/>
+      <path d="M7450 2325 L7450 2960"/><path d="M7450 2960 L7428 2928 L7472 2928 Z" fill="#2D7DA8"/>
+      <path d="M8600 2325 L8600 2960"/><path d="M8600 2960 L8578 2928 L8622 2928 Z" fill="#2D7DA8"/>
+      <path d="M8600 3470 L8600 4525 L6375 4525 L6375 4475"/><path d="M6375 4475 L6353 4507 L6397 4507 Z" fill="#2D7DA8"/>
+      <path d="M9825 2325 L9825 4175"/><path d="M9825 4175 L9803 4143 L9847 4143 Z" fill="#2D7DA8"/>
+      <path d="M9825 4475 L9825 3470"/><path d="M9825 3470 L9803 3502 L9847 3502 Z" fill="#2D7DA8"/>
+      <path d="M10500 3470 L10500 4175"/><path d="M10500 4175 L10478 4143 L10522 4143 Z" fill="#2D7DA8"/>
+      <path d="M10800 4475 L10800 2325"/><path d="M10800 2325 L10778 2357 L10822 2357 Z" fill="#2D7DA8"/>
+      <path d="M10800 4475 L11300 4475 L11300 3470"/><path d="M11300 3470 L11278 3502 L11322 3502 Z" fill="#2D7DA8"/>
+      <path d="M10800 4475 L10800 1400 L12050 1400"/><path d="M12050 1400 L12018 1378 L12018 1422 Z" fill="#2D7DA8"/>
+    </g>
+
+    <g fill="none" stroke="#EE8374" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18 12">
+      <path d="M11500 2960 L11500 2500 L5175 2500 L5175 2325"/><path d="M5175 2325 L5153 2357 L5197 2357 Z" fill="#EE8374" stroke="none"/>
+      <path d="M11500 3470 L12200 3470"/><path d="M12200 3470 L12168 3448 L12168 3492 Z" fill="#EE8374" stroke="none"/>
+    </g>
+
+    <g fill="#17324D" font-size="20" font-weight="700">
+      <rect x="2570" y="3670" width="740" height="62" rx="18" fill="#DDEFFC"/><text x="2600" y="3711">Publish competency metrics</text>
+      <rect x="1750" y="2450" width="620" height="62" rx="18" fill="#DDEFFC"/><text x="1780" y="2491">Shared standard</text>
+      <rect x="3500" y="3730" width="780" height="62" rx="18" fill="#DDEFFC"/><text x="3530" y="3771">Compare profile with target</text>
+      <rect x="6040" y="3670" width="670" height="62" rx="18" fill="#DDEFFC"/><text x="6070" y="3711">Persist agreed actions</text>
+      <rect x="7060" y="2740" width="770" height="62" rx="18" fill="#DDEFFC"/><text x="7090" y="2781">At a later follow-up</text>
+      <rect x="8180" y="2740" width="790" height="62" rx="18" fill="#DDEFFC"/><text x="8210" y="2781">Review together</text>
+      <rect x="7460" y="4550" width="1600" height="62" rx="18" fill="#DDEFFC"/><text x="7490" y="4591">Store confirmed statuses and agreed next actions</text>
+      <rect x="9360" y="3660" width="940" height="62" rx="18" fill="#DDEFFC"/><text x="9390" y="3701">Request plus evidence</text>
+      <rect x="10030" y="3570" width="940" height="62" rx="18" fill="#DDEFFC"/><text x="10060" y="3611">Authorized reviewer</text>
+      <rect x="7430" y="2430" width="1450" height="62" rx="18" fill="#FFE3DE"/><text x="7460" y="2471">Next development cycle</text>
+      <rect x="11670" y="3550" width="520" height="62" rx="18" fill="#FFE3DE"/><text x="11700" y="3591">Reuse data</text>
+    </g>
+
+    <g fill="#17324D" font-size="21">
+      <rect x="1320" y="850" width="810" height="500" rx="24" fill="#FFF0CC" stroke="#F5B84B" stroke-width="4" stroke-dasharray="14 10"/>
+      <text x="1360" y="910" font-size="25" font-weight="700">H1</text><text x="1360" y="970"><tspan x="1360">Set up roles, levels</tspan><tspan x="1360" dy="34">and competency metrics</tspan></text>
+      <rect x="2470" y="850" width="810" height="500" rx="24" fill="#FFF0CC" stroke="#F5B84B" stroke-width="4" stroke-dasharray="14 10"/>
+      <text x="2510" y="910" font-size="25" font-weight="700">H2</text><text x="2510" y="970"><tspan x="2510">Publish competency</tspan><tspan x="2510" dy="34">metrics</tspan></text>
+      <rect x="12050" y="850" width="810" height="500" rx="24" fill="#FFF0CC" stroke="#F5B84B" stroke-width="4" stroke-dasharray="14 10"/>
+      <text x="12090" y="910" font-size="25" font-weight="700">H3</text><text x="12090" y="970"><tspan x="12090">Track gaps and progress</tspan><tspan x="12090" dy="34">by role and level</tspan></text>
+
+      <g fill="#FFF7CC" stroke="#FFD86A" stroke-width="4">
+        <rect x="1320" y="1825" width="810" height="500" rx="24"/><rect x="2470" y="1825" width="810" height="500" rx="24"/>
+        <rect x="3620" y="1825" width="810" height="500" rx="24"/><rect x="4770" y="1825" width="810" height="500" rx="24"/>
+        <rect x="5920" y="1825" width="810" height="500" rx="24"/><rect x="7070" y="1825" width="810" height="500" rx="24"/>
+        <rect x="8220" y="1825" width="810" height="500" rx="24"/><rect x="9370" y="1825" width="810" height="500" rx="24"/>
+        <rect x="10520" y="1825" width="810" height="500" rx="24"/><rect x="11670" y="1825" width="810" height="500" rx="24"/>
+      </g>
+      <g font-size="25" font-weight="700"><text x="1360" y="1885">E1</text><text x="2510" y="1885">E2</text><text x="3660" y="1885">E3</text><text x="4810" y="1885">E4</text><text x="5960" y="1885">E5</text><text x="7110" y="1885">E6</text><text x="8260" y="1885">E7</text><text x="9410" y="1885">E8</text><text x="10560" y="1885">E9</text><text x="11710" y="1885">E10</text></g>
+      <text x="1360" y="1945"><tspan x="1360">View current profile</tspan></text>
+      <text x="2510" y="1945"><tspan x="2510">Select target role</tspan><tspan x="2510" dy="34">and level</tspan></text>
+      <text x="3660" y="1945"><tspan x="3660">Understand the</tspan><tspan x="3660" dy="34">gap analysis</tspan></text>
+      <text x="4810" y="1945"><tspan x="4810">Agree roadmap and</tspan><tspan x="4810" dy="34">next actions with</tspan><tspan x="4810" dy="34">the Manager</tspan></text>
+      <text x="5960" y="1945"><tspan x="5960">Carry out actions</tspan><tspan x="5960" dy="34">and create evidence</tspan></text>
+      <text x="7110" y="1945"><tspan x="7110">At follow-up, revisit</tspan><tspan x="7110" dy="34">previous action</tspan><tspan x="7110" dy="34">statuses</tspan></text>
+      <text x="8260" y="1945"><tspan x="8260">Confirm statuses and</tspan><tspan x="8260" dy="34">agree next actions</tspan><tspan x="8260" dy="34">with Manager</tspan></text>
+      <text x="9410" y="1945"><tspan x="9410">Submit competency</tspan><tspan x="9410" dy="34">review request</tspan></text>
+      <text x="10560" y="1945"><tspan x="10560">View verified profile,</tspan><tspan x="10560" dy="34">readiness and updated</tspan><tspan x="10560" dy="34">roadmap</tspan></text>
+      <text x="11710" y="1945"><tspan x="11710">Export or publish</tspan><tspan x="11710" dy="34">profile for interviews</tspan><tspan x="11710" dy="34">or pitching</tspan></text>
+
+      <g fill="#E6F5EE" stroke="#7AC7A5" stroke-width="4">
+        <rect x="1320" y="2960" width="810" height="510" rx="24"/><rect x="3620" y="2960" width="810" height="510" rx="24"/>
+        <rect x="4770" y="2960" width="810" height="510" rx="24"/><rect x="5920" y="2960" width="810" height="510" rx="24"/>
+        <rect x="7070" y="2960" width="810" height="510" rx="24"/><rect x="8220" y="2960" width="810" height="510" rx="24"/>
+        <rect x="9180" y="2960" width="720" height="510" rx="24"/><rect x="10050" y="2960" width="900" height="510" rx="24"/>
+        <rect x="11100" y="2960" width="800" height="510" rx="24"/><rect x="12050" y="2960" width="810" height="510" rx="24"/>
+      </g>
+      <g font-size="25" font-weight="700"><text x="1360" y="3020">M1</text><text x="3660" y="3020">M2</text><text x="4810" y="3020">M3</text><text x="5960" y="3020">M4</text><text x="7110" y="3020">M5</text><text x="8260" y="3020">M6</text><text x="9220" y="3020">M7</text><text x="10090" y="3020">M8</text><text x="11140" y="3020">M9</text><text x="12090" y="3020">M10</text></g>
+      <text x="1360" y="3080"><tspan x="1360">View Employee List,</tspan><tspan x="1360" dy="34">skills and gaps</tspan></text>
+      <text x="3660" y="3080"><tspan x="3660">Clarify target</tspan><tspan x="3660" dy="34">and gaps</tspan></text>
+      <text x="4810" y="3080"><tspan x="4810">Agree roadmap and</tspan><tspan x="4810" dy="34">actions with Employee</tspan></text>
+      <text x="5960" y="3080"><tspan x="5960">Track progress</tspan><tspan x="5960" dy="34">and evidence</tspan></text>
+      <text x="7110" y="3080"><tspan x="7110">At follow-up, review</tspan><tspan x="7110" dy="34">and confirm previous</tspan><tspan x="7110" dy="34">action statuses</tspan></text>
+      <text x="8260" y="3080"><tspan x="8260">Agree next actions</tspan><tspan x="8260" dy="34">with Employee</tspan></text>
+      <text x="9220" y="3080"><tspan x="9220">Receive competency</tspan><tspan x="9220" dy="34">review request</tspan></text>
+      <text x="10090" y="3080"><tspan x="10090">When authorized,</tspan><tspan x="10090" dy="34">verify using evidence</tspan><tspan x="10090" dy="34">and rationale</tspan></text>
+      <text x="11140" y="3080"><tspan x="11140">Coach and adjust</tspan><tspan x="11140" dy="34">the roadmap</tspan></text>
+      <text x="12090" y="3080"><tspan x="12090">Staff a project or</tspan><tspan x="12090" dy="34">pitch to a client</tspan></text>
+
+      <g fill="#E7F3FB" stroke="#71B7E6" stroke-width="4">
+        <rect x="2380" y="4075" width="900" height="500" rx="24"/><rect x="3470" y="4075" width="900" height="500" rx="24"/>
+        <rect x="4560" y="4075" width="900" height="500" rx="24"/><rect x="5920" y="4075" width="810" height="500" rx="24"/>
+        <rect x="9370" y="4075" width="850" height="500" rx="24"/><rect x="10370" y="4075" width="850" height="500" rx="24"/>
+        <rect x="11370" y="4075" width="900" height="500" rx="24"/>
+      </g>
+      <g font-size="25" font-weight="700"><text x="2420" y="4135">S1</text><text x="3510" y="4135">S2</text><text x="4600" y="4135">S3</text><text x="5960" y="4135">S4</text><text x="9410" y="4135">S5</text><text x="10410" y="4135">S6</text><text x="11410" y="4135">S7</text></g>
+      <text x="2420" y="4195"><tspan x="2420">Store published</tspan><tspan x="2420" dy="34">competency metrics</tspan></text>
+      <text x="3510" y="4195"><tspan x="3510">Compare profile</tspan><tspan x="3510" dy="34">with target</tspan></text>
+      <text x="4600" y="4195"><tspan x="4600">Generate gap</tspan><tspan x="4600" dy="34">analysis</tspan></text>
+      <text x="5960" y="4195"><tspan x="5960">Store roadmap, actions,</tspan><tspan x="5960" dy="34">statuses and history</tspan></text>
+      <text x="9410" y="4195"><tspan x="9410">Store evidence and</tspan><tspan x="9410" dy="34">review request</tspan></text>
+      <text x="10410" y="4195"><tspan x="10410">Store verified skill</tspan><tspan x="10410" dy="34">and immutable history</tspan></text>
+      <text x="11410" y="4195"><tspan x="11410">Update profile, gaps,</tspan><tspan x="11410" dy="34">readiness and roadmap</tspan></text>
+    </g>
+
+    <rect x="120" y="5000" width="12880" height="690" rx="30" fill="#17324D"/>
+    <text x="190" y="5080" fill="#FFFFFF" font-size="33" font-weight="700">TRUST AND FLOW GUARDRAILS</text>
+    <g fill="#FFFFFF" font-size="20">
+      <rect x="190" y="5140" width="1940" height="410" rx="24" fill="#284966"/>
+      <text x="235" y="5210" font-size="23" font-weight="700">EVIDENCE-BASED REVIEW</text><text x="235" y="5270"><tspan x="235">Authorized reviewers use evidence</tspan><tspan x="235" dy="34">and rationale for every decision.</tspan></text>
+      <rect x="2180" y="5140" width="1940" height="410" rx="24" fill="#284966"/>
+      <text x="2225" y="5210" font-size="23" font-weight="700">IMMUTABLE HISTORY</text><text x="2225" y="5270"><tspan x="2225">Verification and confirmed action</tspan><tspan x="2225" dy="34">history cannot be rewritten.</tspan></text>
+      <rect x="4170" y="5140" width="1940" height="410" rx="24" fill="#284966"/>
+      <text x="4215" y="5210" font-size="23" font-weight="700">LEAST PRIVILEGE</text><text x="4215" y="5270"><tspan x="4215">Viewing permissions follow the</tspan><tspan x="4215" dy="34">principle of least privilege.</tspan></text>
+      <rect x="6160" y="5140" width="1940" height="410" rx="24" fill="#284966"/>
+      <text x="6205" y="5210" font-size="23" font-weight="700">SHARED STANDARD</text><text x="6205" y="5270"><tspan x="6205">Published competency metrics drive</tspan><tspan x="6205" dy="34">profiles, targets and gap analysis.</tspan></text>
+      <rect x="8150" y="5140" width="2440" height="410" rx="24" fill="#284966"/>
+      <text x="8195" y="5210" font-size="23" font-weight="700">RETAIN ACTIONS FOR FOLLOW-UP</text><text x="8195" y="5270"><tspan x="8195">Keep roadmap, previous actions and jointly</tspan><tspan x="8195" dy="34">confirmed statuses available for comparison.</tspan></text>
+      <rect x="10640" y="5140" width="2290" height="410" rx="24" fill="#284966"/>
+      <text x="10685" y="5210" font-size="23" font-weight="700">NO ASSUMED OPERATIONS</text><text x="10685" y="5270"><tspan x="10685">No reminders, deadlines, UI, notification</tspan><tspan x="10685" dy="34">channels or SLA are assumed.</tspan></text>
+    </g>
+
+    <text x="120" y="5815" fill="#17324D" font-size="36" font-weight="700">OPEN DECISIONS</text>
+    <g fill="#17324D" font-size="20">
+      <rect x="120" y="5860" width="1530" height="590" rx="25" fill="#FFF0EC" stroke="#EE8374" stroke-width="3"/>
+      <text x="165" y="5930" font-size="23" font-weight="700">PROJECT FIT</text><text x="165" y="5990"><tspan x="165">Project skill requirements</tspan><tspan x="165" dy="34">and fit model are undefined.</tspan></text>
+      <rect x="1690" y="5860" width="1530" height="590" rx="25" fill="#FFF0EC" stroke="#EE8374" stroke-width="3"/>
+      <text x="1735" y="5930" font-size="23" font-weight="700">PUBLIC PROFILE</text><text x="1735" y="5990"><tspan x="1735">Fields, audience, expiry</tspan><tspan x="1735" dy="34">and revocation?</tspan></text>
+      <rect x="3260" y="5860" width="1530" height="590" rx="25" fill="#FFF0EC" stroke="#EE8374" stroke-width="3"/>
+      <text x="3305" y="5930" font-size="23" font-weight="700">PUBLIC GAPS</text><text x="3305" y="5990"><tspan x="3305">Skill gaps are not assumed</tspan><tspan x="3305" dy="34">to appear publicly.</tspan></text>
+      <rect x="4830" y="5860" width="1530" height="590" rx="25" fill="#FFF0EC" stroke="#EE8374" stroke-width="3"/>
+      <text x="4875" y="5930" font-size="23" font-weight="700">SCORING / REVIEWER</text><text x="4875" y="5990"><tspan x="4875">Readiness formula and</tspan><tspan x="4875" dy="34">reviewer assignment?</tspan></text>
+      <rect x="6400" y="5860" width="1530" height="590" rx="25" fill="#FFF0EC" stroke="#EE8374" stroke-width="3"/>
+      <text x="6445" y="5930" font-size="23" font-weight="700">REJECTION / DISPUTES</text><text x="6445" y="5990"><tspan x="6445">Insufficient evidence, rejection,</tspan><tspan x="6445" dy="34">disputes and escalation?</tspan></text>
+      <rect x="7970" y="5860" width="1530" height="590" rx="25" fill="#FFF0EC" stroke="#EE8374" stroke-width="3"/>
+      <text x="8015" y="5930" font-size="23" font-weight="700">OPERATIONS</text><text x="8015" y="5990"><tspan x="8015">SLA and notification</tspan><tspan x="8015" dy="34">channels are undefined.</tspan></text>
+      <rect x="9540" y="5860" width="1530" height="590" rx="25" fill="#FFF0EC" stroke="#EE8374" stroke-width="3"/>
+      <text x="9585" y="5930" font-size="23" font-weight="700">HR ADMIN PERSONA</text><text x="9585" y="5990"><tspan x="9585">Who is the specific</tspan><tspan x="9585" dy="34">HR Admin persona?</tspan></text>
+      <rect x="11110" y="5860" width="1890" height="590" rx="25" fill="#FFF0EC" stroke="#EE8374" stroke-width="3"/>
+      <text x="11155" y="5930" font-size="23" font-weight="700">NEXT-ACTION STATUSES</text><text x="11155" y="5990"><tspan x="11155">Detailed status set and how</tspan><tspan x="11155" dy="34">both parties confirm it?</tspan></text>
+    </g>
+  </g>
+</svg>

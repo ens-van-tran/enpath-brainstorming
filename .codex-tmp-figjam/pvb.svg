@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3600" height="4300" viewBox="0 0 3600 4300">
+  <rect x="0" y="0" width="3600" height="4300" fill="#FFFBF0"/>
+
+  <g font-family="Inter, Arial, sans-serif" fill="#173042">
+    <text x="120" y="130" font-size="82" font-weight="700">EnPath Product Vision Board</text>
+    <text x="124" y="190" font-size="29" fill="#526676">Why EnPath exists, who it serves, and the value it promises</text>
+    <rect x="120" y="228" width="3360" height="5" rx="2" fill="#173042"/>
+
+    <text x="120" y="305" font-size="46" font-weight="700">1. Vision chain</text>
+
+    <g>
+      <rect x="120" y="345" width="500" height="430" rx="28" fill="#FFF1C7" stroke="#D8A72E" stroke-width="5"/>
+      <text x="160" y="405" font-size="31" font-weight="700" fill="#8B5B00">FOR</text>
+      <text x="160" y="462" font-size="25" font-weight="600">
+        <tspan x="160" dy="0">Senior HR and</tspan>
+        <tspan x="160" dy="39">enterprise boards</tspan>
+        <tspan x="160" dy="39">of management</tspan>
+      </text>
+      <text x="160" y="660" font-size="22" fill="#6D6553">
+        <tspan x="160" dy="0">Primary buyer and</tspan>
+        <tspan x="160" dy="33">governance audience</tspan>
+      </text>
+    </g>
+
+    <line x1="620" y1="560" x2="675" y2="560" stroke="#B48617" stroke-width="7"/>
+    <path d="M675 560 L650 544 L650 576 Z" fill="#B48617"/>
+
+    <g>
+      <rect x="690" y="345" width="500" height="430" rx="28" fill="#FFE3D9" stroke="#E27953" stroke-width="5"/>
+      <text x="730" y="405" font-size="31" font-weight="700" fill="#A43D1D">WHO</text>
+      <text x="730" y="462" font-size="24" font-weight="600">
+        <tspan x="730" dy="0">Rely on disconnected</tspan>
+        <tspan x="730" dy="37">spreadsheets to manage</tspan>
+        <tspan x="730" dy="37">competencies,</tspan>
+        <tspan x="730" dy="37">assessments, and</tspan>
+        <tspan x="730" dy="37">career paths</tspan>
+      </text>
+    </g>
+
+    <line x1="1190" y1="560" x2="1245" y2="560" stroke="#B48617" stroke-width="7"/>
+    <path d="M1245 560 L1220 544 L1220 576 Z" fill="#B48617"/>
+
+    <g>
+      <rect x="1260" y="345" width="500" height="430" rx="28" fill="#DCEFFF" stroke="#4D94C9" stroke-width="5"/>
+      <text x="1300" y="405" font-size="31" font-weight="700" fill="#185E91">ENPATH</text>
+      <text x="1300" y="462" font-size="25" font-weight="600">
+        <tspan x="1300" dy="0">A competency and</tspan>
+        <tspan x="1300" dy="39">career-path</tspan>
+        <tspan x="1300" dy="39">management platform</tspan>
+      </text>
+      <text x="1300" y="660" font-size="22" fill="#526676">
+        <tspan x="1300" dy="0">One platform for the</tspan>
+        <tspan x="1300" dy="33">employee growth journey</tspan>
+      </text>
+    </g>
+
+    <line x1="1760" y1="560" x2="1815" y2="560" stroke="#B48617" stroke-width="7"/>
+    <path d="M1815 560 L1790 544 L1790 576 Z" fill="#B48617"/>
+
+    <g>
+      <rect x="1830" y="345" width="500" height="430" rx="28" fill="#E5F6E8" stroke="#56A568" stroke-width="5"/>
+      <text x="1870" y="405" font-size="31" font-weight="700" fill="#26713A">THAT</text>
+      <text x="1870" y="462" font-size="23" font-weight="600">
+        <tspan x="1870" dy="0">Turns evaluation into</tspan>
+        <tspan x="1870" dy="36">explainable employee</tspan>
+        <tspan x="1870" dy="36">profiles, development</tspan>
+        <tspan x="1870" dy="36">priorities, and role-</tspan>
+        <tspan x="1870" dy="36">qualification decisions</tspan>
+      </text>
+    </g>
+
+    <line x1="2330" y1="560" x2="2385" y2="560" stroke="#B48617" stroke-width="7"/>
+    <path d="M2385 560 L2360 544 L2360 576 Z" fill="#B48617"/>
+
+    <g>
+      <rect x="2400" y="345" width="500" height="430" rx="28" fill="#F3E5F8" stroke="#9C6AAF" stroke-width="5"/>
+      <text x="2440" y="405" font-size="31" font-weight="700" fill="#71427F">UNLIKE</text>
+      <text x="2440" y="462" font-size="25" font-weight="600">
+        <tspan x="2440" dy="0">Fragmented tools</tspan>
+        <tspan x="2440" dy="39">and opaque</tspan>
+        <tspan x="2440" dy="39">assessment processes</tspan>
+      </text>
+      <text x="2440" y="660" font-size="22" fill="#67586A">
+        <tspan x="2440" dy="0">The current state is</tspan>
+        <tspan x="2440" dy="33">scattered and subjective</tspan>
+      </text>
+    </g>
+
+    <line x1="2900" y1="560" x2="2955" y2="560" stroke="#B48617" stroke-width="7"/>
+    <path d="M2955 560 L2930 544 L2930 576 Z" fill="#B48617"/>
+
+    <g>
+      <rect x="2970" y="345" width="510" height="430" rx="28" fill="#173042" stroke="#173042" stroke-width="5"/>
+      <text x="3010" y="405" font-size="29" font-weight="700" fill="#FFD66B">DIFFERENTIATOR</text>
+      <text x="3010" y="462" font-size="23" font-weight="600" fill="#FFFFFF">
+        <tspan x="3010" dy="0">Centralizes skills,</tspan>
+        <tspan x="3010" dy="36">evaluations, role</tspan>
+        <tspan x="3010" dy="36">requirements, and gaps</tspan>
+        <tspan x="3010" dy="36">into one auditable</tspan>
+        <tspan x="3010" dy="36">company-wide standard</tspan>
+      </text>
+    </g>
+
+    <text x="120" y="875" font-size="46" font-weight="700">2. Target audiences and business goals</text>
+
+    <g>
+      <rect x="120" y="920" width="1080" height="1050" rx="34" fill="#EAF4FF" stroke="#4B93C8" stroke-width="6"/>
+      <rect x="120" y="920" width="1080" height="125" rx="34" fill="#2D78AD"/>
+      <rect x="120" y="1005" width="1080" height="40" fill="#2D78AD"/>
+      <text x="170" y="1002" font-size="43" font-weight="700" fill="#FFFFFF">MEMBER / EMPLOYEE</text>
+      <text x="170" y="1115" font-size="27" font-weight="700" fill="#185E91">GOAL</text>
+      <text x="170" y="1164" font-size="28" font-weight="600">
+        <tspan x="170" dy="0">Own career growth and</tspan>
+        <tspan x="170" dy="42">professional development</tspan>
+      </text>
+      <rect x="170" y="1275" width="650" height="60" rx="30" fill="#FFFFFF" stroke="#9BC5E4" stroke-width="3"/>
+      <text x="205" y="1315" font-size="24" font-weight="600" fill="#185E91">Tech-savvy and non-tech-savvy</text>
+      <text x="170" y="1410" font-size="26" font-weight="700">20-25 | Early career</text>
+      <text x="170" y="1452" font-size="23" fill="#526676">
+        <tspan x="170" dy="0">Graduates, junior employees,</tspan>
+        <tspan x="170" dy="34">or career-direction explorers</tspan>
+      </text>
+      <text x="170" y="1548" font-size="26" font-weight="700">26-35 | Mid career</text>
+      <text x="170" y="1590" font-size="23" fill="#526676">
+        <tspan x="170" dy="0">Experienced employees growing</tspan>
+        <tspan x="170" dy="34">toward senior or leadership roles</tspan>
+      </text>
+      <text x="170" y="1686" font-size="26" font-weight="700">35+ | Experienced career</text>
+      <text x="170" y="1728" font-size="23" fill="#526676">Senior employees, experts, or managers</text>
+      <rect x="160" y="1790" width="1000" height="130" rx="24" fill="#FFFFFF" stroke="#9BC5E4" stroke-width="3"/>
+      <text x="200" y="1835" font-size="24" font-weight="700" fill="#185E91">BUSINESS GOAL</text>
+      <text x="200" y="1880" font-size="23" font-weight="600">
+        <tspan x="200" dy="0">Understand capabilities - identify gaps -</tspan>
+        <tspan x="200" dy="34">own growth toward the desired role</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="1260" y="920" width="1080" height="1050" rx="34" fill="#ECF8EE" stroke="#58A66A" stroke-width="6"/>
+      <rect x="1260" y="920" width="1080" height="125" rx="34" fill="#347D48"/>
+      <rect x="1260" y="1005" width="1080" height="40" fill="#347D48"/>
+      <text x="1310" y="1002" font-size="43" font-weight="700" fill="#FFFFFF">HR / L&amp;D</text>
+      <text x="1310" y="1115" font-size="27" font-weight="700" fill="#26713A">GOAL</text>
+      <text x="1310" y="1164" font-size="28" font-weight="600">
+        <tspan x="1310" dy="0">Design, manage, and optimize</tspan>
+        <tspan x="1310" dy="42">employee development programs</tspan>
+      </text>
+      <text x="1310" y="1340" font-size="26" font-weight="700">20-25 | Early HR/L&amp;D</text>
+      <text x="1310" y="1382" font-size="23" fill="#526676">
+        <tspan x="1310" dy="0">Junior HR specialists, coordinators,</tspan>
+        <tspan x="1310" dy="34">or L&amp;D assistants building expertise</tspan>
+      </text>
+      <text x="1310" y="1492" font-size="26" font-weight="700">26-35 | Mid HR/L&amp;D</text>
+      <text x="1310" y="1534" font-size="23" fill="#526676">
+        <tspan x="1310" dy="0">Experienced specialists managing</tspan>
+        <tspan x="1310" dy="34">larger development initiatives</tspan>
+      </text>
+      <text x="1310" y="1644" font-size="26" font-weight="700">35+ | Senior HR/L&amp;D</text>
+      <text x="1310" y="1686" font-size="23" fill="#526676">
+        <tspan x="1310" dy="0">HR managers, L&amp;D leaders, and talent</tspan>
+        <tspan x="1310" dy="34">strategists driving organizational growth</tspan>
+      </text>
+      <rect x="1300" y="1790" width="1000" height="130" rx="24" fill="#FFFFFF" stroke="#A9D5B3" stroke-width="3"/>
+      <text x="1340" y="1835" font-size="24" font-weight="700" fill="#26713A">BUSINESS GOAL</text>
+      <text x="1340" y="1880" font-size="22" font-weight="600">
+        <tspan x="1340" dy="0">Consistent standards - transparent paths -</tspan>
+        <tspan x="1340" dy="34">evidence-based evaluation and development</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="2400" y="920" width="1080" height="1050" rx="34" fill="#FFF0E6" stroke="#DB8051" stroke-width="6"/>
+      <rect x="2400" y="920" width="1080" height="125" rx="34" fill="#B9592D"/>
+      <rect x="2400" y="1005" width="1080" height="40" fill="#B9592D"/>
+      <text x="2450" y="1002" font-size="43" font-weight="700" fill="#FFFFFF">MANAGER</text>
+      <text x="2450" y="1115" font-size="27" font-weight="700" fill="#A43D1D">GOAL</text>
+      <text x="2450" y="1164" font-size="28" font-weight="600">
+        <tspan x="2450" dy="0">Manage workforce capabilities and</tspan>
+        <tspan x="2450" dy="42">make strategic talent decisions</tspan>
+      </text>
+      <text x="2450" y="1340" font-size="26" font-weight="700">20-25 | Early manager</text>
+      <text x="2450" y="1382" font-size="23" fill="#526676">
+        <tspan x="2450" dy="0">New managers or team leads moving</tspan>
+        <tspan x="2450" dy="34">from contributor to leadership</tspan>
+      </text>
+      <text x="2450" y="1492" font-size="26" font-weight="700">26-35 | Mid manager</text>
+      <text x="2450" y="1534" font-size="23" fill="#526676">
+        <tspan x="2450" dy="0">Experienced managers leading teams</tspan>
+        <tspan x="2450" dy="34">and improving team performance</tspan>
+      </text>
+      <text x="2450" y="1644" font-size="26" font-weight="700">35+ | Senior manager / leader</text>
+      <text x="2450" y="1686" font-size="23" fill="#526676">
+        <tspan x="2450" dy="0">Department leaders responsible for</tspan>
+        <tspan x="2450" dy="34">workforce strategy and growth</tspan>
+      </text>
+      <rect x="2440" y="1790" width="1000" height="130" rx="24" fill="#FFFFFF" stroke="#E8B293" stroke-width="3"/>
+      <text x="2480" y="1835" font-size="24" font-weight="700" fill="#A43D1D">BUSINESS GOAL</text>
+      <text x="2480" y="1880" font-size="22" font-weight="600">
+        <tspan x="2480" dy="0">Transparent evaluation - accountable</tspan>
+        <tspan x="2480" dy="34">readiness decisions - targeted development</tspan>
+      </text>
+    </g>
+
+    <text x="120" y="2075" font-size="46" font-weight="700">3. Pain-to-need chains</text>
+
+    <g>
+      <rect x="120" y="2120" width="1080" height="650" rx="30" fill="#FFF0EC" stroke="#DF7859" stroke-width="5"/>
+      <text x="170" y="2190" font-size="34" font-weight="700" fill="#A43D1D">EMPLOYEE PAINS</text>
+      <text x="170" y="2260" font-size="25" font-weight="600">
+        <tspan x="170" dy="0">- Career progression lacks transparency</tspan>
+        <tspan x="170" dy="52">- Required company-specific skills are unclear</tspan>
+        <tspan x="170" dy="52">- Learning resources are scattered and generic</tspan>
+        <tspan x="170" dy="52">- No central record for competencies,</tspan>
+        <tspan x="205" dy="36">certifications, courses, and achievements</tspan>
+        <tspan x="170" dy="52">- Heavy reliance on Managers for guidance</tspan>
+      </text>
+      <line x1="660" y1="2770" x2="660" y2="2825" stroke="#2D78AD" stroke-width="8"/>
+      <path d="M660 2825 L642 2795 L678 2795 Z" fill="#2D78AD"/>
+      <text x="700" y="2812" font-size="23" font-weight="700" fill="#2D78AD">NEEDS</text>
+      <rect x="120" y="2840" width="1080" height="650" rx="30" fill="#EAF4FF" stroke="#4B93C8" stroke-width="5"/>
+      <text x="170" y="2910" font-size="34" font-weight="700" fill="#185E91">EMPLOYEE NEEDS</text>
+      <text x="170" y="2980" font-size="25" font-weight="600">
+        <tspan x="170" dy="0">- Clear current competency level</tspan>
+        <tspan x="170" dy="50">- Visible career progression</tspan>
+        <tspan x="170" dy="50">- Skills required for career goals</tspan>
+        <tspan x="170" dy="50">- Personalized learning recommendations</tspan>
+        <tspan x="170" dy="50">- One platform for skills, certifications,</tspan>
+        <tspan x="205" dy="36">courses, achievements, and the full journey</tspan>
+        <tspan x="170" dy="50">- Self-service career visibility</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="1260" y="2120" width="1080" height="650" rx="30" fill="#FFF0EC" stroke="#DF7859" stroke-width="5"/>
+      <text x="1310" y="2190" font-size="34" font-weight="700" fill="#A43D1D">TEAM LEADER PAIN</text>
+      <text x="1310" y="2270" font-size="26" font-weight="600">
+        <tspan x="1310" dy="0">Significant time and effort are spent</tspan>
+        <tspan x="1310" dy="43">gathering information from many systems</tspan>
+        <tspan x="1310" dy="43">before:</tspan>
+        <tspan x="1345" dy="58">- performance reviews</tspan>
+        <tspan x="1345" dy="48">- employee development discussions</tspan>
+        <tspan x="1345" dy="48">- future-project planning</tspan>
+      </text>
+      <line x1="1800" y1="2770" x2="1800" y2="2825" stroke="#347D48" stroke-width="8"/>
+      <path d="M1800 2825 L1782 2795 L1818 2795 Z" fill="#347D48"/>
+      <text x="1840" y="2812" font-size="23" font-weight="700" fill="#347D48">NEEDS</text>
+      <rect x="1260" y="2840" width="1080" height="650" rx="30" fill="#ECF8EE" stroke="#58A66A" stroke-width="5"/>
+      <text x="1310" y="2910" font-size="34" font-weight="700" fill="#26713A">TEAM LEADER NEEDS</text>
+      <text x="1310" y="2980" font-size="25" font-weight="600">
+        <tspan x="1310" dy="0">- Efficient team competency monitoring</tspan>
+        <tspan x="1310" dy="52">- Skill-gap identification</tspan>
+        <tspan x="1310" dy="52">- Coaching support</tspan>
+        <tspan x="1310" dy="52">- Personalized learning plans</tspan>
+        <tspan x="1310" dy="52">- Reliable data for objective performance</tspan>
+        <tspan x="1345" dy="36">and development discussions</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="2400" y="2120" width="1080" height="650" rx="30" fill="#FFF0EC" stroke="#DF7859" stroke-width="5"/>
+      <text x="2450" y="2190" font-size="34" font-weight="700" fill="#A43D1D">STRATEGIC MANAGER PAINS</text>
+      <text x="2450" y="2260" font-size="25" font-weight="600">
+        <tspan x="2450" dy="0">- Limited organization-wide visibility into</tspan>
+        <tspan x="2485" dy="36">capabilities and competency distribution</tspan>
+        <tspan x="2450" dy="54">- Difficult talent development, succession,</tspan>
+        <tspan x="2485" dy="36">and workforce-growth planning</tspan>
+        <tspan x="2450" dy="54">- Cannot forecast future skill demand or</tspan>
+        <tspan x="2485" dy="36">identify organizational skill gaps</tspan>
+      </text>
+      <line x1="2940" y1="2770" x2="2940" y2="2825" stroke="#B9592D" stroke-width="8"/>
+      <path d="M2940 2825 L2922 2795 L2958 2795 Z" fill="#B9592D"/>
+      <text x="2980" y="2812" font-size="23" font-weight="700" fill="#B9592D">NEEDS</text>
+      <rect x="2400" y="2840" width="1080" height="650" rx="30" fill="#FFF0E6" stroke="#DB8051" stroke-width="5"/>
+      <text x="2450" y="2910" font-size="34" font-weight="700" fill="#A43D1D">STRATEGIC MANAGER NEEDS</text>
+      <text x="2450" y="2980" font-size="25" font-weight="600">
+        <tspan x="2450" dy="0">- Organization-wide workforce capability view</tspan>
+        <tspan x="2450" dy="52">- Talent-development insights</tspan>
+        <tspan x="2450" dy="52">- Workforce and succession planning</tspan>
+        <tspan x="2450" dy="52">- Support for promotion decisions</tspan>
+        <tspan x="2450" dy="52">- Reliable insights for strategic,</tspan>
+        <tspan x="2485" dy="36">data-driven decisions</tspan>
+      </text>
+    </g>
+
+    <line x1="660" y1="3490" x2="660" y2="3650" stroke="#8394A0" stroke-width="6"/>
+    <line x1="1800" y1="3490" x2="1800" y2="3650" stroke="#8394A0" stroke-width="6"/>
+    <line x1="2940" y1="3490" x2="2940" y2="3650" stroke="#8394A0" stroke-width="6"/>
+    <line x1="660" y1="3650" x2="2940" y2="3650" stroke="#8394A0" stroke-width="6"/>
+    <line x1="1800" y1="3650" x2="1800" y2="3710" stroke="#173042" stroke-width="9"/>
+    <path d="M1800 3710 L1778 3675 L1822 3675 Z" fill="#173042"/>
+    <text x="1840" y="3696" font-size="24" font-weight="700" fill="#526676">SERVED BY</text>
+
+    <g>
+      <rect x="300" y="3740" width="3000" height="430" rx="44" fill="#173042" stroke="#173042" stroke-width="6"/>
+      <text x="1800" y="3840" text-anchor="middle" font-size="31" font-weight="700" fill="#FFD66B">PRODUCT PROMISE</text>
+      <text x="1800" y="3930" text-anchor="middle" font-size="60" font-weight="700" fill="#FFFFFF">ONE AUDITABLE SOURCE OF TRUTH</text>
+      <text x="1800" y="4005" text-anchor="middle" font-size="31" font-weight="600" fill="#DCE7ED">
+        <tspan x="1800" dy="0">Every competency score and career decision is transparent and explainable</tspan>
+        <tspan x="1800" dy="48">Unlike fragmented spreadsheets and subjective assessments</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

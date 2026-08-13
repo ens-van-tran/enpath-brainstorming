@@ -1,0 +1,458 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5200" height="4300" viewBox="0 0 5200 4300">
+  <rect x="0" y="0" width="5200" height="4300" fill="#F5FBFF"/>
+
+  <g font-family="Inter, Arial, sans-serif" fill="#173042">
+    <text x="120" y="130" font-size="84" font-weight="700">EnPath Product Canvas</text>
+    <text x="124" y="192" font-size="30" fill="#526676">From fragmented career data to verified competency, action, and readiness</text>
+    <rect x="120" y="230" width="4960" height="5" rx="2" fill="#173042"/>
+
+    <text x="120" y="310" font-size="46" font-weight="700">1. Product goal</text>
+
+    <g>
+      <rect x="120" y="350" width="1500" height="620" rx="34" fill="#FFF0EC" stroke="#DF7859" stroke-width="6"/>
+      <text x="175" y="425" font-size="38" font-weight="700" fill="#A43D1D">PROBLEMS TODAY</text>
+      <text x="175" y="500" font-size="27" font-weight="600">
+        <tspan x="175" dy="0">- Competencies, reviews, experience,</tspan>
+        <tspan x="210" dy="39">and career paths are fragmented</tspan>
+        <tspan x="175" dy="58">- Employees cannot see their current</tspan>
+        <tspan x="210" dy="39">state, gaps, or next actions</tspan>
+        <tspan x="175" dy="58">- Employee-Manager agreed actions may</tspan>
+        <tspan x="210" dy="39">be forgotten until the next review</tspan>
+        <tspan x="175" dy="58">- Follow-up and confirmation are missing</tspan>
+      </text>
+      <text x="175" y="865" font-size="23" font-weight="700" fill="#775A50">AFFECTED ACTORS</text>
+      <rect x="430" y="825" width="270" height="62" rx="31" fill="#EAF4FF" stroke="#4B93C8" stroke-width="3"/>
+      <text x="565" y="866" text-anchor="middle" font-size="23" font-weight="700" fill="#185E91">Employee</text>
+      <rect x="725" y="825" width="310" height="62" rx="31" fill="#FFF0E6" stroke="#DB8051" stroke-width="3"/>
+      <text x="880" y="866" text-anchor="middle" font-size="23" font-weight="700" fill="#A43D1D">Line Manager</text>
+      <rect x="1060" y="825" width="200" height="62" rx="31" fill="#ECF8EE" stroke="#58A66A" stroke-width="3"/>
+      <text x="1160" y="866" text-anchor="middle" font-size="23" font-weight="700" fill="#26713A">HR</text>
+    </g>
+
+    <line x1="1620" y1="660" x2="1665" y2="660" stroke="#173042" stroke-width="9"/>
+    <path d="M1665 660 L1635 641 L1635 679 Z" fill="#173042"/>
+    <text x="1635" y="625" font-size="22" font-weight="700" fill="#526676">SOLVED BY</text>
+
+    <g>
+      <rect x="1680" y="350" width="3400" height="620" rx="34" fill="#FFF8DC" stroke="#D4A52F" stroke-width="6"/>
+      <text x="1735" y="425" font-size="38" font-weight="700" fill="#8B5B00">MVP OUTCOME</text>
+
+      <rect x="1750" y="475" width="400" height="175" rx="24" fill="#FFFFFF" stroke="#D4A52F" stroke-width="4"/>
+      <text x="1950" y="575" text-anchor="middle" font-size="28" font-weight="700">TARGET</text>
+      <line x1="2150" y1="562" x2="2200" y2="562" stroke="#B48617" stroke-width="7"/>
+      <path d="M2200 562 L2174 546 L2174 578 Z" fill="#B48617"/>
+
+      <rect x="2210" y="475" width="400" height="175" rx="24" fill="#FFFFFF" stroke="#D4A52F" stroke-width="4"/>
+      <text x="2410" y="575" text-anchor="middle" font-size="28" font-weight="700">GAP</text>
+      <line x1="2610" y1="562" x2="2660" y2="562" stroke="#B48617" stroke-width="7"/>
+      <path d="M2660 562 L2634 546 L2634 578 Z" fill="#B48617"/>
+
+      <rect x="2670" y="475" width="400" height="175" rx="24" fill="#FFFFFF" stroke="#D4A52F" stroke-width="4"/>
+      <text x="2870" y="550" text-anchor="middle" font-size="26" font-weight="700">
+        <tspan x="2870" dy="0">ROADMAP /</tspan>
+        <tspan x="2870" dy="36">NEXT ACTIONS</tspan>
+      </text>
+      <line x1="3070" y1="562" x2="3120" y2="562" stroke="#B48617" stroke-width="7"/>
+      <path d="M3120 562 L3094 546 L3094 578 Z" fill="#B48617"/>
+
+      <rect x="3130" y="475" width="400" height="175" rx="24" fill="#FFFFFF" stroke="#D4A52F" stroke-width="4"/>
+      <text x="3330" y="575" text-anchor="middle" font-size="27" font-weight="700">FOLLOW-UP</text>
+      <line x1="3530" y1="562" x2="3580" y2="562" stroke="#B48617" stroke-width="7"/>
+      <path d="M3580 562 L3554 546 L3554 578 Z" fill="#B48617"/>
+
+      <rect x="3590" y="475" width="400" height="175" rx="24" fill="#FFFFFF" stroke="#D4A52F" stroke-width="4"/>
+      <text x="3790" y="550" text-anchor="middle" font-size="26" font-weight="700">
+        <tspan x="3790" dy="0">EVIDENCE /</tspan>
+        <tspan x="3790" dy="36">REVIEW</tspan>
+      </text>
+      <line x1="3990" y1="562" x2="4040" y2="562" stroke="#B48617" stroke-width="7"/>
+      <path d="M4040 562 L4014 546 L4014 578 Z" fill="#B48617"/>
+
+      <rect x="4050" y="475" width="400" height="175" rx="24" fill="#FFFFFF" stroke="#D4A52F" stroke-width="4"/>
+      <text x="4250" y="550" text-anchor="middle" font-size="25" font-weight="700">
+        <tspan x="4250" dy="0">VERIFIED</tspan>
+        <tspan x="4250" dy="36">COMPETENCY</tspan>
+      </text>
+      <line x1="4450" y1="562" x2="4500" y2="562" stroke="#B48617" stroke-width="7"/>
+      <path d="M4500 562 L4474 546 L4474 578 Z" fill="#B48617"/>
+
+      <rect x="4510" y="475" width="500" height="175" rx="24" fill="#173042" stroke="#173042" stroke-width="4"/>
+      <text x="4760" y="550" text-anchor="middle" font-size="25" font-weight="700" fill="#FFFFFF">
+        <tspan x="4760" dy="0">UPDATED</tspan>
+        <tspan x="4760" dy="36">ROADMAP</tspan>
+      </text>
+
+      <rect x="1750" y="715" width="1050" height="180" rx="24" fill="#EAF4FF" stroke="#4B93C8" stroke-width="3"/>
+      <text x="1790" y="765" font-size="23" font-weight="700" fill="#185E91">CONTINUOUS PRODUCT</text>
+      <text x="1790" y="812" font-size="26" font-weight="600">
+        <tspan x="1790" dy="0">Used throughout the employee's</tspan>
+        <tspan x="1790" dy="39">tenure at the company</tspan>
+      </text>
+
+      <rect x="2850" y="715" width="2160" height="180" rx="24" fill="#FFFFFF" stroke="#D4A52F" stroke-width="3"/>
+      <text x="2890" y="765" font-size="23" font-weight="700" fill="#8B5B00">ROLE IN PERFORMANCE REVIEWS</text>
+      <text x="2890" y="812" font-size="24" font-weight="600">
+        <tspan x="2890" dy="0">Does not replace performance or promotion decisions</tspan>
+        <tspan x="2890" dy="38">Replaces manual data collection and makes reviews calibration checkpoints</tspan>
+      </text>
+    </g>
+
+    <text x="120" y="1065" font-size="46" font-weight="700">2. Core experience loop</text>
+
+    <g>
+      <rect x="120" y="1110" width="500" height="610" rx="30" fill="#ECF8EE" stroke="#58A66A" stroke-width="5"/>
+      <circle cx="180" cy="1170" r="36" fill="#347D48"/>
+      <text x="180" y="1182" text-anchor="middle" font-size="29" font-weight="700" fill="#FFFFFF">1</text>
+      <text x="235" y="1182" font-size="24" font-weight="700" fill="#26713A">HR</text>
+      <text x="165" y="1260" font-size="25" font-weight="600">
+        <tspan x="165" dy="0">Publishes role/level</tspan>
+        <tspan x="165" dy="39">competency metrics</tspan>
+      </text>
+      <text x="165" y="1455" font-size="22" fill="#526676">
+        <tspan x="165" dy="0">Creates the standard</tspan>
+        <tspan x="165" dy="34">used by every later</tspan>
+        <tspan x="165" dy="34">comparison and review</tspan>
+      </text>
+    </g>
+    <line x1="620" y1="1415" x2="665" y2="1415" stroke="#8394A0" stroke-width="7"/>
+    <path d="M665 1415 L640 1399 L640 1431 Z" fill="#8394A0"/>
+
+    <g>
+      <rect x="680" y="1110" width="500" height="610" rx="30" fill="#EAF4FF" stroke="#4B93C8" stroke-width="5"/>
+      <circle cx="740" cy="1170" r="36" fill="#2D78AD"/>
+      <text x="740" y="1182" text-anchor="middle" font-size="29" font-weight="700" fill="#FFFFFF">2</text>
+      <text x="795" y="1182" font-size="24" font-weight="700" fill="#185E91">EMPLOYEE</text>
+      <text x="725" y="1260" font-size="25" font-weight="600">
+        <tspan x="725" dy="0">Has a verified profile</tspan>
+        <tspan x="725" dy="39">and selects a target</tspan>
+        <tspan x="725" dy="39">role/level</tspan>
+      </text>
+      <text x="725" y="1494" font-size="22" fill="#526676">
+        <tspan x="725" dy="0">Starts with a trusted</tspan>
+        <tspan x="725" dy="34">current state and an</tspan>
+        <tspan x="725" dy="34">explicit destination</tspan>
+      </text>
+    </g>
+    <line x1="1180" y1="1415" x2="1225" y2="1415" stroke="#8394A0" stroke-width="7"/>
+    <path d="M1225 1415 L1200 1399 L1200 1431 Z" fill="#8394A0"/>
+
+    <g>
+      <rect x="1240" y="1110" width="500" height="610" rx="30" fill="#F3EAF8" stroke="#9C6AAF" stroke-width="5"/>
+      <circle cx="1300" cy="1170" r="36" fill="#815092"/>
+      <text x="1300" y="1182" text-anchor="middle" font-size="29" font-weight="700" fill="#FFFFFF">3</text>
+      <text x="1355" y="1182" font-size="24" font-weight="700" fill="#71427F">SYSTEM</text>
+      <text x="1285" y="1260" font-size="25" font-weight="600">
+        <tspan x="1285" dy="0">Compares current state</tspan>
+        <tspan x="1285" dy="39">with the target and</tspan>
+        <tspan x="1285" dy="39">generates gap analysis</tspan>
+      </text>
+      <text x="1285" y="1494" font-size="22" fill="#526676">
+        <tspan x="1285" dy="0">Makes the distance to</tspan>
+        <tspan x="1285" dy="34">the desired role visible</tspan>
+      </text>
+    </g>
+    <line x1="1740" y1="1415" x2="1785" y2="1415" stroke="#8394A0" stroke-width="7"/>
+    <path d="M1785 1415 L1760 1399 L1760 1431 Z" fill="#8394A0"/>
+
+    <g>
+      <rect x="1800" y="1110" width="500" height="610" rx="30" fill="#FFF0E6" stroke="#DB8051" stroke-width="5"/>
+      <circle cx="1860" cy="1170" r="36" fill="#B9592D"/>
+      <text x="1860" y="1182" text-anchor="middle" font-size="29" font-weight="700" fill="#FFFFFF">4</text>
+      <text x="1915" y="1182" font-size="24" font-weight="700" fill="#A43D1D">MANAGER + EMPLOYEE</text>
+      <text x="1845" y="1260" font-size="24" font-weight="600">
+        <tspan x="1845" dy="0">Agree on a development</tspan>
+        <tspan x="1845" dy="38">roadmap and concrete</tspan>
+        <tspan x="1845" dy="38">next actions</tspan>
+      </text>
+      <text x="1845" y="1494" font-size="22" fill="#526676">
+        <tspan x="1845" dy="0">Turns analysis into a</tspan>
+        <tspan x="1845" dy="34">shared plan</tspan>
+      </text>
+    </g>
+    <line x1="2300" y1="1415" x2="2345" y2="1415" stroke="#8394A0" stroke-width="7"/>
+    <path d="M2345 1415 L2320 1399 L2320 1431 Z" fill="#8394A0"/>
+
+    <g>
+      <rect x="2360" y="1110" width="500" height="610" rx="30" fill="#F3EAF8" stroke="#9C6AAF" stroke-width="5"/>
+      <circle cx="2420" cy="1170" r="36" fill="#815092"/>
+      <text x="2420" y="1182" text-anchor="middle" font-size="29" font-weight="700" fill="#FFFFFF">5</text>
+      <text x="2475" y="1182" font-size="24" font-weight="700" fill="#71427F">SYSTEM</text>
+      <text x="2405" y="1260" font-size="24" font-weight="600">
+        <tspan x="2405" dy="0">Retains agreed actions</tspan>
+        <tspan x="2405" dy="38">for later follow-up and</tspan>
+        <tspan x="2405" dy="38">status confirmation</tspan>
+      </text>
+      <text x="2405" y="1494" font-size="22" fill="#526676">
+        <tspan x="2405" dy="0">Prevents actions from</tspan>
+        <tspan x="2405" dy="34">being lost between reviews</tspan>
+      </text>
+    </g>
+    <line x1="2860" y1="1415" x2="2905" y2="1415" stroke="#8394A0" stroke-width="7"/>
+    <path d="M2905 1415 L2880 1399 L2880 1431 Z" fill="#8394A0"/>
+
+    <g>
+      <rect x="2920" y="1110" width="500" height="610" rx="30" fill="#EAF4FF" stroke="#4B93C8" stroke-width="5"/>
+      <circle cx="2980" cy="1170" r="36" fill="#2D78AD"/>
+      <text x="2980" y="1182" text-anchor="middle" font-size="29" font-weight="700" fill="#FFFFFF">6</text>
+      <text x="3035" y="1182" font-size="24" font-weight="700" fill="#185E91">EVENT</text>
+      <text x="2965" y="1260" font-size="24" font-weight="600">
+        <tspan x="2965" dy="0">Evidence or a review</tspan>
+        <tspan x="2965" dy="38">request is created</tspan>
+        <tspan x="2965" dy="38">after an event</tspan>
+      </text>
+      <text x="2965" y="1494" font-size="22" fill="#526676">
+        <tspan x="2965" dy="0">Supports event-based,</tspan>
+        <tspan x="2965" dy="34">continuous review</tspan>
+      </text>
+    </g>
+    <line x1="3420" y1="1415" x2="3465" y2="1415" stroke="#8394A0" stroke-width="7"/>
+    <path d="M3465 1415 L3440 1399 L3440 1431 Z" fill="#8394A0"/>
+
+    <g>
+      <rect x="3480" y="1110" width="500" height="610" rx="30" fill="#FFF0E6" stroke="#DB8051" stroke-width="5"/>
+      <circle cx="3540" cy="1170" r="36" fill="#B9592D"/>
+      <text x="3540" y="1182" text-anchor="middle" font-size="29" font-weight="700" fill="#FFFFFF">7</text>
+      <text x="3595" y="1182" font-size="24" font-weight="700" fill="#A43D1D">MANAGER</text>
+      <text x="3525" y="1260" font-size="24" font-weight="600">
+        <tspan x="3525" dy="0">Verifies the evidence</tspan>
+        <tspan x="3525" dy="38">and updates the</tspan>
+        <tspan x="3525" dy="38">competency</tspan>
+      </text>
+      <text x="3525" y="1494" font-size="22" fill="#526676">
+        <tspan x="3525" dy="0">Creates trusted,</tspan>
+        <tspan x="3525" dy="34">accountable status</tspan>
+      </text>
+    </g>
+    <line x1="3980" y1="1415" x2="4025" y2="1415" stroke="#8394A0" stroke-width="7"/>
+    <path d="M4025 1415 L4000 1399 L4000 1431 Z" fill="#8394A0"/>
+
+    <g>
+      <rect x="4040" y="1110" width="500" height="610" rx="30" fill="#F3EAF8" stroke="#9C6AAF" stroke-width="5"/>
+      <circle cx="4100" cy="1170" r="36" fill="#815092"/>
+      <text x="4100" y="1182" text-anchor="middle" font-size="29" font-weight="700" fill="#FFFFFF">8</text>
+      <text x="4155" y="1182" font-size="24" font-weight="700" fill="#71427F">SYSTEM</text>
+      <text x="4085" y="1260" font-size="23" font-weight="600">
+        <tspan x="4085" dy="0">Updates gaps, readiness/</tspan>
+        <tspan x="4085" dy="37">level, roadmap, and</tspan>
+        <tspan x="4085" dy="37">notifications</tspan>
+      </text>
+      <text x="4085" y="1494" font-size="22" fill="#526676">
+        <tspan x="4085" dy="0">Recalculates the next</tspan>
+        <tspan x="4085" dy="34">best direction</tspan>
+      </text>
+    </g>
+    <line x1="4540" y1="1415" x2="4585" y2="1415" stroke="#8394A0" stroke-width="7"/>
+    <path d="M4585 1415 L4560 1399 L4560 1431 Z" fill="#8394A0"/>
+
+    <g>
+      <rect x="4600" y="1110" width="500" height="610" rx="30" fill="#EAF4FF" stroke="#4B93C8" stroke-width="5"/>
+      <circle cx="4660" cy="1170" r="36" fill="#2D78AD"/>
+      <text x="4660" y="1182" text-anchor="middle" font-size="29" font-weight="700" fill="#FFFFFF">9</text>
+      <text x="4715" y="1182" font-size="24" font-weight="700" fill="#185E91">EMPLOYEE</text>
+      <text x="4645" y="1260" font-size="23" font-weight="600">
+        <tspan x="4645" dy="0">Exports or publishes</tspan>
+        <tspan x="4645" dy="37">the updated profile for</tspan>
+        <tspan x="4645" dy="37">interviews or client</tspan>
+        <tspan x="4645" dy="37">pitches</tspan>
+      </text>
+      <text x="4645" y="1531" font-size="22" fill="#526676">
+        <tspan x="4645" dy="0">Creates a reusable</tspan>
+        <tspan x="4645" dy="34">career asset</tspan>
+      </text>
+    </g>
+
+    <path d="M4850 1720 L4850 1830 L1490 1830 L1490 1745" fill="none" stroke="#2D78AD" stroke-width="7"/>
+    <path d="M1490 1745 L1473 1774 L1507 1774 Z" fill="#2D78AD"/>
+    <rect x="2760" y="1793" width="580" height="70" rx="35" fill="#EAF4FF" stroke="#4B93C8" stroke-width="3"/>
+    <text x="3050" y="1838" text-anchor="middle" font-size="23" font-weight="700" fill="#185E91">CONTINUOUS GROWTH LOOP</text>
+
+    <text x="120" y="1960" font-size="46" font-weight="700">3. Product details and delivery boundaries</text>
+
+    <g>
+      <rect x="120" y="2010" width="1250" height="820" rx="32" fill="#F3EAF8" stroke="#9C6AAF" stroke-width="5"/>
+      <text x="170" y="2080" font-size="34" font-weight="700" fill="#71427F">RULES &amp; DEPENDENCIES</text>
+      <text x="170" y="2150" font-size="24" font-weight="600">
+        <tspan x="170" dy="0">- Verified skill requires an authorized</tspan>
+        <tspan x="205" dy="36">reviewer and evidence/rationale</tspan>
+        <tspan x="170" dy="52">- History is immutable</tspan>
+        <tspan x="170" dy="52">- Viewing follows least privilege</tspan>
+        <tspan x="170" dy="52">- Competency metrics -&gt; target/gap -&gt;</tspan>
+        <tspan x="205" dy="36">roadmap/actions -&gt; follow-up -&gt;</tspan>
+        <tspan x="205" dy="36">evidence/review -&gt; updated roadmap</tspan>
+      </text>
+      <rect x="170" y="2585" width="1150" height="165" rx="24" fill="#FFFFFF" stroke="#9C6AAF" stroke-width="3"/>
+      <text x="215" y="2640" font-size="23" font-weight="700" fill="#71427F">MANDATORY DEPENDENCY</text>
+      <text x="215" y="2693" font-size="26" font-weight="700">Competency metrics</text>
+    </g>
+
+    <g>
+      <rect x="1430" y="2010" width="1500" height="820" rx="32" fill="#EAF4FF" stroke="#4B93C8" stroke-width="5"/>
+      <text x="1480" y="2080" font-size="34" font-weight="700" fill="#185E91">MVP REQUIREMENTS</text>
+      <text x="1480" y="2150" font-size="24" font-weight="600">
+        <tspan x="1480" dy="0">- Competency metrics and career paths</tspan>
+        <tspan x="1515" dy="36">by role and level</tspan>
+        <tspan x="1480" dy="52">- Career profile and career target</tspan>
+        <tspan x="1480" dy="52">- Exportable or publishable career profile</tspan>
+        <tspan x="1515" dy="36">for interviews or client pitches</tspan>
+        <tspan x="1480" dy="52">- Gap analysis</tspan>
+        <tspan x="1480" dy="52">- Roadmap/development plan with</tspan>
+        <tspan x="1515" dy="36">retained next actions</tspan>
+        <tspan x="1480" dy="52">- Continuous reviews</tspan>
+        <tspan x="1480" dy="52">- Manager team view</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="2990" y="2010" width="1000" height="820" rx="32" fill="#FFF8DC" stroke="#D4A52F" stroke-width="5"/>
+      <text x="3040" y="2080" font-size="34" font-weight="700" fill="#8B5B00">MANUAL IN MVP</text>
+      <text x="3040" y="2150" font-size="24" font-weight="600">
+        <tspan x="3040" dy="0">HR/Managers map gaps to:</tspan>
+        <tspan x="3075" dy="48">- assignments</tspan>
+        <tspan x="3075" dy="44">- mentors</tspan>
+        <tspan x="3075" dy="44">- materials/courses</tspan>
+        <tspan x="3040" dy="62">Also manual:</tspan>
+        <tspan x="3075" dy="48">- competency metrics import</tspan>
+        <tspan x="3075" dy="44">- calibration/escalation</tspan>
+      </text>
+      <rect x="3040" y="2630" width="900" height="120" rx="22" fill="#FFFFFF" stroke="#D4A52F" stroke-width="3"/>
+      <text x="3490" y="2703" text-anchor="middle" font-size="23" font-weight="700" fill="#8B5B00">HUMAN-GUIDED DELIVERY</text>
+    </g>
+
+    <g>
+      <rect x="4050" y="2010" width="1030" height="820" rx="32" fill="#ECF8EE" stroke="#58A66A" stroke-width="5"/>
+      <text x="4100" y="2080" font-size="34" font-weight="700" fill="#26713A">LATER PHASES</text>
+      <text x="4100" y="2150" font-size="25" font-weight="600">
+        <tspan x="4100" dy="0">- Peer workflow</tspan>
+        <tspan x="4100" dy="58">- Organizational analytics</tspan>
+        <tspan x="4100" dy="58">- HRIS/LMS integration</tspan>
+        <tspan x="4100" dy="58">- Multiple targets</tspan>
+        <tspan x="4100" dy="58">- Competency metrics</tspan>
+        <tspan x="4135" dy="38">versioning</tspan>
+      </text>
+      <rect x="4100" y="2630" width="930" height="120" rx="22" fill="#FFFFFF" stroke="#58A66A" stroke-width="3"/>
+      <text x="4565" y="2703" text-anchor="middle" font-size="23" font-weight="700" fill="#26713A">EXPAND AFTER MVP LEARNS</text>
+    </g>
+
+    <text x="120" y="2920" font-size="46" font-weight="700">4. Personas and success metrics</text>
+
+    <g>
+      <rect x="120" y="2970" width="1200" height="750" rx="32" fill="#EAF4FF" stroke="#4B93C8" stroke-width="5"/>
+      <rect x="120" y="2970" width="1200" height="110" rx="32" fill="#2D78AD"/>
+      <rect x="120" y="3040" width="1200" height="40" fill="#2D78AD"/>
+      <text x="170" y="3045" font-size="39" font-weight="700" fill="#FFFFFF">EMPLOYEE</text>
+      <text x="170" y="3145" font-size="22" font-weight="600">
+        <tspan x="170" dy="0">- Understand current level and select a target</tspan>
+        <tspan x="170" dy="42">- Demonstrate competency</tspan>
+        <tspan x="170" dy="42">- Proactively request reviews</tspan>
+        <tspan x="170" dy="42">- Execute the development plan</tspan>
+        <tspan x="170" dy="42">- Use a visual career path</tspan>
+        <tspan x="170" dy="42">- Take next actions</tspan>
+        <tspan x="170" dy="42">- Revisit agreed actions with the Manager</tspan>
+      </text>
+      <rect x="160" y="3490" width="1120" height="175" rx="22" fill="#FFFFFF" stroke="#9BC5E4" stroke-width="3"/>
+      <text x="200" y="3540" font-size="22" font-weight="700" fill="#A43D1D">CURRENT PAINS</text>
+      <text x="200" y="3585" font-size="21" font-weight="600">
+        <tspan x="200" dy="0">Important gaps are unclear; review cycle causes waiting</tspan>
+        <tspan x="200" dy="34">Development history is not fully recorded</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="1380" y="2970" width="1200" height="750" rx="32" fill="#FFF0E6" stroke="#DB8051" stroke-width="5"/>
+      <rect x="1380" y="2970" width="1200" height="110" rx="32" fill="#B9592D"/>
+      <rect x="1380" y="3040" width="1200" height="40" fill="#B9592D"/>
+      <text x="1430" y="3045" font-size="39" font-weight="700" fill="#FFFFFF">MANAGER</text>
+      <text x="1430" y="3145" font-size="22" font-weight="600">
+        <tspan x="1430" dy="0">- Understand each employee's capability</tspan>
+        <tspan x="1465" dy="34">and potential</tspan>
+        <tspan x="1430" dy="44">- Identify the promotion roadmap</tspan>
+        <tspan x="1430" dy="44">- Set required skills, courses, and experience</tspan>
+        <tspan x="1430" dy="44">- Review/update after each project</tspan>
+        <tspan x="1430" dy="44">- Follow up and confirm agreed actions</tspan>
+        <tspan x="1430" dy="44">- Give a specific roadmap and recommendations</tspan>
+      </text>
+      <rect x="1420" y="3490" width="1120" height="175" rx="22" fill="#FFFFFF" stroke="#E8B293" stroke-width="3"/>
+      <text x="1460" y="3540" font-size="22" font-weight="700" fill="#A43D1D">PRIMARY VALUE</text>
+      <text x="1460" y="3585" font-size="21" font-weight="600">
+        <tspan x="1460" dy="0">Comprehensive team understanding plus timely,</tspan>
+        <tspan x="1460" dy="34">accountable development follow-up</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="2640" y="2970" width="1200" height="750" rx="32" fill="#ECF8EE" stroke="#58A66A" stroke-width="5"/>
+      <rect x="2640" y="2970" width="1200" height="110" rx="32" fill="#347D48"/>
+      <rect x="2640" y="3040" width="1200" height="40" fill="#347D48"/>
+      <text x="2690" y="3045" font-size="39" font-weight="700" fill="#FFFFFF">HR ADMIN</text>
+      <text x="2690" y="3145" font-size="22" font-weight="600">
+        <tspan x="2690" dy="0">- Set up roles, levels, and competency matrices</tspan>
+        <tspan x="2690" dy="44">- Design development programs</tspan>
+        <tspan x="2690" dy="44">- Track progress</tspan>
+        <tspan x="2690" dy="44">- See gaps by role and level</tspan>
+        <tspan x="2690" dy="44">- Target notifications and plans to the</tspan>
+        <tspan x="2725" dy="34">right audience</tspan>
+      </text>
+      <rect x="2680" y="3490" width="1120" height="175" rx="22" fill="#FFFFFF" stroke="#A9D5B3" stroke-width="3"/>
+      <text x="2720" y="3540" font-size="22" font-weight="700" fill="#A43D1D">CURRENT PAIN</text>
+      <text x="2720" y="3590" font-size="21" font-weight="600">
+        <tspan x="2720" dy="0">Competency metrics and evaluation data</tspan>
+        <tspan x="2720" dy="34">are fragmented</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="3900" y="2970" width="1180" height="750" rx="32" fill="#FFF8DC" stroke="#D4A52F" stroke-width="5"/>
+      <rect x="3900" y="2970" width="1180" height="110" rx="32" fill="#9A7110"/>
+      <rect x="3900" y="3040" width="1180" height="40" fill="#9A7110"/>
+      <text x="3950" y="3045" font-size="39" font-weight="700" fill="#FFFFFF">SUCCESS METRICS</text>
+      <text x="3950" y="3140" font-size="24" font-weight="700" fill="#8B5B00">CLARITY &amp; TRUST</text>
+      <text x="3950" y="3190" font-size="21" font-weight="600">
+        <tspan x="3950" dy="0">- Employees understand gaps relative</tspan>
+        <tspan x="3985" dy="34">to company direction</tspan>
+        <tspan x="3950" dy="43">- Employees identify the next action</tspan>
+        <tspan x="3950" dy="43">- Managers receive evaluation results</tspan>
+        <tspan x="3950" dy="43">- Dashboard makes outcomes measurable</tspan>
+      </text>
+      <text x="3950" y="3440" font-size="24" font-weight="700" fill="#8B5B00">EMPLOYEE ACTIVATION</text>
+      <text x="3950" y="3490" font-size="21" font-weight="600">
+        <tspan x="3950" dy="0">- Target role/level selected</tspan>
+        <tspan x="3950" dy="42">- Gap analysis available</tspan>
+        <tspan x="3950" dy="42">- Measure time-to-first-roadmap</tspan>
+      </text>
+    </g>
+
+    <text x="120" y="3800" font-size="46" font-weight="700">5. Assumptions, constraints, and output</text>
+
+    <g>
+      <rect x="120" y="3845" width="2200" height="350" rx="30" fill="#FFFFFF" stroke="#7EAFCF" stroke-width="5"/>
+      <text x="170" y="3910" font-size="32" font-weight="700" fill="#185E91">ASSUMPTIONS</text>
+      <text x="170" y="3970" font-size="21" font-weight="600">
+        <tspan x="170" dy="0">- Pilot has one career family, a sufficiently complete matrix, and an owner</tspan>
+        <tspan x="170" dy="42">- Managers conduct event-based reviews if the process takes only a few minutes</tspan>
+        <tspan x="170" dy="42">- Career clarity and roadmaps are valuable enough for employees to return and act</tspan>
+        <tspan x="170" dy="42">- Mapping/rule-based recommendations are useful enough; AI is not required yet</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="2380" y="3845" width="1200" height="350" rx="30" fill="#FFF0EC" stroke="#DF7859" stroke-width="5"/>
+      <text x="2430" y="3910" font-size="32" font-weight="700" fill="#A43D1D">CONSTRAINTS</text>
+      <text x="2430" y="3975" font-size="22" font-weight="600">
+        <tspan x="2430" dy="0">- Competency metrics are mandatory</tspan>
+        <tspan x="2430" dy="48">- Reliability depends on metrics quality</tspan>
+        <tspan x="2430" dy="48">- Reliability also depends on</tspan>
+        <tspan x="2465" dy="36">Manager workload</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="3640" y="3845" width="1440" height="350" rx="30" fill="#173042" stroke="#173042" stroke-width="5"/>
+      <text x="3690" y="3910" font-size="30" font-weight="700" fill="#FFD66B">CORE OUTPUT</text>
+      <text x="4360" y="3990" text-anchor="middle" font-size="34" font-weight="700" fill="#FFFFFF">
+        <tspan x="4360" dy="0">VERIFIED REUSABLE PROFILE</tspan>
+        <tspan x="4360" dy="52">+ PRIORITIZED GAPS</tspan>
+        <tspan x="4360" dy="52">+ NEXT ACTIONS + READINESS</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6560" height="6500" viewBox="0 0 6560 6500">
+  <rect x="0" y="0" width="6560" height="6500" fill="#FFF7F0"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="100" y="80" width="6360" height="330" rx="34" fill="#17324D"/>
+    <text x="180" y="180" fill="#FFFFFF" font-size="64" font-weight="700">USER STORY MAP - EN-PATH</text>
+    <text x="180" y="242" fill="#D9EAF7" font-size="28">Discovery draft - Updated 2026-08-08 - Not implementation-ready</text>
+    <text x="180" y="306" fill="#FFDCA8" font-size="27" font-weight="700">HR ADMIN - DRAFT: No validated persona, motivations, or pain points yet.</text>
+    <text x="180" y="355" fill="#FFFFFF" font-size="25">Selected scope: Employee profile export and publishing are part of the main product flow.</text>
+
+    <g font-size="22" font-weight="700" fill="#17324D">
+      <circle cx="210" cy="505" r="18" fill="#F5B84B"/><text x="242" y="513">HR Admin - Draft</text>
+      <circle cx="600" cy="505" r="18" fill="#FFD86A"/><text x="632" y="513">Employee</text>
+      <circle cx="875" cy="505" r="18" fill="#7AC7A5"/><text x="907" y="513">Manager / Reviewer</text>
+      <circle cx="1285" cy="505" r="18" fill="#71B7E6"/><text x="1317" y="513">En-Path System</text>
+      <circle cx="1645" cy="505" r="18" fill="#EE8374"/><text x="1677" y="513">Open decision</text>
+      <circle cx="1970" cy="505" r="18" fill="#63778A"/><text x="2002" y="513">Constraint / outcome</text>
+    </g>
+
+    <g fill="#FFFFFF" stroke="#D8CFC7" stroke-width="3">
+      <rect x="100" y="620" width="695" height="2520" rx="26"/>
+      <rect x="895" y="620" width="695" height="2520" rx="26"/>
+      <rect x="1690" y="620" width="695" height="2520" rx="26"/>
+      <rect x="2485" y="620" width="695" height="2520" rx="26"/>
+      <rect x="3280" y="620" width="695" height="2520" rx="26"/>
+      <rect x="4075" y="620" width="695" height="2520" rx="26"/>
+      <rect x="4870" y="620" width="695" height="2520" rx="26"/>
+      <rect x="5665" y="620" width="695" height="2520" rx="26"/>
+    </g>
+
+    <g fill="#17324D" font-size="28" font-weight="700">
+      <text x="140" y="700"><tspan x="140">1 - Establish</tspan><tspan x="140" dy="38">competency metrics</tspan><tspan x="140" dy="38">and matrices</tspan></text>
+      <text x="935" y="700"><tspan x="935">2 - Understand</tspan><tspan x="935" dy="38">profiles and team</tspan><tspan x="935" dy="38">capabilities</tspan></text>
+      <text x="1730" y="700"><tspan x="1730">3 - Select a target</tspan><tspan x="1730" dy="38">and understand</tspan><tspan x="1730" dy="38">gaps</tspan></text>
+      <text x="2525" y="700"><tspan x="2525">4 - Agree, execute</tspan><tspan x="2525" dy="38">and revisit roadmap</tspan><tspan x="2525" dy="38">and next actions</tspan></text>
+      <text x="3320" y="700"><tspan x="3320">5 - Capture</tspan><tspan x="3320" dy="38">evidence and</tspan><tspan x="3320" dy="38">request review</tspan></text>
+      <text x="4115" y="700"><tspan x="4115">6 - Verify and</tspan><tspan x="4115" dy="38">update</tspan><tspan x="4115" dy="38">competencies</tspan></text>
+      <text x="4910" y="700"><tspan x="4910">7 - Reuse profile</tspan><tspan x="4910" dy="38">and competency</tspan><tspan x="4910" dy="38">data</tspan></text>
+      <text x="5705" y="700"><tspan x="5705">8 - Track gaps</tspan><tspan x="5705" dy="38">and progress</tspan></text>
+    </g>
+    <line x1="100" y1="900" x2="6360" y2="900" stroke="#D8CFC7" stroke-width="3"/>
+
+    <g font-size="20" fill="#17324D">
+      <rect x="130" y="950" width="635" height="650" rx="22" fill="#FFF0CC" stroke="#F5B84B" stroke-width="3" stroke-dasharray="12 9"/>
+      <text x="165" y="1000" font-size="23" font-weight="700">HR ADMIN - DRAFT</text>
+      <text x="165" y="1050"><tspan x="165">- Set up roles and levels.</tspan><tspan x="165" dy="34">- Set up competency matrices</tspan><tspan x="185" dy="31">and career paths.</tspan><tspan x="165" dy="34">- Establish and publish</tspan><tspan x="185" dy="31">competency metrics.</tspan><tspan x="165" dy="34">- Employees and Managers use</tspan><tspan x="185" dy="31">the same standard.</tspan></text>
+      <rect x="130" y="1630" width="635" height="590" rx="22" fill="#E7F3FB" stroke="#71B7E6" stroke-width="3"/>
+      <text x="165" y="1680" font-size="23" font-weight="700">EN-PATH SYSTEM</text>
+      <text x="165" y="1730"><tspan x="165">Store roles, levels, matrices,</tspan><tspan x="165" dy="32">career paths and published</tspan><tspan x="165" dy="32">competency metrics as the</tspan><tspan x="165" dy="32">shared standard for:</tspan><tspan x="165" dy="34">- Profiles</tspan><tspan x="165" dy="32">- Targets</tspan><tspan x="165" dy="32">- Gap analysis</tspan></text>
+      <rect x="130" y="2250" width="635" height="300" rx="22" fill="#EEF1F4" stroke="#63778A" stroke-width="3"/>
+      <text x="165" y="2300" font-size="22" font-weight="700">FOUNDATION RULE</text>
+      <text x="165" y="2350"><tspan x="165">Published metrics are the</tspan><tspan x="165" dy="32">standard used throughout the</tspan><tspan x="165" dy="32">career development cycle.</tspan></text>
+
+      <rect x="925" y="950" width="635" height="540" rx="22" fill="#FFF7CC" stroke="#FFD86A" stroke-width="3"/>
+      <text x="960" y="1000" font-size="23" font-weight="700">EMPLOYEE</text>
+      <text x="960" y="1050"><tspan x="960">- View current personal info.</tspan><tspan x="960" dy="34">- View work history and</tspan><tspan x="980" dy="31">experience.</tspan><tspan x="960" dy="34">- View current competencies.</tspan><tspan x="960" dy="34">- Understand strengths and</tspan><tspan x="980" dy="31">development areas.</tspan></text>
+      <rect x="925" y="1520" width="635" height="580" rx="22" fill="#E6F5EE" stroke="#7AC7A5" stroke-width="3"/>
+      <text x="960" y="1570" font-size="23" font-weight="700">MANAGER</text>
+      <text x="960" y="1620"><tspan x="960">- View the Employee List.</tspan><tspan x="960" dy="34">- View each Employee's:</tspan><tspan x="980" dy="32">current skills and competencies,</tspan><tspan x="980" dy="32">gaps, evidence and history.</tspan><tspan x="960" dy="34">- Maintain basic team</tspan><tspan x="980" dy="31">capability visibility.</tspan></text>
+      <rect x="925" y="2130" width="635" height="410" rx="22" fill="#FFF0CC" stroke="#F5B84B" stroke-width="3" stroke-dasharray="12 9"/>
+      <text x="960" y="2180" font-size="23" font-weight="700">HR ADMIN - DRAFT</text>
+      <text x="960" y="2230"><tspan x="960">Track gaps and progress by</tspan><tspan x="960" dy="32">role and level against the</tspan><tspan x="960" dy="32">published competency metrics.</tspan></text>
+
+      <rect x="1720" y="950" width="635" height="650" rx="22" fill="#FFF7CC" stroke="#FFD86A" stroke-width="3"/>
+      <text x="1755" y="1000" font-size="23" font-weight="700">EMPLOYEE</text>
+      <text x="1755" y="1050"><tspan x="1755">- Select a target role and level.</tspan><tspan x="1755" dy="34">- View the target's competency</tspan><tspan x="1775" dy="31">metrics.</tspan><tspan x="1755" dy="34">- View the gap between the</tspan><tspan x="1775" dy="31">current profile and target.</tspan><tspan x="1755" dy="34">- Understand priority gaps.</tspan></text>
+      <rect x="1720" y="1630" width="635" height="430" rx="22" fill="#E6F5EE" stroke="#7AC7A5" stroke-width="3"/>
+      <text x="1755" y="1680" font-size="23" font-weight="700">MANAGER</text>
+      <text x="1755" y="1730"><tspan x="1755">Use target metrics and gap</tspan><tspan x="1755" dy="32">analysis to clarify the</tspan><tspan x="1755" dy="32">Employee's development</tspan><tspan x="1755" dy="32">direction.</tspan></text>
+      <rect x="1720" y="2090" width="635" height="540" rx="22" fill="#E7F3FB" stroke="#71B7E6" stroke-width="3"/>
+      <text x="1755" y="2140" font-size="23" font-weight="700">EN-PATH SYSTEM</text>
+      <text x="1755" y="2190"><tspan x="1755">- Compare the current profile</tspan><tspan x="1775" dy="31">with the target metrics.</tspan><tspan x="1755" dy="34">- Generate gap analysis.</tspan><tspan x="1755" dy="34">- Identify priority gaps.</tspan></text>
+
+      <rect x="2515" y="950" width="635" height="700" rx="22" fill="#FFF7CC" stroke="#FFD86A" stroke-width="3"/>
+      <text x="2550" y="1000" font-size="23" font-weight="700">EMPLOYEE</text>
+      <text x="2550" y="1050"><tspan x="2550">- Agree roadmap and next</tspan><tspan x="2570" dy="31">actions with the Manager.</tspan><tspan x="2550" dy="34">- Carry out actions through</tspan><tspan x="2570" dy="31">projects and day-to-day work.</tspan><tspan x="2550" dy="34">- At follow-up, revisit previous</tspan><tspan x="2570" dy="31">next-action statuses.</tspan><tspan x="2550" dy="34">- Jointly confirm statuses and</tspan><tspan x="2570" dy="31">agree subsequent actions.</tspan></text>
+      <rect x="2515" y="1680" width="635" height="800" rx="22" fill="#E6F5EE" stroke="#7AC7A5" stroke-width="3"/>
+      <text x="2550" y="1730" font-size="23" font-weight="700">MANAGER</text>
+      <text x="2550" y="1780"><tspan x="2550">- Agree roadmap and actions.</tspan><tspan x="2550" dy="34">- Track progress and coach.</tspan><tspan x="2550" dy="34">- At follow-up, review and</tspan><tspan x="2570" dy="31">confirm previous statuses.</tspan><tspan x="2550" dy="34">- Jointly agree next actions.</tspan><tspan x="2550" dy="34">- In MVP, manually map gaps</tspan><tspan x="2570" dy="31">to assignments, mentors,</tspan><tspan x="2570" dy="31">materials or courses.</tspan></text>
+      <rect x="2515" y="2510" width="635" height="520" rx="22" fill="#E7F3FB" stroke="#71B7E6" stroke-width="3"/>
+      <text x="2550" y="2560" font-size="23" font-weight="700">EN-PATH SYSTEM</text>
+      <text x="2550" y="2610"><tspan x="2550">Persist roadmap, next actions,</tspan><tspan x="2550" dy="32">current statuses and jointly</tspan><tspan x="2550" dy="32">confirmed history. Retain old</tspan><tspan x="2550" dy="32">actions for later comparison;</tspan><tspan x="2550" dy="32">store subsequent actions.</tspan></text>
+
+      <rect x="3310" y="950" width="635" height="540" rx="22" fill="#FFF7CC" stroke="#FFD86A" stroke-width="3"/>
+      <text x="3345" y="1000" font-size="23" font-weight="700">EMPLOYEE</text>
+      <text x="3345" y="1050"><tspan x="3345">- Record project contributions,</tspan><tspan x="3365" dy="31">evidence and rationale.</tspan><tspan x="3345" dy="34">- Submit a review request after</tspan><tspan x="3365" dy="31">a project or development event.</tspan></text>
+      <rect x="3310" y="1520" width="635" height="540" rx="22" fill="#E6F5EE" stroke="#7AC7A5" stroke-width="3"/>
+      <text x="3345" y="1570" font-size="23" font-weight="700">MANAGER</text>
+      <text x="3345" y="1620"><tspan x="3345">- View progress, feedback and</tspan><tspan x="3365" dy="31">evidence in roadmap context.</tspan><tspan x="3345" dy="34">- Receive the competency</tspan><tspan x="3365" dy="31">review request.</tspan></text>
+      <rect x="3310" y="2090" width="635" height="470" rx="22" fill="#E7F3FB" stroke="#71B7E6" stroke-width="3"/>
+      <text x="3345" y="2140" font-size="23" font-weight="700">EN-PATH SYSTEM</text>
+      <text x="3345" y="2190"><tspan x="3345">Store evidence and review</tspan><tspan x="3345" dy="32">requests in a centralized</tspan><tspan x="3345" dy="32">history.</tspan></text>
+
+      <rect x="4105" y="950" width="635" height="480" rx="22" fill="#E6F5EE" stroke="#7AC7A5" stroke-width="3"/>
+      <text x="4140" y="1000" font-size="23" font-weight="700">AUTHORIZED REVIEWER</text>
+      <text x="4140" y="1050"><tspan x="4140">- Assess competency using</tspan><tspan x="4160" dy="31">evidence and rationale.</tspan><tspan x="4140" dy="34">- Verify when sufficient</tspan><tspan x="4160" dy="31">evidence is available.</tspan></text>
+      <rect x="4105" y="1460" width="635" height="640" rx="22" fill="#E7F3FB" stroke="#71B7E6" stroke-width="3"/>
+      <text x="4140" y="1510" font-size="23" font-weight="700">EN-PATH SYSTEM</text>
+      <text x="4140" y="1560"><tspan x="4140">- Store verification results in</tspan><tspan x="4160" dy="31">immutable history.</tspan><tspan x="4140" dy="34">- Enforce least-privilege access.</tspan><tspan x="4140" dy="34">- Update competencies, gaps,</tspan><tspan x="4160" dy="31">readiness and roadmap.</tspan></text>
+      <rect x="4105" y="2130" width="635" height="330" rx="22" fill="#FFF7CC" stroke="#FFD86A" stroke-width="3"/>
+      <text x="4140" y="2180" font-size="23" font-weight="700">EMPLOYEE</text>
+      <text x="4140" y="2230"><tspan x="4140">View verified profile, readiness</tspan><tspan x="4140" dy="32">and updated next actions.</tspan></text>
+      <rect x="4105" y="2490" width="635" height="390" rx="22" fill="#E6F5EE" stroke="#7AC7A5" stroke-width="3"/>
+      <text x="4140" y="2540" font-size="23" font-weight="700">MANAGER</text>
+      <text x="4140" y="2590"><tspan x="4140">Continue coaching and adjust</tspan><tspan x="4140" dy="32">the roadmap from updated</tspan><tspan x="4140" dy="32">status.</tspan></text>
+
+      <rect x="4900" y="950" width="635" height="250" rx="22" fill="#EEF1F4" stroke="#63778A" stroke-width="3"/>
+      <text x="4935" y="1000" font-size="22" font-weight="700">SELECTED PRODUCT SCOPE</text>
+      <text x="4935" y="1050"><tspan x="4935">Profile export and publishing</tspan><tspan x="4935" dy="32">are not an optional branch.</tspan></text>
+      <rect x="4900" y="1230" width="635" height="650" rx="22" fill="#FFF7CC" stroke="#FFD86A" stroke-width="3"/>
+      <text x="4935" y="1280" font-size="23" font-weight="700">EMPLOYEE</text>
+      <text x="4935" y="1330"><tspan x="4935">- Export the career profile.</tspan><tspan x="4935" dy="34">- Publish or share it for</tspan><tspan x="4955" dy="31">interviews or client pitches.</tspan><tspan x="4935" dy="34">- Present personal info,</tspan><tspan x="4955" dy="31">work history and experience.</tspan></text>
+      <rect x="4900" y="1910" width="635" height="610" rx="22" fill="#E6F5EE" stroke="#7AC7A5" stroke-width="3"/>
+      <text x="4935" y="1960" font-size="23" font-weight="700">MANAGER</text>
+      <text x="4935" y="2010"><tspan x="4935">- Use Employee List, skills and</tspan><tspan x="4955" dy="31">gaps when staffing projects.</tspan><tspan x="4935" dy="34">- Use competency data when</tspan><tspan x="4955" dy="31">pitching to clients.</tspan></text>
+
+      <rect x="5695" y="950" width="635" height="510" rx="22" fill="#FFF0CC" stroke="#F5B84B" stroke-width="3" stroke-dasharray="12 9"/>
+      <text x="5730" y="1000" font-size="23" font-weight="700">HR ADMIN - DRAFT</text>
+      <text x="5730" y="1050"><tspan x="5730">- Track competency gaps by</tspan><tspan x="5750" dy="31">role and level.</tspan><tspan x="5730" dy="34">- Track progress against the</tspan><tspan x="5750" dy="31">published metrics.</tspan></text>
+      <rect x="5695" y="1490" width="635" height="620" rx="22" fill="#E6F5EE" stroke="#7AC7A5" stroke-width="3"/>
+      <text x="5730" y="1540" font-size="23" font-weight="700">MANAGER</text>
+      <text x="5730" y="1590"><tspan x="5730">- Maintain an up-to-date view</tspan><tspan x="5750" dy="31">of team capabilities and gaps.</tspan><tspan x="5730" dy="34">- Use retained roadmap, actions</tspan><tspan x="5750" dy="31">and confirmed statuses as</tspan><tspan x="5750" dy="31">follow-up context.</tspan></text>
+      <rect x="5695" y="2140" width="635" height="470" rx="22" fill="#FFF7CC" stroke="#FFD86A" stroke-width="3"/>
+      <text x="5730" y="2190" font-size="23" font-weight="700">EMPLOYEE</text>
+      <text x="5730" y="2240"><tspan x="5730">Continue the cycle:</tspan><tspan x="5730" dy="36">target - gap - roadmap/actions</tspan><tspan x="5730" dy="32">- follow-up - evidence - review.</tspan></text>
+    </g>
+
+    <text x="100" y="3235" fill="#17324D" font-size="40" font-weight="700">RELEASE SLICES</text>
+    <g fill="#17324D" font-size="20">
+      <rect x="100" y="3290" width="3080" height="620" rx="28" fill="#FFF4DA" stroke="#F5B84B" stroke-width="4"/>
+      <text x="150" y="3360" font-size="31" font-weight="700">SLICE 0 - FOUNDATION / PILOT</text>
+      <text x="150" y="3410" font-size="22" font-weight="700"><tspan x="150">Outcome: One career family has a sufficiently complete matrix and published</tspan><tspan x="150" dy="32">metrics to begin the pilot.</tspan></text>
+      <text x="150" y="3500"><tspan x="150">- HR Draft: set up roles, levels, matrices, career paths and publish metrics.</tspan><tspan x="150" dy="34">- System stores the shared standard and enforces least-privilege access.</tspan><tspan x="150" dy="34">- OPEN: HR Admin persona is not defined.</tspan><tspan x="150" dy="34">- OPEN: Source and process for the initial current profile are not defined.</tspan></text>
+
+      <rect x="3280" y="3290" width="3080" height="620" rx="28" fill="#EAF5EF" stroke="#7AC7A5" stroke-width="4"/>
+      <text x="3330" y="3360" font-size="31" font-weight="700">SLICE 1 - CAREER CLARITY + RETAINED ACTIONS</text>
+      <text x="3330" y="3410" font-size="22" font-weight="700"><tspan x="3330">Outcome: Employee has a target, gap analysis, first roadmap and persisted actions;</tspan><tspan x="3330" dy="32">Manager has basic team visibility.</tspan></text>
+      <text x="3330" y="3500"><tspan x="3330">- View current profile; select role/level target; generate and understand priority gaps.</tspan><tspan x="3330" dy="34">- Employee and Manager agree roadmap and next actions.</tspan><tspan x="3330" dy="34">- Retain actions, statuses and jointly confirmed history for later follow-up.</tspan><tspan x="3330" dy="34">- Employee executes actions; Manager views team skills and gaps.</tspan><tspan x="3330" dy="34">- HR Draft tracks basic gaps/progress; Manager maps learning manually.</tspan></text>
+
+      <rect x="100" y="3950" width="3080" height="700" rx="28" fill="#E7F3FB" stroke="#71B7E6" stroke-width="4"/>
+      <text x="150" y="4020" font-size="31" font-weight="700">SLICE 2 - FOLLOW-UP + EVIDENCE CLOSED LOOP</text>
+      <text x="150" y="4070" font-size="22" font-weight="700"><tspan x="150">Outcome: Previous actions are jointly revisited; verified project evidence updates</tspan><tspan x="150" dy="32">the competency profile and roadmap.</tspan></text>
+      <text x="150" y="4160"><tspan x="150">- Employee and Manager revisit prior actions, confirm statuses and agree next actions.</tspan><tspan x="150" dy="34">- System retains old actions for comparison and persists the confirmed follow-up.</tspan><tspan x="150" dy="34">- Employee records evidence/rationale and submits a review request.</tspan><tspan x="150" dy="34">- Manager reviews evidence in roadmap context; authorized reviewer verifies it.</tspan><tspan x="150" dy="34">- Immutable history; update competencies, gaps, readiness and roadmap.</tspan><tspan x="150" dy="34">- Employee and Manager view updated status and continue the cycle.</tspan></text>
+
+      <rect x="3280" y="3950" width="3080" height="700" rx="28" fill="#FFF0EC" stroke="#EE8374" stroke-width="4"/>
+      <text x="3330" y="4020" font-size="31" font-weight="700">SLICE 3 - PROFILE REUSE + PROJECT STAFFING</text>
+      <text x="3330" y="4070" font-size="22" font-weight="700"><tspan x="3330">Outcome: Updated competency data is reused for career opportunities and staffing</tspan><tspan x="3330" dy="32">decisions.</tspan></text>
+      <text x="3330" y="4160"><tspan x="3330">- Employee exports, publishes or shares a profile for interviews/client pitches.</tspan><tspan x="3330" dy="34">- Profile presents personal information, work history and experience.</tspan><tspan x="3330" dy="34">- Manager uses Employee List, current skills and gap analysis for staffing.</tspan><tspan x="3330" dy="34">- OPEN: Project skill requirements and systematic project fit are undefined.</tspan><tspan x="3330" dy="34">- OPEN: Public fields, privacy, access, expiry and revocation are undecided.</tspan></text>
+    </g>
+
+    <g fill="#17324D">
+      <rect x="100" y="4780" width="1680" height="1600" rx="30" fill="#EEF1F4" stroke="#63778A" stroke-width="4"/>
+      <text x="155" y="4860" font-size="31" font-weight="700">OUTSIDE CURRENT MVP</text>
+      <text x="155" y="4930" font-size="22"><tspan x="155">- Peer workflow</tspan><tspan x="155" dy="50">- Advanced organization-wide</tspan><tspan x="180" dy="32">analytics</tspan><tspan x="155" dy="50">- HRIS/LMS integrations</tspan><tspan x="155" dy="50">- Multiple career targets</tspan><tspan x="155" dy="50">- Competency metrics versioning</tspan><tspan x="155" dy="50">- AI-generated recommendations</tspan></text>
+      <rect x="155" y="5550" width="1570" height="700" rx="24" fill="#FFFFFF" stroke="#9AA8B4" stroke-width="3"/>
+      <text x="205" y="5620" font-size="24" font-weight="700">NON-ASSUMPTIONS</text>
+      <text x="205" y="5680" font-size="20"><tspan x="205">The map does not assume:</tspan><tspan x="205" dy="38">- Reminders or deadlines</tspan><tspan x="205" dy="38">- A user interface</tspan><tspan x="205" dy="38">- Notification channels</tspan><tspan x="205" dy="38">- An SLA</tspan></text>
+
+      <rect x="1840" y="4780" width="2850" height="1600" rx="30" fill="#FFF0EC" stroke="#EE8374" stroke-width="4"/>
+      <text x="1895" y="4860" font-size="31" font-weight="700">10 OPEN DECISIONS BEFORE EPICS / STORIES</text>
+      <g font-size="20">
+        <rect x="1895" y="4910" width="1335" height="235" rx="20" fill="#FFFFFF"/><text x="1930" y="4965"><tspan font-weight="700">1. Initial profile</tspan><tspan x="1930" dy="33">Source, creation process</tspan><tspan x="1930" dy="30">and verifier?</tspan></text>
+        <rect x="3260" y="4910" width="1375" height="235" rx="20" fill="#FFFFFF"/><text x="3295" y="4965"><tspan font-weight="700">2. Scoring</tspan><tspan x="3295" dy="33">Scoring and readiness</tspan><tspan x="3295" dy="30">formulas?</tspan></text>
+        <rect x="1895" y="5170" width="1335" height="235" rx="20" fill="#FFFFFF"/><text x="1930" y="5225"><tspan font-weight="700">3. Reviewer</tspan><tspan x="1930" dy="33">How is an authorized</tspan><tspan x="1930" dy="30">reviewer assigned?</tspan></text>
+        <rect x="3260" y="5170" width="1375" height="235" rx="20" fill="#FFFFFF"/><text x="3295" y="5225"><tspan font-weight="700">4. Evidence failure</tspan><tspan x="3295" dy="33">Rejection, disputes and</tspan><tspan x="3295" dy="30">escalations?</tspan></text>
+        <rect x="1895" y="5430" width="1335" height="235" rx="20" fill="#FFFFFF"/><text x="1930" y="5485"><tspan font-weight="700">5. Project fit</tspan><tspan x="1930" dy="33">Required skills and</tspan><tspan x="1930" dy="30">assessment method?</tspan></text>
+        <rect x="3260" y="5430" width="1375" height="235" rx="20" fill="#FFFFFF"/><text x="3295" y="5485"><tspan font-weight="700">6. Public profile</tspan><tspan x="3295" dy="33">Fields, audience, expiry</tspan><tspan x="3295" dy="30">and revocation?</tspan></text>
+        <rect x="1895" y="5690" width="1335" height="235" rx="20" fill="#FFFFFF"/><text x="1930" y="5745"><tspan font-weight="700">7. Public gaps</tspan><tspan x="1930" dy="33">Should skill gaps appear</tspan><tspan x="1930" dy="30">in a public profile?</tspan></text>
+        <rect x="3260" y="5690" width="1375" height="235" rx="20" fill="#FFFFFF"/><text x="3295" y="5745"><tspan font-weight="700">8. Action statuses</tspan><tspan x="3295" dy="33">Status set and joint</tspan><tspan x="3295" dy="30">confirmation method?</tspan></text>
+        <rect x="1895" y="5950" width="1335" height="235" rx="20" fill="#FFFFFF"/><text x="1930" y="6005"><tspan font-weight="700">9. Operations</tspan><tspan x="1930" dy="33">SLA, notification channel</tspan><tspan x="1930" dy="30">and update cadence?</tspan></text>
+        <rect x="3260" y="5950" width="1375" height="235" rx="20" fill="#FFFFFF"/><text x="3295" y="6005"><tspan font-weight="700">10. HR Admin</tspan><tspan x="3295" dy="33">Who is the specific</tspan><tspan x="3295" dy="30">HR Admin persona?</tspan></text>
+      </g>
+
+      <rect x="4730" y="4780" width="1630" height="1600" rx="30" fill="#E8F0F7" stroke="#17324D" stroke-width="4"/>
+      <text x="4785" y="4860" font-size="31" font-weight="700">BMAD PREREQUISITES</text>
+      <text x="4785" y="4930" font-size="21"><tspan x="4785">Required before this map can</tspan><tspan x="4785" dy="32">become implementation-ready</tspan><tspan x="4785" dy="32">epics and stories:</tspan></text>
+      <rect x="4785" y="5050" width="1520" height="260" rx="22" fill="#FFFFFF"/>
+      <text x="4825" y="5110" font-size="22" font-weight="700">VALIDATED PRD</text>
+      <text x="4825" y="5160" font-size="20"><tspan x="4825">Functional Requirements</tspan><tspan x="4825" dy="32">and Non-Functional Requirements</tspan></text>
+      <rect x="4785" y="5340" width="1520" height="300" rx="22" fill="#FFFFFF"/>
+      <text x="4825" y="5400" font-size="22" font-weight="700">ARCHITECTURE</text>
+      <text x="4825" y="5450" font-size="20"><tspan x="4825">Data, security, API and</tspan><tspan x="4825" dy="32">integration decisions</tspan></text>
+      <rect x="4785" y="5670" width="1520" height="260" rx="22" fill="#FFFFFF"/>
+      <text x="4825" y="5730" font-size="22" font-weight="700">UX DESIGN CONTRACT</text>
+      <text x="4825" y="5780" font-size="20"><tspan x="4825">Complete UX contract if the</tspan><tspan x="4825" dy="32">product includes a user interface</tspan></text>
+      <rect x="4785" y="5970" width="1520" height="300" rx="22" fill="#17324D"/>
+      <text x="4825" y="6035" fill="#FFFFFF" font-size="22" font-weight="700">UNTIL THESE ARE VALIDATED</text>
+      <text x="4825" y="6085" fill="#FFFFFF" font-size="20"><tspan x="4825">Release slices remain discovery</tspan><tspan x="4825" dy="32">proposals, not implementation</tspan><tspan x="4825" dy="32">commitments.</tspan></text>
+    </g>
+  </g>
+</svg>

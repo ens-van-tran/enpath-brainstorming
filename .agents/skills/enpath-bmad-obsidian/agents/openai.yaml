@@ -1,0 +1,4 @@
+interface:
+  display_name: "EnPath BMAD Vault"
+  short_description: "Archive BMAD artifacts in Obsidian"
+  default_prompt: "Use $enpath-bmad-obsidian to sync the current En-Path BMAD artifact to the Obsidian project vault."
