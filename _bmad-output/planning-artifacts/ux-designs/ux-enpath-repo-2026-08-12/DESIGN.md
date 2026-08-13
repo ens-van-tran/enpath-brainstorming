@@ -1,6 +1,6 @@
 ---
-name: En-Path Policy Desk
-description: A precise, evidence-heavy visual system for HR and L&D competency governance.
+name: En-Path Operations Console
+description: A compact, task-forward visual system for HR and L&D competency governance.
 status: final
 created: 2026-08-12
 updated: 2026-08-13
@@ -13,73 +13,64 @@ sources:
   - Projects/En-Path/docs/PVB.md
   - Projects/En-Path/Catchup business meeting note.md
 colors:
-  background: '#F3F4F1'
-  surface: '#FCFCFA'
-  surface-subtle: '#E9ECE9'
-  surface-strong: '#DDE3DF'
-  foreground: '#202A2A'
-  foreground-muted: '#63706C'
-  border: '#D5DCD8'
-  border-strong: '#95A39D'
-  primary: '#314D45'
-  primary-hover: '#263E38'
+  background: '#F4F7F9'
+  surface: '#FFFFFF'
+  surface-subtle: '#E9F0F4'
+  foreground: '#172A39'
+  foreground-muted: '#607585'
+  border: '#D8E2E8'
+  border-strong: '#91A9B8'
+  sidebar: '#123B5D'
+  sidebar-active: '#245371'
+  sidebar-foreground: '#D5E3EC'
+  primary: '#176A78'
+  primary-hover: '#105966'
   on-primary: '#FFFFFF'
-  primary-container: '#DCE5E1'
-  on-primary-container: '#263B35'
-  info: '#315F78'
-  info-container: '#DDEAF0'
-  warning: '#7F5C11'
-  warning-container: '#EFE7D3'
-  danger: '#913D35'
-  danger-container: '#F0DEDB'
-  success: '#356548'
-  success-container: '#DDEBDF'
-  focus-ring: '#557E70'
-  chart-recorded: '#4E6D63'
-  chart-employee-reference: '#B27A45'
-  chart-expected: '#315F78'
-  chart-active-profile: '#4E6D63'
-  chart-proposed-profile: '#315F78'
-  chart-unknown: '#CBD1CE'
+  primary-container: '#D9ECED'
+  info: '#23526F'
+  info-container: '#E0EDF5'
+  warning: '#986000'
+  warning-container: '#FFF0CF'
+  danger: '#B34438'
+  danger-container: '#FCE4E0'
+  success: '#24756F'
+  success-container: '#DCEEEA'
+  focus-ring: '#2D8791'
+  chart-recorded: '#176A78'
+  chart-employee-reference: '#C77A35'
+  chart-expected: '#123B5D'
+  chart-unknown: '#C8D4DB'
 typography:
   display:
-    fontFamily: 'Avenir Next, Gill Sans, Calibri, sans-serif'
-    fontSize: 28px
-    fontWeight: '650'
+    fontFamily: 'Segoe UI, Helvetica Neue, Arial, sans-serif'
+    fontSize: 26px
+    fontWeight: '700'
     lineHeight: '1.15'
-    letterSpacing: -0.03em
+    letterSpacing: -0.02em
   heading:
-    fontFamily: 'Avenir Next, Gill Sans, Calibri, sans-serif'
-    fontSize: 18px
-    fontWeight: '650'
-    lineHeight: '1.3'
-    letterSpacing: -0.01em
+    fontFamily: 'Segoe UI, Helvetica Neue, Arial, sans-serif'
+    fontSize: 17px
+    fontWeight: '700'
+    lineHeight: '1.25'
   body:
-    fontFamily: 'Avenir Next, Gill Sans, Calibri, sans-serif'
-    fontSize: 14px
+    fontFamily: 'Segoe UI, Helvetica Neue, Arial, sans-serif'
+    fontSize: 13px
     fontWeight: '400'
-    lineHeight: '1.5'
+    lineHeight: '1.45'
   label:
-    fontFamily: 'Avenir Next, Gill Sans, Calibri, sans-serif'
-    fontSize: 12px
-    fontWeight: '650'
-    lineHeight: '1.35'
-    letterSpacing: 0.01em
-  caption:
-    fontFamily: 'Avenir Next, Gill Sans, Calibri, sans-serif'
-    fontSize: 11px
-    fontWeight: '450'
-    lineHeight: '1.4'
+    fontFamily: 'Segoe UI, Helvetica Neue, Arial, sans-serif'
+    fontSize: 10px
+    fontWeight: '700'
+    lineHeight: '1.3'
   data:
     fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace'
     fontSize: 12px
     fontWeight: '550'
     lineHeight: '1.4'
 rounded:
-  sm: 2px
-  md: 4px
-  lg: 6px
-  full: 9999px
+  sm: 4px
+  md: 5px
+  lg: 7px
 spacing:
   '1': 4px
   '2': 8px
@@ -87,63 +78,40 @@ spacing:
   '4': 16px
   '5': 20px
   '6': 24px
-  '8': 32px
-  '10': 40px
-  sidebar: 240px
-  content-max: 1440px
+  sidebar: 220px
+  content-max: 1480px
 components:
   app-shell:
     background: '{colors.background}'
-    sidebar-background: '{colors.surface}'
+    sidebar-background: '{colors.sidebar}'
+    sidebar-foreground: '{colors.sidebar-foreground}'
     sidebar-width: '{spacing.sidebar}'
-    border: '{colors.border}'
-  sidebar-nav:
-    active-background: '{colors.primary-container}'
-    active-foreground: '{colors.on-primary-container}'
-    radius: '{rounded.sm}'
   page-header:
     foreground: '{colors.foreground}'
-    metadata-foreground: '{colors.foreground-muted}'
   button-primary:
     background: '{colors.primary}'
     hover-background: '{colors.primary-hover}'
     foreground: '{colors.on-primary}'
-    radius: '{rounded.sm}'
-  governance-card:
+    radius: '{rounded.md}'
+  panel:
     background: '{colors.surface}'
     border: '{colors.border}'
-    radius: '{rounded.md}'
-  status-badge:
-    radius: '{rounded.full}'
-    label-font: '{typography.caption.fontSize}'
+    radius: '{rounded.lg}'
   data-table:
     background: '{colors.surface}'
     header-background: '{colors.surface-subtle}'
     row-border: '{colors.border}'
-  validation-panel:
-    background: '{colors.danger-container}'
-    foreground: '{colors.danger}'
-    accent-border: '{colors.danger}'
-    radius: '{rounded.sm}'
+  tabs:
+    background: '{colors.surface-subtle}'
+    active-background: '{colors.surface}'
+    active-foreground: '{colors.primary}'
+  competency-drawer:
+    background: '{colors.surface}'
+    border: '{colors.border}'
   pool-choice:
     background: '{colors.surface}'
     selected-background: '{colors.primary-container}'
     border: '{colors.border}'
-  category-assignment:
-    background: '{colors.surface}'
-    border: '{colors.border}'
-  role-framework-composer:
-    background: '{colors.surface}'
-    category-background: '{colors.surface-subtle}'
-    selected-background: '{colors.primary-container}'
-  level-behavior-grid:
-    background: '{colors.surface}'
-    header-background: '{colors.surface-subtle}'
-    border: '{colors.border}'
-  stepper:
-    active: '{colors.primary}'
-    complete: '{colors.success}'
-    pending: '{colors.border-strong}'
   target-fill-bar:
     outline: '{colors.chart-expected}'
     recorded-fill: '{colors.chart-recorded}'
@@ -153,93 +121,78 @@ components:
     expected-outline: '{colors.chart-expected}'
     recorded-fill: '{colors.chart-recorded}'
     employee-reference-line: '{colors.chart-employee-reference}'
-    active-profile-fill: '{colors.chart-active-profile}'
-    proposed-profile-outline: '{colors.chart-proposed-profile}'
-  chart-panel:
-    background: '{colors.surface}'
-    border: '{colors.border}'
-    radius: '{rounded.md}'
-  advice-panel:
-    background: '{colors.info-container}'
-    foreground: '{colors.info}'
-    radius: '{rounded.sm}'
-  side-panel:
-    background: '{colors.surface}'
-    border: '{colors.border}'
-    radius: '{rounded.lg}'
 ---
 
 ## Brand & Style
 
-En-Path Policy Desk is an internal governance tool, not a consumer dashboard. It should feel accountable, calm, and inspectable. Alignment is strict, density is purposeful, and every important result exposes its basis: scope, framework version, recorded Manager Score, reference-only Employee Score, coverage, and history.
+En-Path is an internal HR and L&D work surface. The Operations Console direction is compact, precise, and easy to scan: a navy sidebar, blue-gray canvas, white panels, teal actions, readable sans-serif typography, and minimal decoration.
 
-Friendliness comes from plain language and clear recovery paths. The interface does not soften governance with decoration; it reduces anxiety by explaining what failed, who owns the correction, and what happens next.
+The prototype intentionally carries less explanatory copy. A page header contains its title and at most one primary action; the interaction itself communicates the task. Governance remains visible through ownership, status, scoped Manager assignments, Public template state, and the Audit Log.
 
-The selected visual direction is illustrated by `.working/directions-hr-admin.html` under **D - Policy Desk**. The final interactive visual reference is [HR Admin prototype](mockups/hr-admin-prototype.html), covering the application shell, competency authoring, governance review, assessment generation, and gap analytics. This design contract wins on conflict with either artifact.
+The final interactive visual reference is [HR Admin prototype](mockups/hr-admin-prototype.html). This design contract wins on conflict with the mock.
 
 ## Colors
 
-- **Background** `{colors.background}` is a cool neutral canvas that separates the application from spreadsheet-white without feeling decorative.
-- **Surface** `{colors.surface}` holds registers, builders, and analytical panels.
-- **Primary** `{colors.primary}` marks the current navigation context and consequential primary actions such as Generate, Submit, and Activate.
-- **Danger**, **warning**, **success**, and **info** always appear with a text label or icon. Color never carries state alone.
-- **Recorded Manager Score** `{colors.chart-recorded}` fills the expected-score outline. **Employee reference** `{colors.chart-employee-reference}` is a dashed secondary series and never appears as the system result.
-- **Framework Review** uses `{colors.chart-active-profile}` for the active expected profile and `{colors.chart-proposed-profile}` for the proposed expected profile. These colors never imply assessment results.
-- **Unknown** is neutral gray and must be labeled `Unknown` or `Insufficient data`; it never resembles a zero score.
-
-Load-bearing contrast targets are WCAG 2.2 AA: body text and controls at least 4.5:1; large text and non-text UI boundaries at least 3:1. The target outline must remain visible against both the background and actual fill.
+- `{colors.sidebar}` anchors global navigation; `{colors.sidebar-active}` marks the current route.
+- `{colors.primary}` marks committed actions, selected items, and recorded Manager data.
+- `{colors.chart-expected}` represents the expected skill profile.
+- `{colors.chart-recorded}` represents Manager Score, the recorded system result.
+- `{colors.chart-employee-reference}` represents Employee Score as a dashed reference only.
+- `{colors.chart-unknown}` represents missing Manager data and must be labeled `Unknown`.
+- Status colors always include a visible text label such as `Draft`, `Public`, `Active`, or `Unknown`.
 
 ## Typography
 
-The local font stack keeps the standalone prototype operational without a network connection. `{typography.display}` is reserved for page titles and key totals. `{typography.heading}` names surfaces and panels. `{typography.body}` carries explanations. `{typography.data}` is used for version IDs, rule IDs, scores, dates, gap expressions, and audit values.
-
-Use sentence case. Avoid all-caps except short register labels and stable identifiers. Numeric values use tabular alignment where supported.
+Use the local Segoe UI-led stack so the standalone HTML remains readable without network dependencies. Sentence case is standard. Compact table headers may use uppercase and letter spacing. Numeric values use tabular alignment where available.
 
 ## Layout & Spacing
 
-Desktop web is the primary form factor. The persistent `{spacing.sidebar}` sidebar anchors the navigation. Main content uses a maximum width of `{spacing.content-max}`, with a 12-column grid and 24px gutters. Competency authoring uses editable level behavior and advice grids. Role Framework composition groups selectable Pool competencies inside each assigned Category.
+Desktop web is the primary form factor. A persistent 220px sidebar groups Overview, Framework, Reports, Analytics, and Governance. Content uses compact panels and 12px gaps.
 
-Registers and analytics favor dense tables and aligned panels. Every dense surface begins with a page header that states the current scope and comparison basis before showing numbers.
+The Competencies surface uses tabs to keep Pool and Categories on one route. Creating a competency opens a right-side drawer so the Pool remains visible behind the task. Framework Templates use a narrow selection column and a wider composition/radar work area; Categories are collapsible to reduce vertical density.
 
 ## Elevation & Depth
 
-Hierarchy comes from tonal layering and borders, not floating cards. `{components.governance-card}` uses no default shadow. Side panels and confirmation dialogs may use one restrained shadow to establish modal depth. Never stack more than one modal layer.
+Hierarchy comes from color, borders, and spacing rather than stacked shadows. Panels have no default shadow. The competency drawer and confirmation dialog use one restrained shadow to establish modal depth. Never open more than one modal layer.
 
 ## Shapes
 
-Corners are square to subtly rounded: `{rounded.sm}` for controls and states, `{rounded.md}` for panels, `{rounded.lg}` only for side panels. Pills are reserved for compact status badges. Large playful rounded cards are outside the Policy Desk language.
+Use 4-7px corners for controls and panels. Status badges may be compact rounded labels. Avoid oversized cards, playful pills, gradients, glass effects, and decorative illustration.
 
 ## Components
 
-- **App shell:** Persistent sidebar plus scoped content header. Sidebar groups are Overview, Framework, Assessment, Analytics, and Governance.
-- **Sidebar nav:** Active item uses `{components.sidebar-nav.active-background}` and a strong text label. Parent groups remain expanded for the active route.
-- **Page header:** Title, one-sentence purpose, scope chips, framework/version metadata, and one primary action maximum.
-- **Button primary:** Used for the next committed step. Secondary actions use neutral outline buttons; destructive actions use danger styling and explicit labels.
-- **Governance card:** Bounded summary or work item with title, metadata, accountable owner, and state.
-- **Status badge:** Always pairs color with a word such as `Draft`, `In review`, `Changes requested`, `Active`, `Superseded`, `Unknown`, or `Complete`.
-- **Data table:** Sticky header on long registers, aligned numeric columns, full-row focus state, and explicit empty/loading/error treatment.
-- **Validation panel:** Lists blocking and advisory rules separately. Each finding includes rule ID, current value, expected rule, content owner, and next action.
-- **Competency Pool choice:** Shows competency name and description as separate text lines. Selection is explicit, keyboard-operable, and remains visually subordinate to the Category heading.
-- **Category assignment:** Shows the Category definition together with its Manager, team, and role scope. Category is a framework grouping and assignment boundary, not a competency taxonomy.
-- **Role Framework composer:** Groups assigned Categories and lets HR or the assigned Manager pick relevant competencies from the shared Pool. Omitted Pool competencies remain available elsewhere and are not shown as errors.
-- **Level behavior grid:** Columns represent the shared Level Model; rows capture competency-specific behavior descriptions and improvement advice for each level. Empty required cells are visibly incomplete.
-- **Stepper:** Shows authoring/review/generation progression. Completed steps remain inspectable.
-- **Target fill bar:** The outline represents Expected Score; Manager Score fills the outline because it is the recorded system score. Employee Score may appear only as a labeled reference marker. Never substitute Employee Score when Manager Score is missing.
-- **Radar chart:** Team and member analytics show Expected, recorded Manager, and dashed Employee-reference series. Framework Review instead compares active expected and proposed expected profiles. Every radar includes a numeric/table equivalent.
-- **Chart panel:** Always states role/level, framework version, assessment date, Manager-score coverage, and aggregation method. Includes a numeric/table equivalent.
-- **Advice panel:** Shows HR/Manager-configured guidance and its competency source. It is not presented as AI-generated.
-- **Side panel:** Used for member or competency drill-down without losing analytical context. It exposes a stable close action and returns focus to the trigger.
+- **App shell:** Persistent sidebar and content area. Framework Templates belongs under Governance.
+- **Page header:** Page title plus at most one primary action group. No eyebrow, breadcrumb repetition, or descriptive paragraph.
+- **Tabs:** Pool and Categories share the Competencies route. The selected tab remains visually and programmatically explicit.
+- **Competency Pool table:** Shows competency name, each shared level as an explicit badge, and status. Do not show competency description or a summarized `Level coverage` field.
+- **Competency drawer:** Creates a competency with a name, behavior, and improvement advice for each active shared level. Validation keeps incomplete content in the drawer.
+- **Competency editor:** Shows behavior and advice as two editable rows across the shared levels.
+- **Competency editor:** Selecting a Pool row opens its behavior-by-level grid on the same surface.
+- **Category register:** Shows a Category and every assigned Role Manager scope. Category assignment supports multiple active Managers.
+- **Framework Template composer:** Lets HR or an assigned Manager pick Pool competencies inside collapsible Categories. A template is saved as Draft or made Public directly.
+- **Template radar:** Shows the expected competency profile and an adjacent numeric equivalent.
+- **Role Manager register:** Shows Employee identity, team/role scope, effective date, status, and revoke action.
+- **Assessment Reports table:** Reports on existing assessment activity; it does not launch or generate an assessment.
+- **Team member list:** The full row is the inspection trigger. Do not add a separate Inspect button.
+- **Company insight lists:** Show up to five strongest and five weakest known competencies for the selected team.
+- **Gap charts:** Team and member radars show Expected, recorded Manager, and Employee-reference series with numeric tables. Team trend adds a dashed six-month-prior Manager series.
+- **Prototype fixtures:** Use anonymous labels such as `Employee 101`, `Member 01`, and `Manager - Platform`; never reuse names or identities from persona/interview research.
+- **Audit Log:** Searchable event register and export action. It is the governance record; there is no separate Version History page.
 
 ## Do's and Don'ts
 
 | Do | Don't |
 |---|---|
-| State scope, framework version, assessment date, Manager-score coverage, and comparison basis near every analytical result | Show an unexplained score or chart |
-| Explain validation failures with rule, owner, and recovery action | Use generic `Invalid input` messages |
-| Label `Unknown` separately from shortfall | Convert missing assessment data to zero |
-| Label Employee Score as `reference` wherever it appears | Blend Employee and Manager scores or call Employee Score the recorded result |
-| Use restrained neutral surfaces and strict alignment | Use decorative gradients, glass effects, or playful illustration |
-| Keep HR and Manager ownership visible | Let HR appear to silently edit Manager-owned content |
-| Show active and proposed expected profiles in Framework Review | Reuse assessment-score language for framework-version comparison |
-| Show configured advice provenance | Present rule-based advice as generated intelligence |
-| Use labels and icons with semantic colors | Rely on red/green alone |
+| Keep pages focused on title, primary action, and task content | Add descriptions that repeat the page title |
+| Show Pool and Categories as tabs on one surface | Split them into separate navigation routes |
+| Show every competency level explicitly | Show a vague `Level coverage` summary |
+| Create competency in a right drawer | Replace the Pool with a separate creation page |
+| Support multiple Manager assignments per Category | Treat Category assignment as single-select |
+| Make a valid template Public directly | Add a separate Framework Review queue |
+| Include expected-profile radar in Framework Templates | Hide the expected profile in text-only metadata |
+| Collapse template Categories when they are not being edited | Force every Category to remain expanded |
+| Show team strengths, weaknesses, and six-month movement | Show only one current Average Gap |
+| Keep Assessment as reports only | Include a Generate Assessment action |
+| Open member detail by clicking the row | Add a redundant Inspect button |
+| Label Employee Score as reference-only | Blend Employee and Manager scores |
+| Mark missing Manager Score as `Unknown` | Convert missing data to zero |

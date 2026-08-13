@@ -5,7 +5,7 @@ status: final
 source_path: _bmad-output/planning-artifacts/pvb-product-canvas-persona-alignment-review.md
 synced_at: 2026-08-10T21:19:31+07:00
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-08-13
 ---
 
 # BMAD Alignment Review - PVB, Product Canvas, Personas and Interview Evidence
@@ -107,3 +107,22 @@ Có thể tiếp tục dùng bộ tài liệu hiện tại để định hướn
 - Product Canvas: **Cần chỉnh sửa** để đưa trust/versioning vào MVP, tách performance khỏi competency và xác định action lifecycle.
 - Persona: **Cần tái cấu trúc** dựa trên interview evidence; hiện tại mới bao phủ một phần Employee và Manager, chưa bao phủ HR/Admin.
 - Interview evidence: **Đủ để sửa vòng đầu**, nhưng vẫn cần thêm HR/Admin interview và validation cho exportable profile, event-based review adoption, privacy và metrics.
+
+## UX reconciliation update - 2026-08-13
+
+Prototype HR Admin và hai UX spine đã ghi nhận các quyết định mới sau. Các quyết định này thay thế mô hình cũ trong phạm vi UX, nhưng PVB, Product Canvas, Persona và journey nguồn vẫn cần một vòng cập nhật đồng thời trước implementation planning.
+
+- Thay `Competency Type -> Manager tạo competency` bằng `HR-managed Competency Pool -> Category -> scoped Role Manager -> Role Framework`.
+- HR có thể gán một Employee đang active thành Manager cho một role và team cụ thể. Quyền này chỉ cho phép compose/submit Role Framework trong scope; account/global-role administration vẫn thuộc Super Admin.
+- Framework được activate liên tục, không publish theo performance-review period. Assessment snapshot framework đang active khi được generate.
+- Employee Score chỉ là reference; Manager Score là recorded system score.
+- `Gap = Expected Score - Manager Score`; thiếu Manager Score thì kết quả là `Unknown`.
+- Improvement advice được cấu hình theo từng competency level.
+- Framework Review, team analytics và member analytics có radar chart cùng numeric equivalent.
+
+### Tension còn lại với source documents
+
+- Product Canvas vẫn mô tả HR “publish” competency metrics theo role/level và chưa có scoped Role Manager delegation.
+- HR/Manager journeys vẫn dùng Global/Team Competency, Formula Rules, Matrix lifecycle và publish/schedule theo kỳ.
+- Super Admin story map hiện sở hữu basic Manager role assignment. UX mới cần phân biệt rõ `global/basic role administration` của Super Admin với `business-scope Role Manager delegation` của HR để tránh hai nơi cùng cấp một quyền không rõ precedence.
+- Persona vẫn thiếu HR/Admin interview evidence để validate workload, policy approval, access-conflict handling và nhu cầu nhiều Manager cùng scope.

@@ -6,244 +6,253 @@ updated: 2026-08-13
 sources:
   - _bmad-output/planning-artifacts/pvb-product-canvas-persona-alignment-review.md
   - Projects/En-Path/docs/As-is Journey Map - HR Admin.md
-  - Projects/En-Path/docs/Customer Journey Maps - Persona Views.md
-  - Projects/En-Path/docs/Customer Journey Maps.md
+  - Projects/En-Path/docs/Customer Journey Map - HR Admin.md
+  - Projects/En-Path/docs/Customer Journey Map - Manager.md
   - Projects/En-Path/docs/Product Canvas.md
   - Projects/En-Path/docs/PVB.md
-  - Projects/En-Path/Catchup business meeting note.md
+  - Projects/En-Path/docs/Persona.md
 design: DESIGN.md
 ---
 
 # En-Path HR Admin Experience
 
-`DESIGN.md` owns visual identity. This file owns information architecture, behavior, states, interactions, accessibility, and journeys. These two UX contracts win on conflict with mocks or working artifacts.
+`DESIGN.md` owns visual identity. This file owns information architecture, behavior, states, interactions, accessibility, and journeys. These UX contracts win on conflict with mocks.
 
 ## Foundation
 
-Desktop-first internal enterprise web represented by a standalone HTML prototype that can run locally without network dependencies. It stores demo changes in the browser's local storage; this is prototype persistence, not a production offline-editing contract. The primary actor is Mai Thy, an HR/L&D owner responsible for governing the organization's competency model, preparing assessment cycles, and analyzing employee development gaps.
+En-Path is a desktop-first internal web prototype for HR Admin competency governance and skill-gap reporting. The primary actor is the role-based HR Admin, who maintains reusable competencies, delegates scoped Manager responsibility, organizes competencies into role templates, and analyzes existing assessment results.
 
-The final interactive reference is [HR Admin prototype](mockups/hr-admin-prototype.html). It covers every primary navigation surface, live form validation and calculation, Manager correction and HR publication, assessment generation, member/team gap analysis, session version history, and audit events. This experience contract wins if prototype behavior conflicts with it.
+Managers may compose a template only within their assigned team, role, and Category scopes. HR may also compose templates and is responsible for making the approved result Public. Employee self-assessment remains reference evidence; Manager Score is the result recorded by the system.
 
-The prototype tests a discovery hypothesis, not a validated HR Admin workflow. HR/Admin research is still incomplete. User and access administration belong to Super Admin and remain outside this experience.
+The final interactive reference is [HR Admin prototype](mockups/hr-admin-prototype.html). The actor/system exchange is documented in [HR Admin sequence diagram](hr-admin-sequence-diagram.md).
 
-### Domain model used by the experience
+### Domain model
 
 ```text
 Shared Level Model
-  -> Competency Type
-    -> Global or Team Competency
-      -> Team + Role + Level Matrix + Version
-        -> Employee + Manager Assessment
-          -> Weighted Actual Score
-            -> Member and Team Gap Analytics
+  -> Competency Pool
+  -> Category
+    -> one or more Role Manager scopes
+      -> Framework Template
+        -> Draft or Public
+          -> Assessment Reports
+            -> Manager Score (recorded)
+            -> Employee Score (reference)
+              -> Gap analytics
 ```
 
-- HR Admin defines the Shared Level Model, Competency Types, Global Competencies, and company-wide Formula Rules.
-- HR Admin assigns Competency Types to Managers within an approved team/role scope.
-- Managers author Team Competencies under assigned types and submit matrices by Team + Role + Level.
-- HR Admin may also author competencies directly.
-- HR Admin validates, requests changes, schedules, or publishes matrices. HR does not silently edit Manager-owned content.
+- HR maintains one flat Competency Pool. A competency is not permanently classified by a type.
+- HR defines a shared three- or five-level model.
+- Every competency has a behavior and improvement advice for each active shared level.
+- HR creates Categories and assigns each Category to one or more active Role Manager scopes.
+- HR or an assigned Manager selects relevant Pool competencies within each Category to compose a Framework Template.
+- A valid template moves directly from Draft to Public; there is no separate Framework Review surface.
+- The HR prototype reports assessment activity but does not generate assessments.
+- Audit Log records consequential actions. There is no separate Version History route.
+
+### Recorded score and gap
+
+```text
+Recorded Score = Manager Score
+Gap = Expected Score - Manager Score
+```
+
+Employee Score is reference-only. It may appear beside Manager Score to expose perception differences, but it never changes the recorded score, gap, ranking, or aggregation.
+
+If Manager Score is missing, the result is `Unknown` even when Employee Score exists. Average Gap and rankings exclude `Unknown` and expose Manager-score coverage.
 
 ## Information Architecture
 
 | Group | Surface | Purpose |
 |---|---|---|
-| Overview | Overview | Entry surface for matrix reviews, assessment readiness, validation blocks, and team gap attention |
-| Framework | Competency Types | Create taxonomy; assign type authoring scope to Managers |
-| Framework | Competencies | Search and manage HR- and Manager-authored competencies by type, scope, owner, mode, and state |
-| Framework | Competency Builder | Define description, owner/scope, assessment mode, shared-level behaviors or weighted criteria, and improvement advice |
-| Framework | Level Model | Define one organization-wide three- or five-level vocabulary used by every competency |
-| Framework | Formula Rules | Configure source weights, point calculations, gap convention, validation, and live examples |
-| Framework | Matrix Reviews | Review Manager submissions, validation findings, version differences, effective dates, and publication state |
-| Assessment | Assessment Cycles | Track participant coverage and Employee/Manager completion states |
-| Assessment | Generate Assessment | Select team and members, preview mixed-mode assessment, confirm framework snapshot, and generate |
-| Analytics | Company Gaps | Rank teams by overall Average Gap; compare detail only on Global Competencies |
-| Analytics | Team Gaps | Rank assessed members by Average Gap and inspect strengths, weaknesses, coverage, and competency drivers |
-| Analytics | Member Insight | Explain Self, Manager, Actual, Expected, Gap, source weighting, and configured improvement guidance |
-| Governance | Version History | Inspect Draft -> Scheduled -> Active -> Superseded -> Archived framework history |
-| Governance | Audit Log | Inspect accountable changes, before/after values, actor, reason, and timestamp |
+| Overview | Overview | Show competency, Category, Public-template, and highest-team-gap summaries |
+| Framework | Competencies | Manage the Pool and Categories through two tabs; create and edit competency behaviors |
+| Framework | Level Model | Define the shared three- or five-level vocabulary |
+| Reports | Assessment Reports | View existing assessment completion and template context |
+| Analytics | Company Gaps | Compare team Average Gap and coverage; inspect top strengths and weaknesses for a selected team |
+| Analytics | Team Gaps | Inspect team/member radars, competency-level scores, and current versus six-month-prior team results |
+| Governance | Framework Templates | Compose templates, view expected-profile radar, save Draft, or make Public |
+| Governance | Role Managers | Assign or revoke scoped Manager responsibility |
+| Governance | Audit Log | Search and export governance events |
 
-Persistent desktop navigation follows this grouping. Competency Type assignment lives within Competency Types; there is no access-management module.
+Nine routes are in scope. Competency Pool and Categories are tabs, not separate routes. Generate Assessment, Framework Reviews, and Version History are out of scope.
 
 ## Voice and Tone
 
-Use plain, accountable language. State what happened, why, who owns the next action, and what data was used.
-
-When introducing a specialist product or UX term to a non-specialist audience, add a short plain-language explanation in parentheses on first use. Do not repeatedly explain the same term within one surface.
-
 | Do | Don't |
 |---|---|
-| `Weights total 110%. The Manager must reduce them to 100% before publication.` | `Invalid configuration.` |
-| `Unknown - Manager assessment is incomplete.` | `Score: 0` |
-| `Ready to publish on 1 September 2026.` | `Looks good!` |
-| `Advice configured by HR/L&D for Communication.` | `AI suggestion` |
-| `Actual Score uses Employee 30% and Manager 70%.` | `Combined score` |
+| `Make this template public?` | `Initiate publication governance workflow` |
+| `Manager Score` and `Employee reference` | `Actual Score` without identifying the source |
+| `Unknown` | `0` for missing Manager data |
+| `Select at least one Manager.` | `Invalid assignment configuration` |
+| Short labels and complete error messages | Descriptions that restate the page title |
 
-## Governance and Calculation Rules
+## Product Rules
 
-### Shared Level Model
+### Competency Pool and levels
 
-HR defines either three or five shared levels. Names and count are common to all competencies. Each competency provides its own behavior description for every shared level.
+- Pool and Categories share one Competencies route with persistent tabs.
+- New competency opens in a right-side drawer.
+- A competency requires a name and a behavior for every active shared level.
+- The Pool table shows each active level explicitly; it does not show description or `Level coverage`.
+- Selecting a Pool row opens the competency behavior grid without navigation.
+- Competency creation and editing include one behavior and one improvement-advice message per active level.
+- Changing the shared level count changes the required behavior fields for all competencies.
 
-### Assessment modes
+### Categories and Role Managers
 
-- **Behavior/Level:** Employee and Manager independently select a shared level using competency-specific behavior descriptions.
-- **Criteria/Point:** Employee and Manager independently rate criteria. Criterion weights total 100%; weighted criteria produce the source competency score and mapped level.
-- A competency has one active assessment mode at a time. A matrix may mix modes.
+- A Category is a reusable section inside Framework Templates, not a permanent competency taxonomy.
+- One Category may be assigned to multiple active Role Manager scopes.
+- Each Role Manager assignment is tied to an existing active Employee, team, and role.
+- Multiple Employees may share the same team/role scope. An exact duplicate Employee/team/role assignment is blocked.
+- Revocation removes future scoped responsibility while preserving the Audit Log.
 
-The prototype assessment uses `Communication` in Behavior/Level mode and `Technical Delivery` in Criteria/Point mode.
+### Framework Templates
 
-### Source weighting and gap
+- Framework Templates belongs under Governance.
+- HR or an assigned Manager selects Pool competencies inside each available Category.
+- Template states in this prototype are `Draft` and `Public`.
+- Save returns the current template to Draft.
+- Public is a direct, confirmed action; there is no review queue or request-changes flow.
+- The template surface includes an expected-profile radar and numeric values.
+- Template Categories use collapsible sections; opening or closing a Category does not change its selections.
+- Making a template Public is not tied to a performance-review period.
 
-```text
-Actual Score = Employee Score x Employee Weight
-             + Manager Score x Manager Weight
+### Assessment reports and analytics
 
-Gap = Expected Score - Actual Score
-```
-
-Employee and Manager source weights total 100%. The prototype uses Employee 30% and Manager 70% as demo data; this is configurable and is not a committed organizational default.
-
-Unassessed data is `Unknown`, never zero. Average Gap excludes Unknown competencies and must display assessment coverage. Cross-team detail compares Global Competencies only. Team Competencies remain available within team analysis.
+- Assessment Reports displays existing report records and completion counts.
+- The HR prototype has no Generate Assessment action or participant-launch flow.
+- Manager Score is recorded; Employee Score is reference-only.
+- Team Average Gap and Member Average Gap average only known Manager-based gaps.
+- Company Gaps uses a column chart, numeric table, and selected-team lists of up to five strongest and five weakest known competencies.
+- Team Gaps shows current team radar, current-versus-six-month-prior Manager comparison, clickable member ranking, selected-member radar, and competency-level numeric scores.
+- Clicking anywhere on a member row opens that member. There is no Inspect button.
+- Improvement advice is stored and edited on the Competencies surface. This update does not add advice to analytics.
+- Prototype fixture identities are anonymous and must not reuse names or identities from personas, interviews, or journey protagonists.
 
 ## Component Patterns
 
 | Component | Use | Behavioral rules |
 |---|---|---|
-| App shell | All surfaces | Persistent desktop sidebar; main header states current scope and one primary action |
-| Sidebar nav | All surfaces | Grouped navigation; active route and parent group announced; no Super Admin routes |
-| Page header | All surfaces | Shows purpose, team/role/level where relevant, framework version, and primary action |
-| Button primary | Committed next step | One primary action per surface region; publish/generate actions require a review step |
-| Governance card | Overview and summaries | Opens the corresponding register filtered to the represented state |
-| Status badge | Registers and headers | Always includes a text label; exposes state definition on focus/hover |
-| Data table | Types, competencies, cycles, history, logs | Sort/filter without losing URL/state; numeric columns aligned; row opens detail or side panel |
-| Validation panel | Builder and Matrix Reviews | Separates blocking errors from advisories; links each finding to the offending field and identifies content owner |
-| Formula builder | Formula Rules and Point mode | Constrained inputs only; totals update live; worked example recomputes after every valid change |
-| Level behavior grid | Level Model and Behavior mode | Shared levels are fixed columns; competency behaviors are editable rows; required blanks block submission |
-| Stepper | Builder, Matrix Review, Generate Assessment | Completed steps remain revisitable; changing an earlier step invalidates dependent preview where necessary |
-| Target fill bar | Analytics | Outline is Expected; fill is Actual; source values and numeric gap remain visible; Unknown renders as labeled neutral state |
-| Chart panel | Company, Team, Member analytics | Shows comparison basis and table equivalent; click or keyboard action drills down one level |
-| Advice panel | Member Insight | Shows stored guidance, competency, author/owner, and last updated version; no generative framing |
-| Side panel | Member and competency drill-down | Retains list/chart context; closes with Esc; returns focus to originating row or bar |
+| App shell | All routes | Persistent desktop sidebar; active route is visible and announced |
+| Page header | All routes | Title and at most one primary action group; no descriptive paragraph |
+| Tabs | Competencies | Pool and Categories remain on one route; tab state is keyboard-operable |
+| Pool table | Competencies / Pool | Row click selects competency; shows name, explicit levels, and status |
+| Competency drawer | Competencies / Pool | Name plus behavior and advice per active level; Cancel/Escape restores focus |
+| Behavior and advice grid | Competencies / Pool | Edits one behavior and one advice message per level; Save retains Draft; Activate marks Active |
+| Category register | Competencies / Categories | Shows all assigned Manager scopes; add/edit uses multi-select checkboxes |
+| Template composer | Framework Templates | Select Pool competencies inside collapsible Categories; Save Draft or confirm Public |
+| Radar chart | Templates and analytics | Always paired with numeric values; series differ by fill, outline, and dash |
+| Assessment table | Assessment Reports | Read-only report list; no generation action |
+| Member row | Team Gaps | Entire row is clickable and updates selected-member details |
+| Role Manager register | Role Managers | Shows scoped assignment and supports revoke |
+| Audit register | Audit Log | Search and CSV export |
 
 ## State Patterns
 
 | Surface | Required states |
 |---|---|
-| Overview | Loading skeleton; no pending work; pending review; blocking validation; stale assessment coverage; data-load error |
-| Competency Types | Empty taxonomy; assigned/unassigned; assignment conflict; archived type; save error |
-| Competencies / Builder | Draft; incomplete shared-level behaviors; invalid weights; valid preview; Manager-owned read-only review; archived/versioned competency |
-| Level Model | Not configured; three-level model; five-level model; change-impact warning; used model cannot be rewritten in place |
-| Formula Rules | Invalid source total; invalid criterion total; valid live preview; no sample data; versioned rule set |
-| Matrix Reviews | Submitted; in review; blocked; changes requested; ready; scheduled; active; superseded; overlapping effective date |
-| Assessment Cycles | Draft; generated; Employee pending; Manager pending; partially complete; complete; cancelled; stale framework warning |
-| Generate Assessment | No published matrix; no eligible members; mixed role/level selection; preview ready; generation error; generated confirmation |
-| Company Gaps | No completed data; partial coverage; ranked teams; Unknown team; framework-version mismatch warning |
-| Team Gaps | No assessed members; partial member coverage; ranked members; ties; selected member drill-down |
-| Member Insight | Complete; Employee-only; Manager-only; Unknown; meets/exceeds expected; positive gap; no configured advice |
-| Version History / Audit Log | Empty; filtered results; correction event; permission-limited detail; load error |
+| Overview | Loaded; no data; data error |
+| Competencies / Pool | Empty; selected; Draft; Active; incomplete drawer; save error |
+| Competencies / Categories | Empty; multiple assignments; no Manager selected; save error |
+| Level Model | Three levels; five levels; unsaved changes; save confirmation |
+| Assessment Reports | Empty; in progress; complete; load error |
+| Company Gaps | No known Manager data; partial coverage; ranked teams; Unknown |
+| Team Gaps | No members; partial coverage; selected member; Unknown score; missing six-month baseline |
+| Framework Templates | Draft; Public; no selected competencies; publish confirmation |
+| Role Managers | Empty; active; exact duplicate; revoked; save error |
+| Audit Log | Empty; filtered; exported; load error |
 
 ## Interaction Primitives
 
-- Click or `Enter` on a register row opens its detail or side panel.
-- `Esc` closes the topmost side panel, popover, or dialog and restores focus.
-- Filters use explicit Apply and Clear actions on dense analytical registers; selected scope remains visible as chips.
-- Builders autosave local draft state but require explicit Submit. Publish and Generate always show a review summary.
-- Formula and weight changes update previews after valid input. Invalid input preserves the last valid preview and labels it stale.
-- Chart bars support focus and keyboard activation. The same data appears in an adjacent or toggleable table.
-- Destructive or history-affecting changes create a new version/correction event; they do not erase used records.
+- Click or `Enter` on a table/member row selects or opens its detail.
+- `Esc` closes the topmost drawer/dialog and restores focus to its trigger.
+- Tabs are reachable and operable by keyboard.
+- Draft-editing actions require explicit Save.
+- Public requires a confirmation summary.
+- Radar charts have adjacent numeric equivalents and do not depend on hover.
+- Employee Score always carries reference meaning; Manager Score always carries recorded meaning.
+- Missing Manager data remains `Unknown` across charts, tables, rankings, and averages.
+- Current-versus-six-month comparison uses Manager results from both points in time; missing historical results remain `Unknown`.
+- Consequential assignments, revocations, activations, and Public actions append an Audit Log event.
 
 ## Accessibility Floor
 
-- WCAG 2.2 AA for the desktop web prototype.
-- Every field has a persistent label; placeholder text is never the only label.
-- Validation summary receives focus on failed submit and links to each invalid field.
-- Tables expose proper headers, sort state, and captions describing scope.
-- Charts provide numeric alternatives and do not rely on color. Expected outline, Actual fill, source values, Gap, and Unknown are announced in text.
-- Status badges include visible words. Icons are supplementary.
-- Focus order follows visual order. Side panels trap focus only while open and restore it on close.
-- Formula expressions are accompanied by plain-language explanations and worked examples.
-- Motion is limited to short state transitions and respects reduced-motion preferences.
+- Target WCAG 2.2 AA.
+- Every input has a persistent label; placeholders are examples only.
+- Focus order follows reading order. Drawer/dialog focus returns to the trigger on close.
+- Status uses visible text in addition to color.
+- Tables expose column headers.
+- Radar charts provide readable labels and numeric equivalents.
+- Series use fill, outline, and dash differences in addition to color.
+- `Unknown` is announced as missing Manager assessment, not zero.
+- Motion remains brief and respects reduced-motion preferences in production.
 
 ## Responsive and Platform
 
-The prototype targets desktop and laptop browsers at 1280px and above. Between 1024px and 1279px, the sidebar may collapse to an icon rail and secondary analytics columns stack. Below 1024px, the experience is read-only or unsupported for complex authoring in this prototype; no mobile-native workflow is specified.
+The primary prototype target is desktop/laptop web at 1280px and above. Between 1024px and 1279px, multi-column work areas stack. Below 1024px, the prototype reflows for demonstration, but complex authoring is not specified as a mobile workflow.
 
-No dark mode, production offline-editing contract, or notification channel is defined in this run. The prototype file itself remains usable without network dependencies.
+The standalone HTML uses browser local storage for demo persistence. This is not a production offline or security contract.
 
 ## Inspiration and Anti-patterns
 
-- **Chosen:** Policy Desk visual direction from `.working/directions-hr-admin.html`.
-- **Chosen:** Register-like information density, visible rule IDs, version metadata, and audit provenance.
-- **Rejected:** Spreadsheet imitation as the primary interaction. Tables are used for registers, but authoring is structured and validated.
-- **Rejected:** Free-form Excel-like formulas. Formula Rules use constrained configuration.
-- **Rejected:** AI-generated competencies or advice. Guidance is authored and versioned by HR or the scoped Manager.
-- **Rejected:** Automatic promotion or talent decisions. Analytics explains competency gaps; humans make career decisions.
-- **Rejected:** Comparing role-specific Team Competencies across unrelated teams.
+- **Chosen:** Operations Console: compact panels, strong sidebar, readable typography, restrained color, direct task actions.
+- **Rejected:** Description-heavy pages that explain obvious controls.
+- **Rejected:** Separate Pool and Category navigation.
+- **Rejected:** Competency Types as permanent taxonomy.
+- **Rejected:** Formula builder or blended Employee/Manager score.
+- **Rejected:** Separate Framework Review queue.
+- **Rejected:** HR assessment generation in this prototype.
+- **Rejected:** Version History as a dedicated screen.
+- **Rejected:** AI-generated advice. Improvement advice remains authored per competency level.
+- **Rejected:** Persona/interview names in prototype fixtures.
+- **Rejected:** Separate Inspect buttons where a row itself can open detail.
 
 ## Key Flows
 
-### Flow 1 - Govern the competency language
+### Flow 1 - Create a reusable competency
 
-**Protagonist:** Mai Thy, L&D owner, preparing the August performance review cycle.
+**Protagonist:** An HR Admin maintaining the competency Pool.
 
-1. Mai Thy opens Framework > Level Model and confirms the organization uses five shared levels.
-2. She opens Competency Types and reviews `Communication`, `Soft Skills`, and `Hard Skills`.
-3. She assigns `Soft Skills` authoring scope to the Software Engineering and Business Analysis Managers.
-4. She opens Competencies and creates the Global Competency `Communication`.
-5. In Behavior/Level mode, she writes distinct behavior descriptions for all five shared levels and adds an improvement message.
-6. **Climax:** The builder preview shows a complete assessment item using the shared level vocabulary and competency-specific behaviors, with no missing-level validation.
-7. She submits the competency version for use in new matrices.
+1. HR Admin opens Competencies; Pool is selected.
+2. She selects `New competency`.
+3. A right-side drawer opens while the Pool remains visible.
+4. HR Admin enters the competency name, one behavior, and one improvement-advice message for every shared level.
+5. Missing required content keeps the drawer open and identifies the problem.
+6. **Climax:** She creates the competency and immediately sees it selected in the Pool with all levels visible.
+7. She may refine behaviors and activate it from the inline editor.
 
-Failure path: Level 4 has no behavior description. Submit focuses the validation panel and Level 4 cell; the draft remains saved.
+### Flow 2 - Assign Categories and publish a Framework Template
 
-### Flow 2 - Review and publish a Manager matrix
+**Protagonists:** HR Admin and a scoped Software Engineering Manager.
 
-**Protagonist:** Mai Thy, reviewing a Platform Team submission before the PR cycle opens.
+1. HR Admin opens Categories within Competencies.
+2. HR Admin edits `Soft Skills` and assigns multiple Manager scopes.
+3. The scoped Manager opens Framework Templates under Governance.
+4. In the Software Engineer template, he selects `Self-Management` inside `Soft Skills`.
+5. The Manager expands only the Category being edited; the expected-profile radar updates with an adjacent numeric list.
+6. He saves the template as Draft.
+7. **Climax:** HR Admin confirms `Public`; the template becomes Public immediately and is not tied to a review period.
 
-1. Mai Thy opens Matrix Reviews and selects `Platform Team / Backend Engineer / L2 / proposed v2.1`.
-2. She compares the submission with active v2.0 and sees Global and Team Competencies, modes, weights, expected scores, owners, and advice coverage.
-3. Validation reports total competency weight at 110% and identifies Manager ownership.
-4. She selects Request changes, writes a reason, and returns the submission without editing its values.
-5. The demo advances to a corrected resubmission with total weight 100%.
-6. She reviews the effective date and version impact.
-7. **Climax:** She publishes v2.1 for 1 September 2026. The UI confirms `Scheduled`; v2.0 remains Active until the effective date, and historical assessments retain their snapshots.
+Failure: no competency is selected for a required Category. The template stays Draft until corrected.
 
-Failure path: The effective date overlaps another scheduled version. Publish is blocked and the conflicting version is linked.
+### Flow 3 - Inspect assessment results and team gaps
 
-### Flow 3 - Generate a mixed-mode assessment
+**Protagonist:** HR Admin reviewing existing results.
 
-**Protagonist:** Mai Thy, launching the Platform Team assessment after matrix publication.
-
-1. Mai Thy opens Generate Assessment and selects Platform Team.
-2. Eligible members are selected by default; she excludes one member on leave.
-3. The system resolves each member's Role + Level to a published matrix and flags anyone without one.
-4. She reviews the demo source weighting: Employee 30% / Manager 70%.
-5. Preview shows `Communication` in Behavior/Level mode and `Technical Delivery` in Criteria/Point mode for both Employee and Manager.
-6. She reviews participant count, framework snapshot, assessment items, and formula summary.
-7. **Climax:** She generates the assessment. The confirmation identifies the cycle, selected members, two rating sources, and snapshotted framework versions.
-
-Failure path: A selected member has no published Role + Level matrix. Generation is blocked for that member; Mai Thy may exclude the member or return to framework governance.
-
-### Flow 4 - Find development gaps after assessment
-
-**Protagonist:** Mai Thy, reviewing demo results after Employee and Manager assessments complete.
-
-1. Mai Thy opens Company Gaps and sees teams ranked by overall Average Gap with coverage.
-2. She drills into the cross-team Global Competency comparison and identifies Mobile Engineering as the widest shared gap.
-3. She opens Team Gaps for Mobile Engineering and sees members ranked by Average Gap; Unknown results are separated.
-4. She selects a high-gap member.
-5. Member Insight shows Employee Score, Manager Score, weighted Actual Score, Expected Score, and Gap per competency.
-6. Target fill bars expose strengths and weaknesses; the numeric table provides the same values.
-7. **Climax:** Mai Thy identifies `Communication` as the highest confirmed gap and sees the configured improvement guidance and its owner/version.
-
-Failure path: Manager assessment is incomplete. The competency is `Unknown`, excluded from Average Gap, and coverage explains why the member cannot be fairly ranked on the missing item.
+1. HR Admin opens Assessment Reports and checks Employee/Manager completion.
+2. HR Admin opens Company Gaps and compares team Average Gap and coverage.
+3. HR Admin selects a team and reviews its top strengths and weaknesses.
+4. Team Gaps opens with current team results, the six-month comparison, and member ranking.
+5. She clicks the highest-gap member row.
+6. The member radar and numeric table update in place.
+7. **Climax:** HR Admin can identify the competencies driving the gap and whether the team improved over six months, while distinguishing Manager recorded score, Employee reference, Expected, and Unknown.
 
 ## Assumptions and Open Questions
 
-- **[ASSUMPTION]** Prototype demo source weights are Employee 30% and Manager 70%; HR configures the actual organizational values.
-- **[ASSUMPTION]** Strength means Actual Score meets or exceeds Expected Score; weakness means a positive confirmed Gap.
-- **[ASSUMPTION]** Criteria/Point scores normalize to the Shared Level Model through an organization-defined mapping. The exact mapping rule is not yet specified.
-- Assessment deadlines, reminders, reviewer substitution, cancellation rules, and SLA are outside this prototype.
-- HR Admin workload, submission volume, and reporting/export needs still require direct interview validation.
-- Permission detail for raw evidence and private Manager comments is not defined; least privilege remains the governing constraint.
+- A Manager Score at or above Expected is treated as a strength; a positive Gap is treated as a weakness.
+- The source and lifecycle of Assessment Report data are outside this prototype.
+- Manager authoring and Employee/Manager assessment-taking surfaces are represented by fixture data, not fully designed workflows.
+- HR Admin workload, report export requirements, evidence visibility, and private-comment permissions still need direct interview validation.
+- Vault scope not yet represented by dedicated prototype surfaces: HR structure and Employee-to-role/level mapping; career paths; required/optional competency rules; framework completeness/impact governance; development programs and retained action follow-up; evidence/calibration review; adoption/progress monitoring; profile access rules; and HR data synchronization.
+- Upstream Product Canvas and journey notes may still contain older Competency Type, Formula Rules, review-queue, generation, advice, or cycle-publication concepts and should be reconciled before implementation planning.
