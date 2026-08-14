@@ -2,7 +2,7 @@
 title: En-Path HR Admin Experience
 status: final
 created: 2026-08-12
-updated: 2026-08-13
+updated: 2026-08-14
 sources:
   - _bmad-output/planning-artifacts/pvb-product-canvas-persona-alignment-review.md
   - Projects/En-Path/docs/As-is Journey Map - HR Admin.md
@@ -31,16 +31,18 @@ The final interactive reference is [HR Admin prototype](mockups/hr-admin-prototy
 
 ```text
 Shared Rating Scale
+  -> system default: 5 scores
+  -> Customize scale: Coming soon
   -> Competency Pool
     -> competency description
     -> score anchors + improvement advice
-    -> role + role-level rubric
-      -> evaluation criterion
+    -> role + role-level expectation
+      -> expected score
       -> Below / Meet / Above Expectation behavior
   -> Category
     -> one or more Role Manager scopes
       -> Framework Template
-        -> Draft or Public
+        -> Draft, Public, or Archived
           -> Assessment Reports
             -> Manager Score (recorded)
             -> Employee Score (reference)
@@ -48,10 +50,10 @@ Shared Rating Scale
 ```
 
 - HR maintains one flat Competency Pool. A competency is not permanently classified by a type.
-- HR defines a shared three- or five-score rating model.
-- Every competency has a description, score anchor, and improvement advice for each active score.
-- Each competency may have multiple role-level rubrics. A rubric binds a role, role level, evaluation criterion, and observable Below / Meet / Above Expectation behavior.
-- Shared score anchors explain what scores mean across the system; role-level rubrics explain what evidence qualifies at a specific role level.
+- En-Path provides a fixed default five-score rating model in the current scope. Custom score counts and labels are future scope.
+- Every competency has a description, score anchor, and improvement advice for each of the five default scores.
+- Each competency may have multiple role-level expectations. An expectation binds a role, role level, Expected Score, and observable Below / Meet / Above Expectation behavior.
+- Shared score anchors explain what scores mean across the system; role-level expectations explain what evidence qualifies for one Role + Level and which score is expected.
 - HR creates Categories and assigns each Category to one or more active Role Manager scopes.
 - HR or an assigned Manager selects relevant Pool competencies within each Category to compose a Framework Template.
 - A valid template moves directly from Draft to Public; there is no separate Framework Review surface.
@@ -74,16 +76,18 @@ If Manager Score is missing, the result is `Unknown` even when Employee Score ex
 | Group | Surface | Purpose |
 |---|---|---|
 | Overview | Overview | Show competency, Category, Public-template, and highest-team-gap summaries |
-| Framework | Competencies | Manage the Pool and Categories through two tabs; create and edit competency behaviors |
-| Framework | Rating Scale | Define the shared three- or five-score vocabulary |
+| Framework | Competencies | Manage the Pool and Categories through two tabs; open a competency into dedicated setup |
+| Framework | Competency Setup | Edit Definition or Role expectations for one competency; nested route, not sidebar navigation |
+| Framework | Rating Scale | Show the default five-score vocabulary and future Customize scale entry point |
+| Framework | Framework Templates | Create, compose, publish, and archive role templates |
 | Reports | Assessment Reports | View existing assessment completion, template context, and evidence read-only |
 | Analytics | Company Gaps | Compare team Average Gap and coverage; inspect top strengths and weaknesses for a selected team |
 | Analytics | Team Gaps | Inspect team/member radars, competency-level scores, and current versus six-month-prior team results |
-| Governance | Framework Templates | Compose templates, view expected-profile radar, save Draft, or make Public |
-| Governance | People & Managers | Import Employees with role/level and assign or revoke scoped Manager responsibility |
+| Governance | Employee Management | Import and list Employees with team, role, level, status, and source |
+| Governance | Role Managers | Assign or revoke scoped Manager responsibility |
 | Governance | Audit Log | Search and export governance events |
 
-Nine routes are in scope. Competency Pool and Categories are tabs, not separate routes. Generate Assessment, Framework Reviews, and Version History are out of scope.
+Ten primary sidebar routes plus the nested Competency Setup route are in scope. Competency Pool and Categories are tabs, not separate routes. Generate Assessment, Framework Reviews, and Version History are out of scope.
 
 ## Voice and Tone
 
@@ -97,16 +101,17 @@ Nine routes are in scope. Competency Pool and Categories are tabs, not separate 
 
 ## Product Rules
 
-### Competency Pool, rating scale, and rubrics
+### Competency Pool, rating scale, and role expectations
 
 - Pool and Categories share one Competencies route with persistent tabs.
-- New competency opens in a right-side drawer.
-- A competency requires a name, description, score anchor and improvement advice for every active score, plus at least one role-level rubric before activation.
-- The Pool table shows name, rubric count, and status; it does not repeat long descriptions or show `Level coverage`.
-- Selecting a Pool row opens score-anchor and rubric editing without navigation.
-- A role-level rubric requires role, role level, evaluation criterion, and Below / Meet / Above Expectation behavior.
-- The source PDF's short 1–5 descriptions are treated as score anchors; its three expectation columns are treated as role-level rubric behavior. They are not merged into one field.
-- Changing the shared score count changes the required score-anchor and improvement-advice fields for all competencies.
+- New competency opens in a right-side drawer for name and description, then continues to Competency Setup.
+- A competency requires a name, description, score anchor and improvement advice for all five default scores, plus at least one role-level expectation before activation.
+- The Pool table shows name, role-expectation count, owner, and status; it does not repeat long descriptions or show `Level coverage`.
+- Selecting a Pool row opens the dedicated Competency Setup route.
+- Competency Setup separates Definition from Role expectations; only one section is visible at a time.
+- A role-level expectation requires role, role level, one Expected Score from 1–5, and Below / Meet / Above Expectation behavior. Role is selected from the system Role list derived from Employee records and Framework Templates; it is not entered as free text.
+- The source PDF's short 1–5 descriptions are treated as score anchors; its three expectation columns are treated as role-level behavior. They are not merged into one field.
+- Rating Scale displays the system default five scores. `Customize scale` opens `Coming soon` and does not mutate the model.
 
 ### Categories and Role Managers
 
@@ -116,23 +121,29 @@ Nine routes are in scope. Competency Pool and Categories are tabs, not separate 
 - Multiple Employees may share the same team/role scope. An exact duplicate Employee/team/role assignment is blocked.
 - Revocation removes future scoped responsibility while preserving the Audit Log.
 
-### Employee import
+### Employee Management
 
 - HR imports Employee records containing Employee identity, team, role, and role level.
 - Import validates one row as `Employee, Role, Level, Team`; invalid rows do not create records.
+- HR can edit Employee name, team, role, level, and Active/Inactive status from the Employee register.
+- Changing the team or role of an active Manager Employee updates that Employee's active Role Manager scopes. Changing the Employee to Inactive revokes those active scopes.
+- Employee edits and any resulting Manager-scope update or revocation append Audit Log events.
 - Imported Employee role and level determine Role Manager assignment options and Framework Template impact preview.
 - Career-path authoring is not part of this HR prototype.
 
 ### Framework Templates
 
-- Framework Templates belongs under Governance.
+- Framework Templates belongs under Framework.
+- HR can create a new Draft template with template name, team, and role.
+- HR can add available Categories to an existing active template.
 - HR or an assigned Manager selects Pool competencies inside each available Category.
-- Template states in this prototype are `Draft` and `Public`.
+- Template states in this prototype are `Draft`, `Public`, and `Archived`.
 - Save returns the current template to Draft.
 - Public is a direct, confirmed action; there is no review queue or request-changes flow.
 - Before Public, an impact preview shows matched imported Employees and the role levels in scope.
 - The template surface includes an expected-profile radar and numeric values.
 - Template Categories use collapsible sections; opening or closing a Category does not change its selections.
+- HR can archive a Draft or Public template. An Archived template remains visible and becomes read-only.
 - Making a template Public is not tied to a performance-review period.
 
 ### Assessment reports and analytics
@@ -146,7 +157,7 @@ Nine routes are in scope. Competency Pool and Categories are tabs, not separate 
 - Company Gaps uses a column chart, numeric table, and selected-team lists of up to five strongest and five weakest known competencies.
 - Team Gaps shows current team radar, current-versus-six-month-prior Manager comparison, clickable member ranking, selected-member radar, and competency-level numeric scores.
 - Clicking anywhere on a member row opens that member. There is no Inspect button.
-- Improvement advice is stored and edited on the Competencies surface. This update does not add advice to analytics.
+- Improvement advice is stored and edited in Competency Setup. This update does not add advice to analytics.
 - Prototype fixture identities are anonymous and must not reuse names or identities from personas, interviews, or journey protagonists.
 
 ## Component Patterns
@@ -156,15 +167,17 @@ Nine routes are in scope. Competency Pool and Categories are tabs, not separate 
 | App shell | All routes | Persistent desktop sidebar; active route is visible and announced |
 | Page header | All routes | Title and at most one primary action group; no descriptive paragraph |
 | Tabs | Competencies | Pool and Categories remain on one route; tab state is keyboard-operable |
-| Pool table | Competencies / Pool | Row click selects competency; shows name, rubric count, and status |
-| Competency drawer | Competencies / Pool | Name, description, score anchors, advice, and first role-level rubric; Cancel/Escape restores focus |
-| Score-anchor rows | Competencies / Pool | Edits one score anchor and one improvement-advice message per score |
-| Role-level rubric editor | Competencies / Pool | Edits role, role level, criterion, and Below / Meet / Above behavior; supports multiple rubrics |
+| Pool table | Competencies / Pool | Row click opens Competency Setup; shows name, role-expectation count, owner, and status |
+| Competency drawer | Competencies / Pool | Captures name and description, then routes to setup; Cancel/Escape restores focus |
+| Setup tabs | Competency Setup | Switch between Definition and Role expectations without placing both workflows on one page |
+| Score-anchor rows | Competency Setup / Definition | Edits one score anchor and one improvement-advice message for each of five scores |
+| Role-level expectation editor | Competency Setup / Role expectations | Selects an existing system Role and edits role level, Expected Score, and stacked Below / Meet / Above behavior |
+| Rating Scale list | Rating Scale | Shows five default scores; Customize scale opens Coming soon |
 | Category register | Competencies / Categories | Shows all assigned Manager scopes; add/edit uses multi-select checkboxes |
-| Template composer | Framework Templates | Select Pool competencies inside collapsible Categories; Save Draft or confirm Public |
+| Template composer | Framework Templates | Create template, add Category, select Pool competencies, Save Draft, confirm Public, or Archive |
 | Radar chart | Templates and analytics | Always paired with numeric values; series differ by fill, outline, and dash |
 | Assessment table | Assessment Reports | Read-only report list; opens evidence view-only; no generation action |
-| Employee Import | People & Managers | Imports and lists Employee, team, role, level, status, and source |
+| Employee register | Employee Management | Imports, lists, and edits Employee name, team, system Role, level, and status |
 | Member row | Team Gaps | Entire row is clickable and updates selected-member details |
 | Role Manager register | Role Managers | Shows scoped assignment and supports revoke |
 | Audit register | Audit Log | Search and CSV export |
@@ -174,14 +187,16 @@ Nine routes are in scope. Competency Pool and Categories are tabs, not separate 
 | Surface | Required states |
 |---|---|
 | Overview | Loaded; no data; data error |
-| Competencies / Pool | Empty; selected; Draft; Active; incomplete drawer; missing rubric; save error |
+| Competencies / Pool | Empty; list; incomplete drawer; save error |
+| Competency Setup | Definition; Role expectations; Draft; Active; missing expectation; incomplete five-score guidance |
 | Competencies / Categories | Empty; multiple assignments; no Manager selected; save error |
-| Level Model | Three levels; five levels; unsaved changes; save confirmation |
+| Rating Scale | Default five scores; Customize scale Coming soon |
 | Assessment Reports | Empty; in progress; complete; load error |
 | Company Gaps | No known Manager data; partial coverage; ranked teams; Unknown |
 | Team Gaps | No members; partial coverage; selected member; Unknown score; missing six-month baseline |
-| Framework Templates | Draft; Public; no selected competencies; impact preview; no matched Employees; publish confirmation |
-| People & Managers | Empty import; valid import; invalid row; active assignment; exact duplicate; revoked; save error |
+| Framework Templates | Draft; Public; Archived read-only; empty Categories; no selected competencies; impact preview; no matched Employees; publish confirmation |
+| Employee Management | Empty import; valid import; invalid row; loaded register; edit; Inactive; Manager-scope synchronization |
+| Role Managers | Active assignment; exact duplicate; revoked; save error |
 | Audit Log | Empty; filtered; exported; load error |
 
 ## Interaction Primitives
@@ -238,10 +253,11 @@ The standalone HTML uses browser local storage for demo persistence. This is not
 1. HR Admin opens Competencies; Pool is selected.
 2. She selects `New competency`.
 3. A right-side drawer opens while the Pool remains visible.
-4. HR Admin enters the competency name and description, one score anchor and improvement-advice message for every shared score, then the first role-level rubric.
-5. Missing required content keeps the drawer open and identifies the problem.
-6. **Climax:** She creates the competency and immediately sees it selected with its score anchors and role-level rubric.
-7. She may add more role-level rubrics and activate it from the inline editor.
+4. HR Admin enters the competency name and description, then selects `Continue to setup`.
+5. Competency Setup opens on Definition, where she completes five score anchors and improvement-advice messages.
+6. She switches to Role expectations, adds Role, Role Level, Expected Score, and Below / Meet / Above behavior.
+7. Missing required content blocks activation and identifies the incomplete setup.
+8. **Climax:** She activates the competency from the dedicated setup route and returns to a clean Pool list when finished.
 
 ### Flow 2 - Assign Categories and publish a Framework Template
 
@@ -249,7 +265,7 @@ The standalone HTML uses browser local storage for demo persistence. This is not
 
 1. HR Admin opens Categories within Competencies.
 2. HR Admin edits `Soft Skills` and assigns multiple Manager scopes.
-3. The scoped Manager opens Framework Templates under Governance.
+3. The scoped Manager opens Framework Templates under Framework.
 4. In the Software Engineer template, he selects `Self-Management` inside `Soft Skills`.
 5. The Manager expands only the Category being edited; the expected-profile radar updates with an adjacent numeric list.
 6. He saves the template as Draft.
@@ -257,6 +273,8 @@ The standalone HTML uses browser local storage for demo persistence. This is not
 8. **Climax:** HR Admin confirms `Public`; the template becomes Public immediately and is not tied to a review period.
 
 Failure: no competency is selected for a required Category. The template stays Draft until corrected.
+
+HR may also create a new template, add its Categories, or archive an obsolete template. Archived templates remain visible and read-only.
 
 ### Flow 3 - Inspect assessment results and team gaps
 

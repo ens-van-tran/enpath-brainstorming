@@ -3,7 +3,7 @@ name: En-Path Operations Console
 description: A compact, task-forward visual system for HR and L&D competency governance.
 status: final
 created: 2026-08-12
-updated: 2026-08-13
+updated: 2026-08-14
 sources:
   - _bmad-output/planning-artifacts/pvb-product-canvas-persona-alignment-review.md
   - Projects/En-Path/docs/As-is Journey Map - HR Admin.md
@@ -150,7 +150,7 @@ Use local-first Aptos Display/Avenir Next for headings, IBM Plex Sans/Aptos for 
 
 Desktop web is the primary form factor. A persistent 232px sidebar groups Overview, Framework, Reports, Analytics, and Governance. Content uses compact panels and 12px gaps.
 
-The Competencies surface uses tabs to keep Pool and Categories on one route. Creating a competency opens a right-side drawer so the Pool remains visible behind the task. Framework Templates use a narrow selection column and a wider composition/radar work area; Categories are collapsible to reduce vertical density.
+The Competencies surface uses tabs to keep Pool and Categories on one route. The Pool is list-only. Creating a competency opens a right-side drawer for name and description, then continues to a dedicated Competency Setup route. Setup separates Definition from Role expectations so HR does not edit the entire competency on one dense page. Framework Templates use a narrow selection column and a wider composition/radar work area; Categories are collapsible to reduce vertical density.
 
 ## Elevation & Depth
 
@@ -162,17 +162,18 @@ Use 4-7px corners for controls and panels. Status badges may be compact rounded 
 
 ## Components
 
-- **App shell:** Persistent sidebar and content area. Framework Templates belongs under Governance.
+- **App shell:** Persistent sidebar and content area. Framework Templates belongs under Framework; Employee Management and Role Managers are separate Governance routes.
 - **Page header:** Page title plus at most one primary action group. No eyebrow, breadcrumb repetition, or descriptive paragraph.
 - **Tabs:** Pool and Categories share the Competencies route. The selected tab remains visually and programmatically explicit.
-- **Competency Pool table:** Shows competency name, role-level rubric count, and status. Do not show repeated descriptions or a summarized `Level coverage` field.
-- **Competency drawer:** Creates a competency description, score anchors, improvement advice per score, and the first role-level rubric.
-- **Competency editor:** Shows the shared score anchors as readable rows rather than narrow columns.
-- **Role-level rubric editor:** Separates role, role level, evaluation criterion, and Below / Meet / Above Expectation behavior.
+- **Competency Pool table:** Shows competency name, role-expectation count, owner, and status. Selecting a row opens Competency Setup.
+- **Competency drawer:** Captures only competency name and description, then continues to setup.
+- **Competency Setup:** Uses Definition and Role expectations tabs. Definition shows five score anchors and improvement advice as readable rows.
+- **Role-level expectation editor:** Separates role, role level, Expected Score, and stacked Below / Meet / Above Expectation behavior. Role is selected from Roles already present in Employee Management or Framework Templates.
+- **Rating Scale:** Shows the system default five scores. `Customize scale` opens a restrained Coming soon dialog.
 - **Category register:** Shows a Category and every assigned Role Manager scope. Category assignment supports multiple active Managers.
-- **Framework Template composer:** Lets HR or an assigned Manager pick Pool competencies inside collapsible Categories. A template is saved as Draft or made Public directly.
+- **Framework Template composer:** Lets HR or an assigned Manager create a template, add Categories, pick Pool competencies, save Draft, make Public, or archive it. Archived templates are read-only.
 - **Template radar:** Shows the expected competency profile and an adjacent numeric equivalent.
-- **People & Managers:** Uses tabs for Role Managers and Employee Import; imported records expose team, role, and level.
+- **Employee Management:** Imports, lists, and edits Employee identity, team, role, level, and status. Editing a Manager Employee keeps the related role scope synchronized or revokes it when the Employee becomes Inactive.
 - **Role Manager register:** Shows Employee identity, level, team/role scope, effective date, status, and revoke action.
 - **Assessment Reports table:** Reports on existing assessment activity and opens evidence in a view-only dialog.
 - **Public impact preview:** Shows matched imported Employees and role levels before a Framework Template becomes Public.
@@ -188,11 +189,14 @@ Use 4-7px corners for controls and panels. Status badges may be compact rounded 
 |---|---|
 | Keep pages focused on title, primary action, and task content | Add descriptions that repeat the page title |
 | Show Pool and Categories as tabs on one surface | Split them into separate navigation routes |
-| Separate shared score anchors from role-level rubrics | Treat a score label as the complete evaluation rubric |
-| Create competency in a right drawer | Replace the Pool with a separate creation page |
+| Separate shared score anchors from role-level expectations | Treat a score label as the complete role expectation |
+| Use the drawer for basic creation, then a dedicated setup route | Force the complete competency setup into the drawer or Pool page |
+| Use Expected Score for each Role + Level expectation | Reintroduce an ambiguous Evaluation criterion field |
+| Keep the default five-score scale visible | Offer a working 3/5 selector before custom scales are supported |
 | Support multiple Manager assignments per Category | Treat Category assignment as single-select |
 | Make a valid template Public directly | Add a separate Framework Review queue |
 | Include expected-profile radar in Framework Templates | Hide the expected profile in text-only metadata |
+| Keep archived templates visible and read-only | Remove archived templates from governance history |
 | Collapse template Categories when they are not being edited | Force every Category to remain expanded |
 | Show team strengths, weaknesses, and six-month movement | Show only one current Average Gap |
 | Keep Assessment as reports only | Include a Generate Assessment action |

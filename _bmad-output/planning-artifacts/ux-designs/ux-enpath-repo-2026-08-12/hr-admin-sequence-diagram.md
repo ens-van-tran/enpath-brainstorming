@@ -3,7 +3,7 @@ title: En-Path HR Admin Sequence Diagram
 artifact_type: ux-sequence-diagram
 status: final
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-14
 sources:
   - EXPERIENCE.md
   - DESIGN.md
@@ -20,28 +20,39 @@ sequenceDiagram
     actor HR as HR Admin
     actor Manager as Manager
     participant EnPath as En-Path
-    participant HRData as Employee Import
+    participant HRData as Employee Management
     participant Results as Assessment Results
 
     rect rgb(236, 242, 246)
-        HR->>EnPath: Open Competencies / Pool
+        HR->>EnPath: Open Competencies / Pool list
         HR->>EnPath: Open New competency drawer
-        HR->>EnPath: Enter name, description, score anchors, and advice
-        HR->>EnPath: Define role + level + criterion rubric
+        HR->>EnPath: Enter name and description
+        HR->>EnPath: Continue to Competency Setup
+        HR->>EnPath: Define five score anchors and improvement advice
+        HR->>EnPath: Select a system Role + define level + Expected Score
         HR->>EnPath: Define Below / Meet / Above behavior
-        EnPath->>EnPath: Validate score content and role-level rubric
-        alt Required score, advice, or rubric is missing
-            EnPath-->>HR: Keep drawer open and show validation
+        EnPath->>EnPath: Validate definition and role-level expectation
+        alt Required score, advice, or expectation is missing
+            EnPath-->>HR: Keep setup open and show validation
         else Competency is complete
-            HR->>EnPath: Create competency
-            EnPath-->>HR: Select new Pool row and record audit event
+            HR->>EnPath: Activate competency
+            EnPath-->>HR: Show Active status and record audit event
         end
     end
 
     rect rgb(233, 240, 238)
         HR->>HRData: Import Employee, team, role, and level
         HRData->>EnPath: Provide validated Employee records
-        EnPath-->>HR: Show Employee Import register
+        EnPath-->>HR: Show Employee Management register
+        opt HR edits an Employee
+            HR->>EnPath: Update name, team, role, level, or status
+            alt Employee becomes Inactive
+                EnPath->>EnPath: Revoke active Role Manager scopes
+            else Active Manager team or role changes
+                EnPath->>EnPath: Synchronize active Role Manager scopes
+            end
+            EnPath->>EnPath: Record Employee and governance changes in Audit Log
+        end
         HR->>EnPath: Assign an Employee as Role Manager for team + role
         EnPath->>EnPath: Validate active Employee and exact duplicate
         alt Assignment is invalid
@@ -57,6 +68,11 @@ sequenceDiagram
 
     rect rgb(222, 237, 237)
         Manager->>EnPath: Open Framework Templates
+        opt HR creates a new template
+            HR->>EnPath: Enter template name, team, and role
+            EnPath-->>HR: Create Draft template
+            HR->>EnPath: Add available Category
+        end
         Manager->>EnPath: Expand a Category and pick Pool competencies
         EnPath-->>Manager: Update expected-profile radar and numeric values
         Manager->>EnPath: Save template as Draft
@@ -67,6 +83,10 @@ sequenceDiagram
         EnPath->>EnPath: Set template status to Public
         EnPath->>EnPath: Record Public action in Audit Log
         EnPath-->>HR: Show Public status
+        opt HR archives an obsolete template
+            HR->>EnPath: Archive template
+            EnPath-->>HR: Keep template visible and read-only
+        end
     end
 
     rect rgb(238, 234, 222)
@@ -103,13 +123,16 @@ sequenceDiagram
 
 - Competencies live in one flat Pool; Categories organize Pool selections inside Framework Templates.
 - Every competency stores a description, score anchor, and improvement advice for each active shared score.
-- Role-level rubrics bind role, role level, evaluation criterion, and Below / Meet / Above Expectation behavior.
-- Shared score anchors and role-level rubrics remain separate concepts.
+- The current Rating Scale is the system default five scores; Customize scale is a future feature.
+- Role-level expectations bind role, role level, Expected Score, and Below / Meet / Above Expectation behavior.
+- Role-level expectation Role is selected from Roles already present in Employee Management or Framework Templates.
+- Shared score anchors and role-level expectations remain separate concepts.
 - Template Categories are collapsible presentation sections; collapse state does not change composition.
 - A Category may be assigned to multiple active Role Manager scopes.
 - HR and appropriately scoped Managers may compose Framework Templates.
-- HR imports Employee team, role, and level data before role assignment and impact preview.
-- Templates move directly between Draft and Public in this prototype; there is no Framework Review route.
+- HR imports and edits Employee team, role, level, and status data before role assignment and impact preview.
+- Active Manager scopes follow Employee team/role edits; setting a Manager Employee to Inactive revokes those active scopes and records the governance change.
+- Templates support Draft, Public, and Archived states; Archived templates remain visible and read-only.
 - Public confirmation includes affected imported Employees and role levels.
 - Making a template Public is not tied to a performance-review period.
 - Assessment Reports consume existing assessment results; HR does not generate assessments in this prototype.

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "figma-use": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-use/SKILL.md",
+      "computedHash": "9ad6263e09bd94a500b5481f7fa1c25f19c745a6d90d5a8ecb446c6a581300c1"
+    },
+    "figma-use-figjam": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-use-figjam/SKILL.md",
+      "computedHash": "331230205d64466044baacffbac57f64e0b298178bc6aaf39f37d33e31c20109"
+    }
+  }
+}

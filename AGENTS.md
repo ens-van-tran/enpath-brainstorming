@@ -1,5 +1,45 @@
 # En-Path Repository Instructions
 
+## FigJam Visual Editing
+
+Before editing:
+
+1. Inspect the existing board and preserve relevant content.
+2. Plan a clear left-to-right, top-to-bottom narrative.
+3. Define sections and visual hierarchy before creating nodes.
+
+Visual system:
+
+- Create one white top-level wrapper section for the entire board.
+- Alternate section backgrounds: light blue, light violet, light orange, light teal, and light gray.
+- Use white cards inside colored sections.
+- Board title: 72px bold.
+- Section title: 48px bold.
+- Card title: 28-32px semibold.
+- Body: 20-24px.
+- Use consistent spacing based on a 4px grid.
+- Keep 60-92px between closely related elements.
+- Keep 200-400px between separate groups.
+- Align cards into clean rows and columns.
+- Use stickies only for discussion or participant input.
+- Use cards/text for explanatory or editorial content.
+- Use semantic colors consistently: blue=information, green=positive, yellow=attention, pink=decision, red=blocker, violet=exploration.
+- Use no more than two decorative emphasis elements per section.
+- Label important connectors and minimize crossing lines.
+
+Execution:
+
+1. Build the main structure.
+2. Add content section by section.
+3. Take a screenshot after each major section and visually inspect it.
+4. Perform a final reflow pass:
+   - Fix overflow.
+   - Remove overlaps.
+   - Equalize related card sizes.
+   - Resize sections to fit content.
+   - Improve whitespace and alignment.
+5. Return all created and modified node IDs.
+
 ## Obsidian Project Context
 
 - Treat the personal Obsidian vault at `~/DEVs/my-obsidian-sync/` as a primary source of user-authored En-Path product context.
