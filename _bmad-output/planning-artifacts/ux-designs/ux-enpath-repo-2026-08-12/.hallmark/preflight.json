@@ -1,11 +1,31 @@
 {
   "intent": "redesign",
-  "artifact": "interactive HR Admin operations console",
-  "preserve": ["nine routes", "information architecture", "business rules", "working interactions", "anonymous fixture identities"],
-  "visual_direction": "calm slate operations workbench",
-  "density": "compact",
-  "primary_surface": "desktop web",
-  "modified": [".working/key-hr-admin-prototype.html", "mockups/hr-admin-prototype.html", "DESIGN.md", "EXPERIENCE.md", "hr-admin-sequence-diagram.md"],
-  "created": [".working/tokens.css", "mockups/tokens.css", ".hallmark/preflight.json", ".hallmark/log.json"],
+  "artifact": "En-Path role-gateway and three-role interactive prototype",
+  "preserve": [
+    "standalone HR Admin business logic",
+    "standalone Employee business logic",
+    "Manager routes and interactions",
+    "existing prototype data and reset behavior"
+  ],
+  "visual_source": "mockups/enpath.css and mockups/line-manager.html",
+  "visual_direction": "Manager-pattern growth operations workbench",
+  "primary_surface": "desktop web with responsive demo support",
+  "modified": [
+    "mockups/hr-admin-prototype.html",
+    "mockups/employee-prototype.html",
+    "mockups/enpath-app.js",
+    "mockups/hr-admin.html",
+    "mockups/line-manager.html",
+    "mockups/employee.html",
+    "mockups/prototype-smoke-test.js",
+    "mockups/tokens.css",
+    "DESIGN.md",
+    "EXPERIENCE.md"
+  ],
+  "created": [
+    "mockups/prototype-theme.css",
+    "mockups/demo-session.js",
+    "mockups/login.html"
+  ],
   "deleted": []
 }

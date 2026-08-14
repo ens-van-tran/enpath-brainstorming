@@ -73,7 +73,7 @@ function boot(persona, route, options = {}) {
     listeners.submit({ target: form, preventDefault() {} });
   }
 
-  return { app, click, submit, window };
+  return { app, click, submit, window, location };
 }
 
 const routes = {
@@ -88,6 +88,30 @@ for (const [persona, personaRoutes] of Object.entries(routes)) {
     assert(runtime.app.innerHTML.includes("app-shell"), `${persona}/${route} did not render`);
   }
 }
+
+const mockupFiles = {
+  login: fs.readFileSync(path.join(__dirname, "login.html"), "utf8"),
+  session: fs.readFileSync(path.join(__dirname, "demo-session.js"), "utf8"),
+  hr: fs.readFileSync(path.join(__dirname, "hr-admin-prototype.html"), "utf8"),
+  employee: fs.readFileSync(path.join(__dirname, "employee-prototype.html"), "utf8")
+};
+
+assert(mockupFiles.login.includes('data-login-role="hr"'), "Login As is missing HR Admin");
+assert(mockupFiles.login.includes('data-login-role="manager"'), "Login As is missing Manager");
+assert(mockupFiles.login.includes('data-login-role="employee"'), "Login As is missing Employee");
+assert(mockupFiles.session.includes('hr: "hr-admin-prototype.html"'), "HR Admin login destination is incorrect");
+assert(mockupFiles.session.includes('manager: "line-manager.html"'), "Manager login destination is incorrect");
+assert(mockupFiles.session.includes('employee: "employee-prototype.html"'), "Employee login destination is incorrect");
+for (const [role, html] of Object.entries({ hr: mockupFiles.hr, employee: mockupFiles.employee })) {
+  assert(html.includes('href="prototype-theme.css"'), `${role} does not load the Manager design adapter`);
+  assert(html.includes("data-demo-logout"), `${role} is missing Logout`);
+}
+
+const managerShell = boot("manager", "team-overview");
+assert(managerShell.app.innerHTML.includes("logout-demo"), "Manager is missing Logout");
+assert(!managerShell.app.innerHTML.includes("data-switch-persona"), "Manager still exposes direct persona switching");
+managerShell.click("logout-demo");
+assert(managerShell.location.href === "login.html", "Manager Logout does not return to Login As");
 
 const fallback = boot("employee", "profile", { protocol: "file:", throwStorage: true });
 assert(fallback.app.innerHTML.includes("Good morning, Minh"), "Direct-file fallback did not render");
@@ -140,4 +164,4 @@ assert(state.assessments.some(item => item.cycle === "Focused assessment smoke" 
 assert(state.idps.find(idp => idp.id === "idp-minh-1").actions.some(action => action.title === "Run failure injection review" && action.evidence.length === 3), "IDP evidence mutation failed");
 assert(state.reassessmentRequests.some(request => request.reason.startsWith("I can now") && request.status === "Submitted"), "Re-assessment request did not submit");
 
-console.log("EnPath prototype smoke test passed: 22 routes, direct-file fallback, rating-scale adoption, immutable history, and 6 cross-persona mutations.");
+console.log("En-Path prototype smoke test passed: Login As routes, role Logout, 22 integrated routes, direct-file fallback, rating-scale adoption, immutable history, and 6 cross-persona mutations.");

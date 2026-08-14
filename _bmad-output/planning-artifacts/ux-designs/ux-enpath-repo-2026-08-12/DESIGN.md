@@ -1,23 +1,24 @@
 ---
-name: EnPath Growth OS
-description: Three-persona visual and interaction contract for competency, assessment, career path and IDP operations.
+name: En-Path Growth OS
+description: Role-gateway visual and interaction contract for competency, assessment, career path and IDP operations.
 status: final
 created: 2026-08-12
 updated: 2026-08-14
-source_of_truth: User prototype prompt dated 2026-08-13
+source_of_truth: User prototype update dated 2026-08-14
 prototype_entries:
-  - mockups/hr-admin.html
+  - mockups/login.html
+  - mockups/hr-admin-prototype.html
   - mockups/line-manager.html
-  - mockups/employee.html
+  - mockups/employee-prototype.html
 ---
 
-# EnPath Growth OS — Design Contract
+# En-Path Growth OS — Design Contract
 
-This document replaces the previous HR-only Operations Console direction. The 2026-08-13 user prompt is the single source of truth. The runnable reference consists of exactly three directly openable persona entries: [HR Admin](mockups/hr-admin.html), [Line Manager](mockups/line-manager.html), and [Employee](mockups/employee.html).
+The 2026-08-14 prototype update makes [Login As](mockups/login.html) the default demo entry. It routes to the specialized [HR Admin](mockups/hr-admin-prototype.html), integrated [Manager](mockups/line-manager.html), and specialized [Employee](mockups/employee-prototype.html) prototypes.
 
 ## Product character
 
-EnPath feels like a dependable growth operating system: structured enough for governance, fast enough for Managers to own, and optimistic enough for employees to understand where they can go next. The interface does not introduce an HR approval queue for team frameworks. Trust comes from completeness validation, immutable versions, impact previews, status history, notifications and audit evidence.
+En-Path feels like a dependable growth operating system: structured enough for governance, fast enough for Managers to own, and optimistic enough for employees to understand where they can go next. The interface does not introduce an HR approval queue for team frameworks. Trust comes from completeness validation, immutable versions, impact previews, status history, notifications and audit evidence.
 
 The visual language combines:
 
@@ -53,7 +54,7 @@ Text and essential UI boundaries target WCAG 2.2 AA. Semantic color always appea
 
 ## App shell
 
-Desktop uses a persistent 264px dark sidebar, persona identity card, scoped navigation, sticky translucent top bar and centered content up to 1480px. The demo bar contains `Switch persona`, `Jump to demo state` and `Reset demo data` on every entry.
+Desktop uses a persistent 264px dark sidebar, role identity card, scoped navigation and centered content up to 1480px. The integrated Manager keeps a sticky translucent top bar with `Jump to demo state` and `Reset demo data`. Persona switching no longer occurs inside a workspace; every role exposes `Log out`, which returns to Login As.
 
 At widths below 820px:
 
@@ -62,6 +63,12 @@ At widths below 820px:
 - Modals occupy the full viewport with a persistent action footer.
 - The career graph becomes a simplified vertical path.
 - Multi-column analysis and form layouts collapse to one column.
+
+## Login As gateway
+
+Login As uses a split role-gateway layout: a dark En-Path identity panel and a warm operational canvas containing exactly three role cards. Each card names one role, gives one short scope statement and exposes one entry action. The gateway does not imitate production authentication and does not ask for credentials.
+
+At narrow widths, the identity panel becomes a compact introduction above a one-column role list. Role buttons remain single-line and at least 44px tall.
 
 ## Core components
 
@@ -112,5 +119,6 @@ Page content rises subtly on route changes. Modal and drawer entry establish spa
 
 - `mockups/enpath.css` owns tokens, layout, responsive behavior, components and motion.
 - `mockups/enpath-app.js` owns shared seed data, localStorage persistence, charts, view rendering and real CTA behavior.
-- The three HTML entries contain only persona metadata and the shared assets, allowing each to open directly.
-- `mockups/prototype-smoke-test.js` exercises all 22 routes, direct-file storage fallback and cross-persona mutations without external dependencies.
+- `mockups/tokens.css` and `mockups/prototype-theme.css` adapt the standalone HR Admin and Employee prototypes to the Manager visual system without replacing their existing business logic.
+- `mockups/login.html` and `mockups/demo-session.js` own role entry and Logout navigation.
+- `mockups/prototype-smoke-test.js` exercises Login As destinations, role Logout, all 22 integrated routes, direct-file storage fallback and cross-persona mutations without external dependencies.

@@ -1,19 +1,21 @@
 ---
-title: EnPath Three-Persona Experience
+title: En-Path Role-Gateway Experience
 status: final
 created: 2026-08-12
 updated: 2026-08-14
-source_of_truth: User prototype prompt dated 2026-08-13
+source_of_truth: User prototype update dated 2026-08-14
 design: DESIGN.md
 ---
 
-# EnPath Three-Persona Experience
+# En-Path Role-Gateway Experience
 
-This is the behavioral contract for the runnable prototype. The current user prompt replaces earlier HR-only workflow assumptions.
+This is the behavioral contract for the runnable prototype. The current update preserves each role prototype while adding one explicit Login As and Logout loop.
 
-## Foundation and shared state
+## Foundation and demo state
 
-The prototype runs locally without network dependencies. `hr-admin.html`, `line-manager.html` and `employee.html` all load the same `enpath-app.js` store and persist changes under one versioned localStorage key. Direct `file:` use mirrors state into `window.name`, so `Switch persona` preserves the demo even when a browser blocks file-origin storage. The browser `storage` event refreshes another open persona tab when shared demo state changes.
+The prototype runs locally without network dependencies. `login.html` is the default entry and routes HR Admin to `hr-admin-prototype.html`, Manager to `line-manager.html`, and Employee to `employee-prototype.html`. Logout returns to `login.html` without resetting the selected prototype's demo data.
+
+The Manager prototype retains the integrated `enpath-app.js` shared store and direct-file fallback. HR Admin and Employee retain their specialized standalone state and business logic. Login As is therefore a rapid role-navigation layer, not a production authentication contract or a guarantee that mutations synchronize between all three standalone destinations.
 
 Seed data represents EnPath Labs, its four teams, HR Admin Tuyen Nguyen, Backend Manager Luc Tran, Employee Minh Nguyen and another Backend employee with no completed assessment. It includes a Published Backend framework v1.0, incomplete Draft v1.1, the Mid-year 2026 assessment, Minh's two confirmed gaps, active AWS/distributed-systems IDP and a re-assessment request in `More Evidence Needed`.
 
@@ -21,7 +23,7 @@ System Admin remains the source of identity records. HR Admin manages organizati
 
 ## Responsibility model
 
-| Object | HR Admin | Line Manager | Employee |
+| Object | HR Admin | Manager | Employee |
 |---|---|---|---|
 | User identity | View seed record | View direct reports | View self |
 | Role, Level, assignment | Create/configure/update | View | View current |
@@ -66,11 +68,15 @@ Minh selects competencies, reason, IDP, action, existing evidence and timing. A 
 
 ## Navigation and direct entries
 
+### Login As
+
+HR Admin; Manager; Employee. Each role card has one entry action. No credentials, organization selector or production session behavior is simulated.
+
 ### HR Admin — Tuyen Nguyen
 
 Overview; Users; Roles & Levels; Competency Categories; Rating Scale; Framework Templates; Team Frameworks; Career Path Configuration; Governance & Audit.
 
-### Line Manager — Luc Tran
+### Manager — Luc Tran
 
 Team Overview; Team Framework; Team Competencies; Team Members; Assessments; Assessment Requests; Development Plans.
 
@@ -91,6 +97,14 @@ My Profile; My Career Path; My Assessments; Re-assessment Requests; My IDP; Noti
 - Missing heatmap data: `Unknown`, not zero.
 - Destructive changes: confirmation modal.
 
+## Demo session flow
+
+1. The demonstrator opens `login.html`.
+2. They select HR Admin, Manager or Employee.
+3. En-Path opens the corresponding role prototype directly.
+4. Existing role-specific reset and demo controls continue to work.
+5. **Climax:** selecting `Log out` returns to Login As so the demonstrator can enter another role without editing a URL.
+
 ## Coverage matrix
 
 | Persona | Activity | Screen / flow |
@@ -105,13 +119,13 @@ My Profile; My Career Path; My Assessments; Re-assessment Requests; My IDP; Noti
 | HR Admin | Assign Manager-owned framework | Team Frameworks create modal, register and detail |
 | HR Admin | Configure progression | Career Path tree, transitions and Employee preview |
 | HR Admin | Trace change | Governance & Audit timeline and before/after drawer |
-| Line Manager | Monitor team capability | Team Overview heatmap, radar, gaps, funnel and actions |
-| Line Manager | Author and publish framework | Team Framework validator, version compare and publish modal |
-| Line Manager | Define detailed competency | Team Competencies add/edit expectations and guidance |
-| Line Manager | Coach direct reports | Team Members table, radar drawer and contextual CTAs |
-| Line Manager | Start and complete assessment | Assessment modal, full workspace, rubric and notification |
-| Line Manager | Decide re-assessment | Request inbox/detail, Accept/Decline/More Evidence/Complete |
-| Line Manager | Track development | Development Plans list, evidence detail, comments and check-in |
+| Manager | Monitor team capability | Team Overview heatmap, radar, gaps, funnel and actions |
+| Manager | Author and publish framework | Team Framework validator, version compare and publish modal |
+| Manager | Define detailed competency | Team Competencies add/edit expectations and guidance |
+| Manager | Coach direct reports | Team Members table, radar drawer and contextual CTAs |
+| Manager | Start and complete assessment | Assessment modal, full workspace, rubric and notification |
+| Manager | Decide re-assessment | Request inbox/detail, Accept/Decline/More Evidence/Complete |
+| Manager | Track development | Development Plans list, evidence detail, comments and check-in |
 | Employee | Understand current state | My Profile completed and no-assessment demo states |
 | Employee | Request first assessment | Initial request modal, submission and Manager notification |
 | Employee | Review history and gaps | My Assessments radar, table, evidence and snapshot history |
@@ -124,6 +138,6 @@ My Profile; My Career Path; My Assessments; Re-assessment Requests; My IDP; Noti
 
 ## Verification intent
 
-Open any of the three HTML entries directly or through a local static server. Use the demo controls to reset, switch persona and jump to the highest-value edge states. Mutations persist across entries and browser refreshes until reset.
+Open `mockups/login.html` directly or through a local static server. Enter each role, verify its primary navigation and use Logout to return to the role gateway. The Manager demo controls still reset and jump to high-value edge states; direct persona switching has been removed.
 
-Run `node mockups/prototype-smoke-test.js` from this artifact directory to verify all 22 routes, direct-file fallback and the connected Role/assignment → framework publish → assessment → IDP evidence → re-assessment mutation chain.
+Run `node mockups/prototype-smoke-test.js` from this artifact directory to verify Login As destinations, role Logout, all 22 integrated routes, direct-file fallback and the connected Role/assignment → framework publish → assessment → IDP evidence → re-assessment mutation chain.

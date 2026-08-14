@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102b33">
+  <title>En-Path - Login As</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="prototype-theme.css">
+  <script src="demo-session.js" defer></script>
+</head>
+<body class="login-page">
+  <div class="login-shell">
+    <aside class="login-brand-panel" aria-label="En-Path demo">
+      <div class="login-wordmark"><span class="login-wordmark-mark" aria-hidden="true">E</span><span>En-Path</span></div>
+      <div class="login-brand-copy">
+        <h1>One system. Three roles.</h1>
+      </div>
+      <div class="login-meta">Interactive role demo</div>
+    </aside>
+
+    <main class="login-main">
+      <div class="login-content">
+        <header class="login-heading">
+          <h2>Choose a role</h2>
+          <p>Log out from any workspace to return here and switch role.</p>
+        </header>
+
+        <section class="role-grid" aria-label="Demo roles">
+          <article class="role-card">
+            <span class="role-code" aria-hidden="true">HR</span>
+            <div class="role-copy"><h3>HR Admin</h3><p>Competencies, frameworks, employee data and governance.</p></div>
+            <button class="button primary" type="button" data-login-role="hr">Open HR Admin</button>
+          </article>
+
+          <article class="role-card">
+            <span class="role-code" aria-hidden="true">M</span>
+            <div class="role-copy"><h3>Manager</h3><p>Team frameworks, assessments, gaps and development plans.</p></div>
+            <button class="button primary" type="button" data-login-role="manager">Open Manager</button>
+          </article>
+
+          <article class="role-card">
+            <span class="role-code" aria-hidden="true">E</span>
+            <div class="role-copy"><h3>Employee</h3><p>Career paths, competency results, evidence and growth actions.</p></div>
+            <button class="button primary" type="button" data-login-role="employee">Open Employee</button>
+          </article>
+        </section>
+
+        <p class="login-footnote">Demo data stays in the selected prototype until you reset it.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
