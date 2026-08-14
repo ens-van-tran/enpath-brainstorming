@@ -1,245 +1,116 @@
 ---
-name: En-Path Policy Desk
-description: A precise, evidence-heavy visual system for HR and L&D competency governance.
+name: EnPath Growth OS
+description: Three-persona visual and interaction contract for competency, assessment, career path and IDP operations.
 status: final
 created: 2026-08-12
-updated: 2026-08-13
-sources:
-  - _bmad-output/planning-artifacts/pvb-product-canvas-persona-alignment-review.md
-  - Projects/En-Path/docs/As-is Journey Map - HR Admin.md
-  - Projects/En-Path/docs/Customer Journey Maps - Persona Views.md
-  - Projects/En-Path/docs/Customer Journey Maps.md
-  - Projects/En-Path/docs/Product Canvas.md
-  - Projects/En-Path/docs/PVB.md
-  - Projects/En-Path/Catchup business meeting note.md
-colors:
-  background: '#F3F4F1'
-  surface: '#FCFCFA'
-  surface-subtle: '#E9ECE9'
-  surface-strong: '#DDE3DF'
-  foreground: '#202A2A'
-  foreground-muted: '#63706C'
-  border: '#D5DCD8'
-  border-strong: '#95A39D'
-  primary: '#314D45'
-  primary-hover: '#263E38'
-  on-primary: '#FFFFFF'
-  primary-container: '#DCE5E1'
-  on-primary-container: '#263B35'
-  info: '#315F78'
-  info-container: '#DDEAF0'
-  warning: '#7F5C11'
-  warning-container: '#EFE7D3'
-  danger: '#913D35'
-  danger-container: '#F0DEDB'
-  success: '#356548'
-  success-container: '#DDEBDF'
-  focus-ring: '#557E70'
-  chart-recorded: '#4E6D63'
-  chart-employee-reference: '#B27A45'
-  chart-expected: '#315F78'
-  chart-active-profile: '#4E6D63'
-  chart-proposed-profile: '#315F78'
-  chart-unknown: '#CBD1CE'
-typography:
-  display:
-    fontFamily: 'Avenir Next, Gill Sans, Calibri, sans-serif'
-    fontSize: 28px
-    fontWeight: '650'
-    lineHeight: '1.15'
-    letterSpacing: -0.03em
-  heading:
-    fontFamily: 'Avenir Next, Gill Sans, Calibri, sans-serif'
-    fontSize: 18px
-    fontWeight: '650'
-    lineHeight: '1.3'
-    letterSpacing: -0.01em
-  body:
-    fontFamily: 'Avenir Next, Gill Sans, Calibri, sans-serif'
-    fontSize: 14px
-    fontWeight: '400'
-    lineHeight: '1.5'
-  label:
-    fontFamily: 'Avenir Next, Gill Sans, Calibri, sans-serif'
-    fontSize: 12px
-    fontWeight: '650'
-    lineHeight: '1.35'
-    letterSpacing: 0.01em
-  caption:
-    fontFamily: 'Avenir Next, Gill Sans, Calibri, sans-serif'
-    fontSize: 11px
-    fontWeight: '450'
-    lineHeight: '1.4'
-  data:
-    fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace'
-    fontSize: 12px
-    fontWeight: '550'
-    lineHeight: '1.4'
-rounded:
-  sm: 2px
-  md: 4px
-  lg: 6px
-  full: 9999px
-spacing:
-  '1': 4px
-  '2': 8px
-  '3': 12px
-  '4': 16px
-  '5': 20px
-  '6': 24px
-  '8': 32px
-  '10': 40px
-  sidebar: 240px
-  content-max: 1440px
-components:
-  app-shell:
-    background: '{colors.background}'
-    sidebar-background: '{colors.surface}'
-    sidebar-width: '{spacing.sidebar}'
-    border: '{colors.border}'
-  sidebar-nav:
-    active-background: '{colors.primary-container}'
-    active-foreground: '{colors.on-primary-container}'
-    radius: '{rounded.sm}'
-  page-header:
-    foreground: '{colors.foreground}'
-    metadata-foreground: '{colors.foreground-muted}'
-  button-primary:
-    background: '{colors.primary}'
-    hover-background: '{colors.primary-hover}'
-    foreground: '{colors.on-primary}'
-    radius: '{rounded.sm}'
-  governance-card:
-    background: '{colors.surface}'
-    border: '{colors.border}'
-    radius: '{rounded.md}'
-  status-badge:
-    radius: '{rounded.full}'
-    label-font: '{typography.caption.fontSize}'
-  data-table:
-    background: '{colors.surface}'
-    header-background: '{colors.surface-subtle}'
-    row-border: '{colors.border}'
-  validation-panel:
-    background: '{colors.danger-container}'
-    foreground: '{colors.danger}'
-    accent-border: '{colors.danger}'
-    radius: '{rounded.sm}'
-  pool-choice:
-    background: '{colors.surface}'
-    selected-background: '{colors.primary-container}'
-    border: '{colors.border}'
-  category-assignment:
-    background: '{colors.surface}'
-    border: '{colors.border}'
-  role-framework-composer:
-    background: '{colors.surface}'
-    category-background: '{colors.surface-subtle}'
-    selected-background: '{colors.primary-container}'
-  level-behavior-grid:
-    background: '{colors.surface}'
-    header-background: '{colors.surface-subtle}'
-    border: '{colors.border}'
-  stepper:
-    active: '{colors.primary}'
-    complete: '{colors.success}'
-    pending: '{colors.border-strong}'
-  target-fill-bar:
-    outline: '{colors.chart-expected}'
-    recorded-fill: '{colors.chart-recorded}'
-    employee-marker: '{colors.chart-employee-reference}'
-    unknown-fill: '{colors.chart-unknown}'
-  radar-chart:
-    expected-outline: '{colors.chart-expected}'
-    recorded-fill: '{colors.chart-recorded}'
-    employee-reference-line: '{colors.chart-employee-reference}'
-    active-profile-fill: '{colors.chart-active-profile}'
-    proposed-profile-outline: '{colors.chart-proposed-profile}'
-  chart-panel:
-    background: '{colors.surface}'
-    border: '{colors.border}'
-    radius: '{rounded.md}'
-  advice-panel:
-    background: '{colors.info-container}'
-    foreground: '{colors.info}'
-    radius: '{rounded.sm}'
-  side-panel:
-    background: '{colors.surface}'
-    border: '{colors.border}'
-    radius: '{rounded.lg}'
+updated: 2026-08-14
+source_of_truth: User prototype prompt dated 2026-08-13
+prototype_entries:
+  - mockups/hr-admin.html
+  - mockups/line-manager.html
+  - mockups/employee.html
 ---
 
-## Brand & Style
+# EnPath Growth OS — Design Contract
 
-En-Path Policy Desk is an internal governance tool, not a consumer dashboard. It should feel accountable, calm, and inspectable. Alignment is strict, density is purposeful, and every important result exposes its basis: scope, framework version, recorded Manager Score, reference-only Employee Score, coverage, and history.
+This document replaces the previous HR-only Operations Console direction. The 2026-08-13 user prompt is the single source of truth. The runnable reference consists of exactly three directly openable persona entries: [HR Admin](mockups/hr-admin.html), [Line Manager](mockups/line-manager.html), and [Employee](mockups/employee.html).
 
-Friendliness comes from plain language and clear recovery paths. The interface does not soften governance with decoration; it reduces anxiety by explaining what failed, who owns the correction, and what happens next.
+## Product character
 
-The selected visual direction is illustrated by `.working/directions-hr-admin.html` under **D - Policy Desk**. The final interactive visual reference is [HR Admin prototype](mockups/hr-admin-prototype.html), covering the application shell, competency authoring, governance review, assessment generation, and gap analytics. This design contract wins on conflict with either artifact.
+EnPath feels like a dependable growth operating system: structured enough for governance, fast enough for Managers to own, and optimistic enough for employees to understand where they can go next. The interface does not introduce an HR approval queue for team frameworks. Trust comes from completeness validation, immutable versions, impact previews, status history, notifications and audit evidence.
 
-## Colors
+The visual language combines:
 
-- **Background** `{colors.background}` is a cool neutral canvas that separates the application from spreadsheet-white without feeling decorative.
-- **Surface** `{colors.surface}` holds registers, builders, and analytical panels.
-- **Primary** `{colors.primary}` marks the current navigation context and consequential primary actions such as Generate, Submit, and Activate.
-- **Danger**, **warning**, **success**, and **info** always appear with a text label or icon. Color never carries state alone.
-- **Recorded Manager Score** `{colors.chart-recorded}` fills the expected-score outline. **Employee reference** `{colors.chart-employee-reference}` is a dashed secondary series and never appears as the system result.
-- **Framework Review** uses `{colors.chart-active-profile}` for the active expected profile and `{colors.chart-proposed-profile}` for the proposed expected profile. These colors never imply assessment results.
-- **Unknown** is neutral gray and must be labeled `Unknown` or `Insufficient data`; it never resembles a zero score.
-
-Load-bearing contrast targets are WCAG 2.2 AA: body text and controls at least 4.5:1; large text and non-text UI boundaries at least 3:1. The target outline must remain visible against both the background and actual fill.
+- Deep ink navigation for accountable operational context.
+- A warm mist canvas with a subtle grid and organic teal/amber light fields.
+- Paper-like data surfaces that avoid an entirely flat white page.
+- Muted teal for progress and successful completion.
+- Amber for attention, readiness and pending evidence.
+- Soft coral for confirmed gaps, blocked states and destructive actions.
+- Blue for snapshots, targets and informational comparison.
 
 ## Typography
 
-The local font stack keeps the standalone prototype operational without a network connection. `{typography.display}` is reserved for page titles and key totals. `{typography.heading}` names surfaces and panels. `{typography.body}` carries explanations. `{typography.data}` is used for version IDs, rule IDs, scores, dates, gap expressions, and audit values.
+- Display and analytical headings use `Iowan Old Style`, `Palatino Linotype`, Palatino or Georgia. This gives career and growth moments a humane editorial voice.
+- Body and controls use `Avenir Next`, Avenir, `Gill Sans` or Calibri for dense B2B readability without relying on Inter, Roboto or Arial.
+- Score, percentage and date layouts use tabular numerals where supported.
+- Headings use sentence case. Statuses use lifecycle wording exactly as defined by the domain.
 
-Use sentence case. Avoid all-caps except short register labels and stable identifiers. Numeric values use tabular alignment where supported.
+## Design tokens
 
-## Layout & Spacing
+| Purpose | Token | Value |
+|---|---|---|
+| Navigation ink | `--ink-900` | `#102B33` |
+| Work canvas | `--mist-100` | `#EEF2EB` |
+| Data surface | `--paper` | `#FFFEF9` |
+| Progress | `--teal` | `#2D7D73` |
+| Attention | `--amber` | `#D18B2E` |
+| Critical gap | `--coral` | `#D76555` |
+| Target / snapshot | `--blue` | `#4B759F` |
+| Boundary | `--line` | `#D6E0D9` |
 
-Desktop web is the primary form factor. The persistent `{spacing.sidebar}` sidebar anchors the navigation. Main content uses a maximum width of `{spacing.content-max}`, with a 12-column grid and 24px gutters. Competency authoring uses editable level behavior and advice grids. Role Framework composition groups selectable Pool competencies inside each assigned Category.
+Text and essential UI boundaries target WCAG 2.2 AA. Semantic color always appears with a label, number, icon or pattern. Missing assessment data is labeled `Unknown` or presented as an empty state; it never appears as zero.
 
-Registers and analytics favor dense tables and aligned panels. Every dense surface begins with a page header that states the current scope and comparison basis before showing numbers.
+## App shell
 
-## Elevation & Depth
+Desktop uses a persistent 264px dark sidebar, persona identity card, scoped navigation, sticky translucent top bar and centered content up to 1480px. The demo bar contains `Switch persona`, `Jump to demo state` and `Reset demo data` on every entry.
 
-Hierarchy comes from tonal layering and borders, not floating cards. `{components.governance-card}` uses no default shadow. Side panels and confirmation dialogs may use one restrained shadow to establish modal depth. Never stack more than one modal layer.
+At widths below 820px:
 
-## Shapes
+- Navigation becomes an off-canvas sidebar opened from the mobile header.
+- Tables become labeled card rows.
+- Modals occupy the full viewport with a persistent action footer.
+- The career graph becomes a simplified vertical path.
+- Multi-column analysis and form layouts collapse to one column.
 
-Corners are square to subtly rounded: `{rounded.sm}` for controls and states, `{rounded.md}` for panels, `{rounded.lg}` only for side panels. Pills are reserved for compact status badges. Large playful rounded cards are outside the Policy Desk language.
+## Core components
 
-## Components
+### Page header
 
-- **App shell:** Persistent sidebar plus scoped content header. Sidebar groups are Overview, Framework, Assessment, Analytics, and Governance.
-- **Sidebar nav:** Active item uses `{components.sidebar-nav.active-background}` and a strong text label. Parent groups remain expanded for the active route.
-- **Page header:** Title, one-sentence purpose, scope chips, framework/version metadata, and one primary action maximum.
-- **Button primary:** Used for the next committed step. Secondary actions use neutral outline buttons; destructive actions use danger styling and explicit labels.
-- **Governance card:** Bounded summary or work item with title, metadata, accountable owner, and state.
-- **Status badge:** Always pairs color with a word such as `Draft`, `In review`, `Changes requested`, `Active`, `Superseded`, `Unknown`, or `Complete`.
-- **Data table:** Sticky header on long registers, aligned numeric columns, full-row focus state, and explicit empty/loading/error treatment.
-- **Validation panel:** Lists blocking and advisory rules separately. Each finding includes rule ID, current value, expected rule, content owner, and next action.
-- **Competency Pool choice:** Shows competency name and description as separate text lines. Selection is explicit, keyboard-operable, and remains visually subordinate to the Category heading.
-- **Category assignment:** Shows the Category definition together with its Manager, team, and role scope. Category is a framework grouping and assignment boundary, not a competency taxonomy.
-- **Role Framework composer:** Groups assigned Categories and lets HR or the assigned Manager pick relevant competencies from the shared Pool. Omitted Pool competencies remain available elsewhere and are not shown as errors.
-- **Level behavior grid:** Columns represent the shared Level Model; rows capture competency-specific behavior descriptions and improvement advice for each level. Empty required cells are visibly incomplete.
-- **Stepper:** Shows authoring/review/generation progression. Completed steps remain inspectable.
-- **Target fill bar:** The outline represents Expected Score; Manager Score fills the outline because it is the recorded system score. Employee Score may appear only as a labeled reference marker. Never substitute Employee Score when Manager Score is missing.
-- **Radar chart:** Team and member analytics show Expected, recorded Manager, and dashed Employee-reference series. Framework Review instead compares active expected and proposed expected profiles. Every radar includes a numeric/table equivalent.
-- **Chart panel:** Always states role/level, framework version, assessment date, Manager-score coverage, and aggregation method. Includes a numeric/table equivalent.
-- **Advice panel:** Shows HR/Manager-configured guidance and its competency source. It is not presented as AI-generated.
-- **Side panel:** Used for member or competency drill-down without losing analytical context. It exposes a stable close action and returns focus to the trigger.
+Every screen begins with a small contextual kicker, editorial title, one-sentence outcome, scope/version chips and no more than two primary actions. Framework and assessment headers always reveal the active snapshot or working version.
 
-## Do's and Don'ts
+### Status badge and timeline
 
-| Do | Don't |
-|---|---|
-| State scope, framework version, assessment date, Manager-score coverage, and comparison basis near every analytical result | Show an unexplained score or chart |
-| Explain validation failures with rule, owner, and recovery action | Use generic `Invalid input` messages |
-| Label `Unknown` separately from shortfall | Convert missing assessment data to zero |
-| Label Employee Score as `reference` wherever it appears | Blend Employee and Manager scores or call Employee Score the recorded result |
-| Use restrained neutral surfaces and strict alignment | Use decorative gradients, glass effects, or playful illustration |
-| Keep HR and Manager ownership visible | Let HR appear to silently edit Manager-owned content |
-| Show active and proposed expected profiles in Framework Review | Reuse assessment-score language for framework-version comparison |
-| Show configured advice provenance | Present rule-based advice as generated intelligence |
-| Use labels and icons with semantic colors | Rely on red/green alone |
+Status badges support Framework (`Draft`, `Published`, `Superseded`, `Archived`), Assessment (`Not Started`, `Active`, `Completed`, `Cancelled`, `Expired`), Request, IDP and Action lifecycle states. Timeline entries include actor, date, status and a plain-language note.
+
+### Cards, registers and drawers
+
+- KPI cards are drill-down controls, not decoration.
+- Tables are used for comparable records; every row exposes a real detail or mutation action.
+- Drawers preserve list context for employee, framework, request, audit and development-plan detail.
+- Modals handle create/edit/assign/publish/confirmation work. Assessment workspace and IDP detail use full pages.
+
+### Validation and impact preview
+
+Validation names what is missing and how to recover. Framework publication is blocked by incomplete expected scores or guidance. Assignment, rating-scale activation and framework publication show downstream framework, Manager, active-assessment, employee, IDP and snapshot impact before mutation.
+
+### Data visualization
+
+- Radar: self, recorded Manager and expected/target profiles; accompanied by a numeric equivalent.
+- Heatmap: employee × competency with explicit `On track`, `Gap 1`, `Gap 2+` and `Unknown` labels.
+- Bars and donuts: clickable drill-downs for adoption, gaps, completion and status distribution.
+- Funnel: assessment assignment through completion.
+- Career graph: configured nodes and transitions with current, selected, optional and locked treatments.
+
+Charts answer a product question and route to the relevant list. They never stand alone as decorative dashboard filler.
+
+## Motion
+
+Page content rises subtly on route changes. Modal and drawer entry establish spatial hierarchy. Score, progress and status updates animate briefly; published changes finish with a toast. `prefers-reduced-motion` disables meaningful duration.
+
+## Domain-specific visual rules
+
+- Published Framework and Rating Scale versions look stable and are never edited in place.
+- Draft comparison uses paired neutral/current and amber/proposed panels.
+- Manager Score is the recorded assessment result. Self Score is explicitly labeled and optional.
+- Expected Score and Target Expected Score use the blue comparison treatment.
+- A competency gap uses coral only when a completed Manager score is below expectation.
+- Destructive actions require confirmation; blocked archive/delete actions explain the recovery path.
+- Employee empty states explain when information becomes available and offer the relevant assessment request CTA.
+
+## Implementation mapping
+
+- `mockups/enpath.css` owns tokens, layout, responsive behavior, components and motion.
+- `mockups/enpath-app.js` owns shared seed data, localStorage persistence, charts, view rendering and real CTA behavior.
+- The three HTML entries contain only persona metadata and the shared assets, allowing each to open directly.
+- `mockups/prototype-smoke-test.js` exercises all 22 routes, direct-file storage fallback and cross-persona mutations without external dependencies.
