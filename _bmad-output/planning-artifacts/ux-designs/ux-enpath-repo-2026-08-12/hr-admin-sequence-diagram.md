@@ -25,18 +25,17 @@ sequenceDiagram
 
     rect rgb(236, 242, 246)
         HR->>EnPath: Open Competencies / Pool list
-        HR->>EnPath: Open New competency drawer
+        HR->>EnPath: Open New competency detail modal
         HR->>EnPath: Enter name and description
-        HR->>EnPath: Continue to Competency Setup
         HR->>EnPath: Define five score anchors and improvement advice
         HR->>EnPath: Select a system Role + define level + Expected Score
         HR->>EnPath: Define Below / Meet / Above behavior
         EnPath->>EnPath: Validate definition and role-level expectation
         alt Required score, advice, or expectation is missing
-            EnPath-->>HR: Keep setup open and show validation
+            EnPath-->>HR: Keep modal open and show validation
         else Competency is complete
-            HR->>EnPath: Activate competency
-            EnPath-->>HR: Show Active status and record audit event
+            HR->>EnPath: Create competency
+            EnPath-->>HR: Add Draft to Pool and record audit event
         end
     end
 

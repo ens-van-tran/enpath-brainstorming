@@ -106,6 +106,10 @@ for (const [role, html] of Object.entries({ hr: mockupFiles.hr, employee: mockup
   assert(html.includes('href="prototype-theme.css"'), `${role} does not load the Manager design adapter`);
   assert(html.includes("data-demo-logout"), `${role} is missing Logout`);
 }
+assert(mockupFiles.hr.includes("function openCompetencyModal()"), "HR competency creation does not open the detail modal");
+assert(mockupFiles.hr.includes('id="new-score-anchor-4"'), "HR competency modal is missing five-score guidance");
+assert(mockupFiles.hr.includes('id="new-rubric-above"'), "HR competency modal is missing role-level expectations");
+assert(!mockupFiles.hr.includes("Continue to setup"), "HR competency creation still uses the preliminary setup step");
 
 const managerShell = boot("manager", "team-overview");
 assert(managerShell.app.innerHTML.includes("logout-demo"), "Manager is missing Logout");
