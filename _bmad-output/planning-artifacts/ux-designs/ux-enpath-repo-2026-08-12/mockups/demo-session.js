@@ -2,17 +2,21 @@
   "use strict";
 
   const ROLE_KEY = "enpath-demo-role";
+  const STATE_PREFIX = "__ENPATH_DEMO_STATE__";
+  const ROLE_PREFIX = "__ENPATH_DEMO_ROLE__";
   const destinations = {
-    hr: "hr-admin-prototype.html",
+    hr: "hr-admin.html",
     manager: "line-manager.html",
-    employee: "employee-prototype.html"
+    employee: "employee.html",
+    reviewer: "contextual-reviewer.html"
   };
 
   function remember(role) {
     try {
       localStorage.setItem(ROLE_KEY, role);
     } catch (error) {
-      window.name = `__ENPATH_DEMO_ROLE__${role}`;
+      // Preserve schema-v7 (and migrated legacy) shared state in direct-file sessions.
+      if (!window.name.startsWith(STATE_PREFIX)) window.name = `${ROLE_PREFIX}${role}`;
     }
   }
 
@@ -20,7 +24,7 @@
     try {
       localStorage.removeItem(ROLE_KEY);
     } catch (error) {
-      if (window.name.startsWith("__ENPATH_DEMO_ROLE__")) window.name = "";
+      if (window.name.startsWith(ROLE_PREFIX)) window.name = "";
     }
   }
 
