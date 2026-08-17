@@ -1,0 +1,35 @@
+site_name: En-Path Product Documentation
+site_description: Canonical product model, prototype guide, and review surface for En-Path.
+site_url: https://ens-van-tran.github.io/enpath-brainstorming/
+repo_url: https://github.com/ens-van-tran/enpath-brainstorming
+repo_name: ens-van-tran/enpath-brainstorming
+docs_dir: docs
+site_dir: site
+strict: true
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  navigation_depth: 3
+
+nav:
+  - Home: index.md
+  - Product Model: product-model.md
+  - Prototype Review: prototype.md
+  - Review Checklist: review-checklist.md
+  - Canonical Artifacts: artifacts.md
+  - Research:
+      - Performance Review Interview - Phat: interviews/phat-performance-review-interview.md
+      - Performance Review Interview - Quy: interviews/quy-employee-performance-review-interview.md
+
+extra_css:
+  - stylesheets/enpath-docs.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+
