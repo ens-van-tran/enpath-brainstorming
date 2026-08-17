@@ -1,0 +1,17 @@
+:root {
+  --enpath-ink: #102b33;
+  --enpath-teal: #2d7d73;
+  --enpath-paper: #fffef9;
+}
+
+body { color: var(--enpath-ink); }
+.wy-nav-side { background: linear-gradient(165deg, #102b33, #173b43); }
+.wy-side-nav-search { background: transparent; }
+.wy-side-nav-search input { border-color: rgba(255,255,255,.28); }
+.wy-nav-content { max-width: 1050px; }
+.rst-content h1, .rst-content h2, .rst-content h3 { font-family: Georgia, "Times New Roman", serif; letter-spacing: -.02em; }
+.rst-content h1 { color: var(--enpath-ink); }
+.rst-content a { color: var(--enpath-teal); }
+.rst-content code { color: #1f655d; }
+.rst-content table.docutils { width: 100%; }
+
